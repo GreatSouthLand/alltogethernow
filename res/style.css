@@ -4,7 +4,7 @@ body {
 	font-size: 12px;
 	color: #4d5051;
 	background-color: #d6d6d6;
-	background-image: url(../res/top-rept.jpg);
+	background-image: url(top-rept.jpg);
 	background-repeat: repeat-x;
 	background-position: left top;
 	margin: 0px;
@@ -124,7 +124,7 @@ img.f-right {
 
 
 .page-in {
-	background-image: url(../res/bottom-rept.jpg);
+	background-image: url(bottom-rept.jpg);
 	background-repeat: repeat-x;
 	background-position: left bottom;
 	width: 100%;
@@ -142,7 +142,7 @@ img.f-right {
 }
 
 .header-top {
-	background-image: url(../res/header-top.jpg);
+	background-image: url(header-top.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
 	width: 1000px;
@@ -175,7 +175,7 @@ img.f-right {
 }
 
 .header-bottom {
-	background-image: url(../res/header.jpg);
+	background-image: url(header.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
 	width: 1000px;
@@ -203,7 +203,7 @@ img.f-right {
 
 .content {
 	background-color: #FFFFFF;
-	background-image: url(../res/body-top.jpg);
+	background-image: url(body-top.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
 	width: 952px;
@@ -239,7 +239,7 @@ img.f-right {
 ul.list1 {
 	margin-top: 5px;
 	margin-left: 25px;
-	list-style-image: url(../res/bullet.jpg);
+	list-style-image: url(bullet.jpg);
 }
 
 ul.list1 li {
@@ -279,7 +279,7 @@ ul.list1 li {
 /* nav bar at bottom of page */
 .footer {
 	line-height: 69px;
-	background-image: url(../res/footer.jpg);
+	background-image: url(footer.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
 	width: 952px;
@@ -533,4 +533,5 @@ td {
 .navigation ul li a:hover {
 	text-decoration:underline;
 }
+
 
