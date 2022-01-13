@@ -1,7 +1,7 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 100%;
 	color: #4d5051;
 	background-color: #d6d6d6;
 	background-image: url(top-rept.jpg);
@@ -103,25 +103,6 @@ img.f-right {
 	float:right !important;
 }
 
-.t-left {
-	text-align:left !important;
-}
-
-.t-center {
-	text-align:center !important;
-}
-
-.t-right {
-	text-align:right !important;
-}
-
-.t-justify {
-	text-align:justify !important;
-}
-
-
-
-
 
 .page-in {
 	background-image: url(bottom-rept.jpg);
@@ -152,7 +133,7 @@ img.f-right {
 
 .header-top h1 {
 	font-family: "Times New Roman", Times, serif;
-	font-size: 50px;
+	font-size: 420%;
 	font-weight: normal;
 	line-height: 55px;
 	color: #FFFFFF;
@@ -185,7 +166,7 @@ img.f-right {
 
 .header-bottom h2 {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	font-size: 200%;
 	font-weight: normal;
 	color: #000000;
 	margin-top: 92px;
@@ -194,7 +175,7 @@ img.f-right {
 
 .header-bottom h3 {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 19px;
+	font-size: 160%;
 	font-weight: normal;
 	color: #000000;
 	margin-top: 0px;
@@ -226,7 +207,7 @@ img.f-right {
 
 .title {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	font-size: 200%;
 	font-weight: normal;
 	color: #000000;
 	margin-bottom: 30px;
@@ -259,7 +240,7 @@ ul.list1 li {
 
 .subtitle {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 150%;
 	font-weight: normal;
 	color: #171817;
 	margin-bottom: 10px;
@@ -289,13 +270,13 @@ ul.list1 li {
 }
 
 .footer p {
-	font-size: 11px;
+	font-size: 90%;
 	color: #FFFFFF;
 	float: left;
 }
 
 .footer a {
-	font-size: 11px;
+	font-size: 90%;
 	color: #FFFFFF;
 	text-decoration: none;
 }
