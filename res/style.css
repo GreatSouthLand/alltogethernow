@@ -489,14 +489,14 @@ td {
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-device-width: 992px) {
 	.navbar a, .drop .drop-btn {
 		font-size: 30px;
 	}
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 600px) {
 	.navbar a, .drop .drop-btn {
 		font-size: 40px;
 	}
