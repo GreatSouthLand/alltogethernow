@@ -488,6 +488,19 @@ td {
 }
 
 
+@media screen and (max-width: 992px) {
+  .navbar {
+    font-size: 200%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: 300%;
+  }
+}
+
 
 /* navbar container */
 .navbar {
