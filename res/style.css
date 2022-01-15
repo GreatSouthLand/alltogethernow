@@ -489,14 +489,14 @@ td {
 
 
 @media screen and (max-width: 992px) {
-  .navbar {
+  .navbar a {
     font-size: 200%;
   }
 }
 
 
 @media screen and (max-width: 600px) {
-  .navbar {
+  .navbar a {
     font-size: 300%;
   }
 }
