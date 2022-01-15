@@ -491,7 +491,7 @@ td {
 
 /* navbar container */
 .navbar {
-	font-size: inherit;/*12px;*/
+	font-size: 150%;/*12px;*/
 	overflow: hidden;
 	background-color: #e6e6e6;
 	border:#BBBFB4 solid 1px;
@@ -568,18 +568,5 @@ td {
 	display: block;
 }
 
-
-@media screen and (max-width: 992px) {
-  .navbar a {
-    font-size: 200%;
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  .navbar a {
-    font-size: 300%;
-  }
-}
 
 
