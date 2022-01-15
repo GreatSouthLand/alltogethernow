@@ -506,7 +506,6 @@ td {
 
 /* links inside the navbar */
 .navbar a {
-	font-size: inherit;/*12px;*/
 	float: left;
 	color:#406000;
 	text-align: center;
@@ -531,7 +530,6 @@ td {
 .drop .drop-btn {
 	padding-top: 4px;
 	padding-bottom: 4px;
-	font-size: inherit;/*12px;*/
 	border: none;
 	outline: none;
 	color:#406000;
@@ -548,7 +546,6 @@ td {
 
 /* drop content (hidden by default) */
 .drop-content {
-	font-size: inherit;
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
@@ -559,7 +556,6 @@ td {
 
 /* links inside the drop */
 .drop-content a {
-	font-size: inherit;
 	float: none;
 	display: block;
 	text-align: left;
