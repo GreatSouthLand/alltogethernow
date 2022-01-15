@@ -491,13 +491,13 @@ td {
 
 @media screen and (max-width: 992px) {
   .navbar a, .drop .drop-btn {
-    font-size: 300%;
+    font-size: 400%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .navbar a, .drop .drop-btn {
-    font-size: 500%;
+    font-size: 600%;
   }
 }
 
