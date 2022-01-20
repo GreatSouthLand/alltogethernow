@@ -116,6 +116,10 @@ img.f-right {
 
 
 
+.strk {
+   text-decoration: wavy line-through red 2px;
+}
+
 
 .page-in {
 	background-image: url(bottom-rept.jpg);
@@ -142,14 +146,6 @@ img.f-right {
 	width: 1000px;
 	height: 80px;
 	float: left;
-}
-
-
-@media screen and (max-width: 800px) {
-    .navbar a, .drop .drop-btn {
-		font-size: 30px;
-		padding: 2px 10px;
-	}
 }
 
 .header-top h1 {
@@ -321,8 +317,6 @@ table {
 
 .more a {
 	border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
 	padding: 6px 12px;
 	text-decoration:none;
 	font-weight:bold;
