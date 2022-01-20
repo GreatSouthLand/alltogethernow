@@ -16,47 +16,42 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, input, textarea {
 	margin: 0px;
 }
 
+h2, h3, h4, h5, h6 {
+	font-weight:bold;
+}
+
 h1 {
 	font-size:300%;
-	font-weight:normal;
-	color:#004B96;
 }
 
 h2 {
 	font-size:220%;
-	font-weight:bold;
-	color:#004B96;
 }
 
 h3 {
-	font-size:160%;
-	font-weight:normal;
+	font-size:180%;
 }
 
 h4 {
-	font-size:135%;
-	font-weight:bold;
-	color:#507010; /*dk green*/
+	font-size:150%;
 }
 
 h5, h6 {
-	font-size:115%;
-	font-weight:bold;
+	font-size:125%;
 	margin-top:15px;
 	margin-bottom:12px;
 }
 
-a {
+h3 b, h4 b {
+	color:#507010; /*dk green*/
+}
+
+a, h2, h3 p, h4 p {
 	color:#608020; /*green*/
-	text-decoration:none;
 }
 
 a:hover, a:active, a:focus {
-	color:#0065C8; /* blue */
-}
-
-h2 b {
-	color:#608020; /*green*/
+	color:#0055B8; /*dk blue*/
 }
 
 img.f-flag {
@@ -118,7 +113,6 @@ img.f-right {
 .t-justify {
 	text-align:justify !important;
 }
-
 
 
 
@@ -208,15 +202,7 @@ img.f-right {
 	background-position: left top;
 	width: 952px;
 	float: left;
-	padding: 30px 24px 0px 24px;
-}
-
-.content-left {
-	background-repeat: repeat-y;
-	background-position: right top;
-	width: 952px;/*725px;*/
-	float: left;
-	padding-right: 21px;
+	padding: 30px 24px 4px 24px;
 }
 
 .row1 {
@@ -274,6 +260,10 @@ ul.list1 li {
 }
 
 
+a {
+	text-decoration: none;
+}
+
 
 /* nav bar at bottom of page */
 .footer {
@@ -313,12 +303,12 @@ table {
 /* pseudo-buttons for navigation */
 .more {
 	text-align:right;
-	margin: 0px 2px 0px 2px !important;
+	margin: 0px 4px 0px 4px !important;
 	float:right;
 }
 
 .more p {
-	margin: 10px 2px 6px 2px !important;
+	margin: 14px 4px 10px 4px !important;
 }
 
 .more a {
@@ -388,6 +378,16 @@ td {
 	text-align: left;
 }
 
+
+
+/* green header text for boxes */
+.rbox h6 {
+	color: #507010;
+	padding-bottom:3px;
+	margin:0;
+	text-align:center;
+	font-weight:normal;
+}
 
 /* container boxes with outlines, placed center, left or right */
 .cbox, .lbox, .rbox, .row {
@@ -565,3 +565,6 @@ td {
 .drop:hover .drop-content {
 	display: block;
 }
+
+
+
