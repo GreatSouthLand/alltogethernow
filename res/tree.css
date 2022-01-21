@@ -1,0 +1,113 @@
+
+.tree {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #f8f8f8;
+	border: #d0d0d0 solid 1px;
+	padding: 4px 4px 0px 4px;
+	border-radius: 5px;
+}
+
+.tree ul {
+	padding-left: 16px; position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.tree ul:first-child{
+	padding-left: 20px;
+	width: 100px;
+}
+
+.tree li {
+	list-style-type: none;
+	line-height: 200%;
+	position: relative;
+	padding: 5px 0 5px 16px;
+	display: flex;
+	transition: all 0.5s;
+}
+
+.tree li a{
+	border: 2px solid #ccc;
+	padding: 4px 10px;
+	text-decoration: none;
+	color: #444;
+	font-family: arial, verdana, tahoma;
+	align-self: center;
+	border-radius: 5px;
+	flex: 1 0 auto;
+	width: 158px;
+	/*flex-basis: 160px;*/
+	flex:1;
+	background: #f5f7ec; /*pale green*/
+}
+
+.threeacross li a{
+	width: 200px;
+}
+
+/* draw connectors using ::before and ::after to */
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; left: 0; bottom: 50%;
+	border-left: 2px solid #ccc;
+	width: 16px; height: 50%;
+}
+
+.tree li::after{
+	bottom: auto; top: 50%;
+	border-top: 2px solid #ccc;
+}
+
+/* remove left-right connectors from elements without any siblings */
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/* remove space from the top of single children */
+.tree li:only-child{ padding-left: 0;}
+
+/* remove left connector from first child and right connector from last child */
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/* add back the vertical connector to the last nodes */
+.tree li:last-child::before{
+	border-bottom: 2px solid #ccc;
+	border-radius: 0 0 5px 0;
+}
+.tree li:first-child::after{
+	border-radius: 0 0 0 5px;
+}
+
+/* add downward connectors from parents */
+.tree ul ul::before{
+	content: '';
+	position: absolute; left: 0; top: 50%;
+	border-top: 2px solid #ccc;
+	width: 16px; height: 0;
+}
+
+/* hover effect, for element */
+.tree li a:hover {
+	background: #c0e080; /*light green #e0f0b0*/
+	color: #000; border: 
+	2px solid #94a0b4; /*#608020;*/
+}
+
+/* hover effect, for border */
+.tree li a:hover+ul li a {
+	background: #f0f2e4; /*pale green #f5f7ec*/
+	color: #000; 
+	border: 2px solid #94a0b4; /*#608020;*/
+}
+
+/* hover effect, for connector */
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color: #94a0b4; /*#608020;*/
+}
