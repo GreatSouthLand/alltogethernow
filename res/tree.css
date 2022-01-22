@@ -3,8 +3,8 @@
 	display: flex;
 	justify-content: flex-start;
 	background-color: #f8f8f8;
-	border: #d0d0d0 solid 1px;
 	padding: 4px 4px 0px 4px;
+	border: #d0d0d0 solid 1px;
 	border-radius: 5px;
 }
 
@@ -15,13 +15,13 @@
 }
 
 .tree ul:first-child{
-	padding-left: 20px;
+	padding-left: 0px;
 	width: 100px;
 }
 
 .tree li {
 	list-style-type: none;
-	line-height: 200%;
+	line-height: 170%;
 	position: relative;
 	padding: 5px 0 5px 16px;
 	display: flex;
@@ -30,21 +30,36 @@
 
 .tree li a{
 	border: 2px solid #ccc;
-	padding: 4px 10px;
+	padding: 3px;
 	text-decoration: none;
 	color: #444;
 	font-family: arial, verdana, tahoma;
 	align-self: center;
-	border-radius: 5px;
-	flex: 1 0 auto;
-	width: 158px;
-	/*flex-basis: 160px;*/
-	flex:1;
+	border-radius: 6px;
+	/*flex: 1 0 auto;*/
+	flex: 1;
 	background: #f5f7ec; /*pale green*/
+	/*flex-basis: 260px;*/
+	width: 260px;
 }
 
-.threeacross li a{
-	width: 200px;
+.tree li img {
+	width:60px;
+	height:60px;
+	margin-right:5px;
+	vertical-align:top;
+	float:left;
+	border: #c0c0c0 solid 2px;
+	border-radius: 5px;
+}
+
+.fouracross li img{
+	width: 52px;
+	height: 52px;
+}
+
+.fouracross li a{
+	width: 185px;
 }
 
 /* draw connectors using ::before and ::after to */
@@ -92,14 +107,14 @@
 
 /* hover effect, for element */
 .tree li a:hover {
-	background: #c0e080; /*light green #e0f0b0*/
+	background: #c8e088; /*light green #e0f0b0*/
 	color: #000; border: 
 	2px solid #94a0b4; /*#608020;*/
 }
 
 /* hover effect, for border */
 .tree li a:hover+ul li a {
-	background: #f0f2e4; /*pale green #f5f7ec*/
+	background: #e0e2d4; /*pale green #f5f7ec*/
 	color: #000; 
 	border: 2px solid #94a0b4; /*#608020;*/
 }
