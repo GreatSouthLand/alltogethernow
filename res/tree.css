@@ -9,44 +9,46 @@
 }
 
 .tree ul {
-	padding-left: 16px; position: relative;
+	padding-left: 16px; 
+	position: relative;
 	display: flex;
 	flex-direction: column;
 }
 
 .tree ul:first-child{
 	padding-left: 0px;
-	width: 100px;
+	width: 180px;
 }
 
 .tree li {
 	list-style-type: none;
 	line-height: 170%;
 	position: relative;
-	padding: 5px 0 5px 16px;
+	padding: 2px 0px 2px 16px;
 	display: flex;
 	transition: all 0.5s;
 }
 
 .tree li a{
 	border: 2px solid #ccc;
-	padding: 3px;
+	padding: 3px 10px 3px 3px;
 	text-decoration: none;
 	color: #444;
-	font-family: arial, verdana, tahoma;
 	align-self: center;
 	border-radius: 6px;
-	/*flex: 1 0 auto;*/
-	flex: 1;
+	/*flex: 1 0 180px;*/
 	background: #f5f7ec; /*pale green*/
-	/*flex-basis: 260px;*/
 	width: 260px;
 }
 
+.tree li a b {
+    font-size: 10px;
+	}
+
 .tree li img {
-	width:60px;
-	height:60px;
-	margin-right:5px;
+	width:36px;
+	height:36px;
+	margin-right:8px;
 	vertical-align:top;
 	float:left;
 	border: #c0c0c0 solid 2px;
@@ -59,20 +61,32 @@
 }
 
 .fouracross li a{
-	width: 185px;
+	width: 180px;
+	text-align:center;
 }
+
+.fiveacross li a{
+	width: 135px;
+	text-align:center;
+	padding: 2px;
+}
+
 
 /* draw connectors using ::before and ::after to */
 
 .tree li::before, .tree li::after{
 	content: '';
-	position: absolute; left: 0; bottom: 50%;
+	position: absolute; 
+	left: 0; 
+	bottom: 50%;
 	border-left: 2px solid #ccc;
-	width: 16px; height: 50%;
+	width: 16px; 
+	height: 50%;
 }
 
 .tree li::after{
-	bottom: auto; top: 50%;
+	bottom: auto; 
+	top: 50%;
 	border-top: 2px solid #ccc;
 }
 
@@ -100,21 +114,24 @@
 /* add downward connectors from parents */
 .tree ul ul::before{
 	content: '';
-	position: absolute; left: 0; top: 50%;
+	position: absolute; 
+	left: 0; 
+	top: 50%;
 	border-top: 2px solid #ccc;
-	width: 16px; height: 0;
+	width: 16px; 
+	height: 0;
 }
 
 /* hover effect, for element */
 .tree li a:hover {
 	background: #c8e088; /*light green #e0f0b0*/
-	color: #000; border: 
-	2px solid #94a0b4; /*#608020;*/
+	color: #000; 
+	border: 2px solid #94a0b4; /*#608020;*/
 }
 
 /* hover effect, for border */
 .tree li a:hover+ul li a {
-	background: #e0e2d4; /*pale green #f5f7ec*/
+	background: #e8f8d8; /*pale green #f5f7ec*/
 	color: #000; 
 	border: 2px solid #94a0b4; /*#608020;*/
 }
