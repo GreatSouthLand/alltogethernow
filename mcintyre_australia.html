@@ -7,7 +7,14 @@
   <meta name="keywords" content="keyword1, keyword2, keyword3">
   <link href="res/style.css" rel="stylesheet" type="text/css">
   <link href="favicon.ico" rel="icon" type="image/x-icon">
-</head>
+  <script>
+    function Togl(btn,where,what) {
+    var show=(where.style.display=="none") ? 1 : 0;
+    where.style.display=show ? "block" : where.style.display="none";
+    btn.innerHTML=show ? "&#9651; &nbsp;Hide Children" : "&#9661; &nbsp;Show Children";
+    return false;
+	}
+  </script></head>
 <body>
 <div class="page-in">
 <div class="page">
@@ -87,7 +94,7 @@
     <b>&raquo;&nbsp;Archibald McIntyre</b> (1804-1861)
     and <b>Jessie Dewar Halling </b> (1808-1887) had the following children:
     <br><br>
-    <table class="family">
+    <table class="family" id="arch">
       <tr><td><b>Duncan</b></td>
           <td>25.06.<b>1830</b>&nbsp;–<br>
               *Glasgow</td>
@@ -157,13 +164,17 @@
 
     
     
-    <div class="rbox" style="width:43%; margin:25px 0px 20px 20px;">
+    <div class="rbox" style="width:43%; margin:20px 0px 10px 20px;">
     <a href="img/archibald/1845_millers_point.jpg">
     <img src="img/archibald/1845_millers_point.jpg" alt="">
     </a>
-    <p>Above: Millers Point by Joseph Fowles 1845</p>
-    <br>
-    <p>Below: An early view of West Maitland about 1837</p>
+    <p><b>Above:</b> Millers Point by Joseph Fowles 1845</p>
+    <div class="lbox" style="width:98%; margin:8px 0px 16px 0px;">
+    <a href="img/archibald/sands_duncan.jpg">
+    <img src="img/archibald/sands_duncan.jpg" alt="">
+    </a>
+    </div>
+    <p><b>Below:</b> An early view of West Maitland about 1837</p>
     <a href="img/glenartney/Maitland,_West_c1837.jpg">
     <img src="img/glenartney/Maitland,_West_c1837.jpg" alt="">
     </a>
@@ -171,24 +182,26 @@
     
     <h5>Millers Point in Sydney</h5>
     
-    Since Duncan was a fully qualified Baker, he naturally enough set himself up in a bakery business in Sydney. This he did at Millers Point, aptly named by the presence the flour mills there, which were needed by the rapidly flourishing settlement. If Archibald did indeed arrive in the colony before his family it would be more than likely that he found the location for Duncan's new bakery and residence at 41 Windmill Street and it was there that the family was first brought under cover upon arrival.
+    Since Duncan was a fully qualified Baker, he naturally enough set himself up in a bakery business in Sydney. This he did at Millers Point, aptly named by the presence the flour mills there, which were needed by the rapidly flourishing settlement. If Archibald did indeed arrive in the colony before his family it would be more than likely that he found the location for Duncan's new bakery and residence at 42 Windmill Street and it was there that the family was first brought under cover upon arrival.
+    <img src="res/blank.gif" style="width:52%; height:1px; margin:0px;" alt="">
     
-   
     <h5>On to Maitland</h5>
 
     Soon after their arrival in Sydney, Archibald and Jessie moved to Maitland in the Hunter Valley where Archibald's brother William had already established a home and school. In Maitland, Archibald and Jessie's children were educated not only by the same rigorous Highland style taught by William, they also had a good serving of education in colonial life from their other uncles.
     <br><br>
     John Archibald, for instance became so savvy with property dealings he was already a manager at the end of his teens. He went on to become one of 'the McIntyres' of New England fame. His sister, Amelia married the future wool brokering tycoon, John Bridge, in Maitland and later moving to Sydney. Sister Flora established a Catholic School in Maitland and in her later years, not having married, moved in with the Bridges in their Sydney residence.
     <br><br>
-    Another daughter, Eglantine, married John McGregor, an imposing Scot from Dunstaffnage, who was also managing properties throughout his life. Jessie and Archibald's youngest child, Mary Georgina also married a property owner, John Cameron Campbell, and lived fairly close to her brother John Archibald who was in New England by that time. William McKinnon, the second youngest hooked up with one those close family ties who had accompanied William and his brothers to Australia.    
+    Another daughter, Eglantine, married John McGregor, an imposing Scot from Dunstaffnage, who was also managing properties throughout his life. Jessie and Archibald's youngest child, Mary Georgina also married a property owner, John Cameron Campbell, and lived fairly close to her brother John Archibald who was in New England by that time. William McKinnon, the second youngest hooked up with one those close family ties who had accompanied William and his brothers to Australia.  
+     
+    <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">  
     
     <div class="rbox" style="width:48%; margin:25px 0px 20px 20px;">
     <a href="img/archibald/1869_musclebrook.jpg">
     <img src="img/archibald/1869_musclebrook.jpg" alt="">
     </a>
-    <p>Above: View of Musclebrook in 1869</p>
+    <p><b>Above:</b> View of Musclebrook in 1869</p>
     <br>
-    <p>Below: Jessie's signature on her land purchase</p>
+    <p><b>Below:</b> Jessie's signature on her land purchase</p>
     <a href="img/archibald/jessie_bethel">
     <img src="img/archibald/jessie_bethel.jpg" alt="" style="width:100%;">
     </a>
@@ -228,7 +241,7 @@
     <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
     
     
-    <h4><b>Duncan McIntyre, our great-great-grandfather</b></h4>
+    <h4><b>Duncan McIntyre (1830-1916) our great-great-grandfather</b></h4>
     <br>
 
     Duncan, the eldest son of Archibald and Jessie, married three times. All three wives were Catholics.<br>
@@ -239,7 +252,11 @@
     
     
     <div class="lbox" style="width:90%; padding:16px; margin-left:20px;">
-    <b>&raquo;&nbsp;Duncan</b> married his 1st wife <b>Isabella Kelly</b> (1832-1863) in Edinburgh on 12.02.1851 and they had the following children:
+    <b>&raquo;&nbsp;Duncan</b> married his 1st wife <b>Isabella Kelly</b> (1832-1863) 
+    in Edinburgh on 12.02.1851
+    <button type="button" class="b1" onclick="return Togl(btn1,dun1,'#dun1')" id="btn1">&#9661; &nbsp;Show Children</button>
+    <div id="dun1" style="display:none">
+    &nbsp;&nbsp;&nbsp;and they had the following children:
     <br><br>
     <table class="family">
       <tr><td><b>Archibald Royston</b></td>
@@ -285,10 +302,15 @@
           <td> unmarried</td>
           </tr>
     </table>
+    </div>
     <hr>
     Upon arrival from Scotland, Duncan and Isabella lived at Millers Point in Sydney where Duncan practised his profession as a master baker. After Duncan's grandmother Catherine died in May of 1861 and Duncan's father in September, he turned up at his mother's place in Bethel near Scone presumably to look after the legals. Isabella died aged 31 in Sydney 6 dec 1863, possibly from an illness or from giving birth. Duncan then moved to the Nothern Rivers and possibly left his children with his mother.
     <hr>
-    <b>&raquo;&nbsp;Duncan</b> married his 2nd wife <b>Ellen Kirby</b> (1840-1875) in Pimlico on 23.10.1865 and they had the following children:
+    <b>&raquo;&nbsp;Duncan</b> married his 2nd wife <b>Ellen Kirby</b> (1840-1875) 
+    in Pimlico on 23.10.1865 
+    <button type="button" class="b1" onclick="return Togl(btn2,dun2,'#dun2')" id="btn2">&#9661; &nbsp;Show Children</button>
+    <div id="dun2" style="display:none">
+    &nbsp;&nbsp;&nbsp;and they had the following children:
     <br><br>
     <table class="family">
       <tr><td><b>Ellen Isabella</b></td>
@@ -320,11 +342,15 @@
           <td>m. 05.09.1894 Alice Maude Sayers in Kogarah</td>
           </tr>
     </table>
+    </div>
     <hr>
     Duncan allegedly supervised the building of a ship in Pimlico. He then moved to Wardell and literally set up shop there, his first being on one side of the Richmond River and then another on the other side at East Wardell. He supposedly ran ships, moving produce outbound and merchandise back into the Northern Rivers. Duncan also had his hands in many land and property transactions, including mills and a hotel. Upon Duncan's retirement, Allan Roy took over the shop business. Ellen died aged 34 on 3rd January 1875 and Duncan remarried a few months later.
     <hr>
-    <b>&raquo;&nbsp;Duncan</b> married his 3rd wife <b>Elizabeth May McDonald</b> (1848-1913) in Broadwater on 19.05.1875 and they had the following children:
-    
+    <b>&raquo;&nbsp;Duncan</b> married his 3rd wife <b>Elizabeth May McDonald</b> (1848-1913) 
+    in Broadwater on 19.05.1875 
+    <button type="button" class="b1" onclick="return Togl(btn3,dun3,'#dun3')" id="btn3">&#9661; &nbsp;Show Children</button>
+    <div id="dun3" style="display:none">
+    &nbsp;&nbsp;&nbsp;and they had the following children:
     <br><br>
     <table class="family">
       <tr><td><b>Clarence Duncan</b></td>
@@ -398,14 +424,15 @@
           <td>m. 03.08.1918 Constance Edith Jackson in Sydney</td>
           </tr>
     </table>
+    </div>
     <hr>
     Upon Duncan's death four of his children from this last marriage became executors of his estate
     but there was a caveat that the estate couldn't be sold for a specified number of years. The youngest child Roderick Dhu was left 20 pounds and successfully sued the estate for more. When Duncan's mother Jessie died in 1887, he and his brother John Archibald became executors of her estate. They sold her grazing property called Bethel and distributed the funds. Elizabeth May died aged 64 in Ryde 24 August 1913. Duncan died aged 86 in Wardell 16 September 1916.
     </div>
     
-    <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
     <br>
 
+    <img src="res/blank.gif" style="width:98%; height:1px; margin:20px;" alt="">
 
     <br>
     </li>
