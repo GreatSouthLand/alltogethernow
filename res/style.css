@@ -550,7 +550,7 @@ td {
 
 /* drop button */
 .drop .drop-btn {
-	padding-top: 4px;
+	padding-top: 5px;
 	padding-bottom: 4px;
 	border: none;
 	outline: none;
@@ -589,9 +589,10 @@ td {
 	display: block;
 }
 
+
 .b1 {
 	float:right;
-	margin-left: 20px;
+    margin-left: 20px;
 	outline: none;
 	background-color:#EEE;
 	color:#406000; /*dk green*/
