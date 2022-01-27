@@ -589,5 +589,15 @@ td {
 	display: block;
 }
 
-
+.b1 {
+	float:right;
+	margin-left: 20px;
+	outline: none;
+	background-color:#EEE;
+	color:#406000; /*dk green*/
+	border-radius:5px;
+	border:1px solid #DDD;
+	padding: 3px 12px;
+	font-size: 15px;
+	}
 
