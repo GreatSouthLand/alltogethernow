@@ -31,7 +31,7 @@
 
 .tree li a{
 	border: 2px solid #ccc;
-	padding: 3px 10px 3px 3px;
+	padding: 3px;
 	text-decoration: none;
 	color: #444;
 	align-self: center;
