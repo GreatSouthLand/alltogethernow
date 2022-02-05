@@ -1,22 +1,20 @@
 
 html {
-	font:1rem/1.5 "arial", sans-serif;
+	font:100%/1.5 "arial", sans-serif;
 }
 
 body {
-	/*font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;*/
 	color: #4d5051;
 	background-color: #d6d6d6;
 	background-image: url(top-rept.jpg);
 	background-repeat: repeat-x;
 	background-position: left top;
-	margin: 0em;/*0px;*/
+	margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, input, textarea {
-	padding: 0em;/*0px;*/
-	margin: 0em;/*0px;*/
+	padding: 0px;
+	margin: 0px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -24,25 +22,25 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size:3em;/*300%;*/
+	font-size:300%;
 }
 
 h2 {
-	font-size:2.2em;/*220%;*/
+	font-size:220%;
 }
 
 h3 {
-	font-size:1.8em;/*180%;*/
+	font-size:180%;
 }
 
 h4 {
-	font-size:1.5em;/*150%;*/
+	font-size:150%;
 }
 
 h5, h6 {
-	font-size:1.1em;/*125%;*/
-	margin-top:1em;/*15px;*/
-	margin-bottom:0.9em;/*12px;*/
+	font-size:125%;
+	margin-top:15px;
+	margin-bottom:12px;
 }
 
 h3 b, h4 b {
@@ -58,26 +56,26 @@ a:hover, a:active, a:focus {
 }
 
 img.f-flag {
-	margin: 1.3em 0em 1.3em 1.3em;/*15px 0px 15px 15px;*/
+	margin: 15px 0px 15px 15px;
 	float:left !important;
 	width:10%;
 }
 
 img.f-left {
-	margin: 0.6em 1.3em 0em 0em;/*5px 15px 0px 0px;*/
+	margin: 5px 15px 0px 0px;
 }
 
 img.f-right {
-	margin: 0.6em 0em 0em 1.3em;/*5px 0px 0px 15px;*/
+	margin: 5px 0px 0px 15px;
 }
 
 .articles {
-	margin:0em;
+	margin:0;
 	list-style:none;
 }
 
 .articles h2 {
-	margin:0em;
+	margin:0;
 }
 
 .articles h2 a {
@@ -85,8 +83,8 @@ img.f-right {
 }
 
 .articles .article-info {
-	padding-bottom:0em;/*0px;*/
-	margin-bottom:0.8em;/*10px;*/
+	padding-bottom:0px;
+	margin-bottom:10px;
 }
 
 .articles .article-info p {
@@ -128,7 +126,7 @@ img.f-right {
 
 .page {
 	width: 1000px;
-	margin: 0em auto;/*0px auto;*/
+	margin: 0px auto;
 }
 
 .main, .header {
@@ -146,11 +144,6 @@ img.f-right {
 }
 
 .header-top h1 {
-	/*font-family: "Times New Roman", Times, serif;
-	font-size: 50px;
-	font-weight: normal;
-	line-height: 55px;*/
-	/*font:3.8em/1.1 "Times New Roman", Times, serif;*/
 	font:50px "Times New Roman", Times, serif;
 	color: #FFFFFF;
 	margin-left: 115px;
@@ -181,10 +174,6 @@ img.f-right {
 }
 
 .header-bottom h2 {
-	/*font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
-	font-weight: normal;*/
-	/*font:1.8em/1.5 Arial, Helvetica, sans-serif;*/
 	font:24px/1.5 Arial, Helvetica, sans-serif;
 	color: #000000;
 	margin-top: 92px;
@@ -192,10 +181,6 @@ img.f-right {
 }
 
 .header-bottom h3 {
-	/*font-family: Arial, Helvetica, sans-serif;
-	font-size: 19px;
-	font-weight: normal;*/
-	/*font:1.4em/1.5 Arial, Helvetica, sans-serif;*/
 	font:19px/1.5 Arial, Helvetica, sans-serif;
 	color: #000000;
 	margin-top: 0px;
@@ -209,7 +194,7 @@ img.f-right {
 	background-position: left top;
 	width: 952px;
 	float: left;
-	padding: 30px 24px 4px 24px;/*2.6em 2.1em 0.4em 2.1em;*/
+	padding: 30px 24px 4px 24px;
 }
 
 .row1 {
@@ -218,11 +203,7 @@ img.f-right {
 }
 
 .title {
-	/*font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
-	font-weight: normal;*/
-	/*font:2.14em/1.5 Arial, Helvetica, sans-serif;*/
-	font:1.8em/1.5 Arial, Helvetica, sans-serif;
+	font:24px/1.5 Arial, Helvetica, sans-serif;
 	color: #000000;
 	margin-bottom: 30px;
 }
@@ -237,7 +218,6 @@ ul.list1 {
 	list-style-image: url(bullet.jpg);
 }
 
-
 ul.list1 li {
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -248,16 +228,13 @@ ul.list1 li {
 .row2 {
 	width: 920px;/*680px;*/
 	float: left;
-	padding: 1.1em;/*15px 15px 15px 15px;*/
+	padding: 15px 15px 15px 15px;
 	background: #f5f7ec; /*pale green*/
 	border-radius: 15px;
 }
 
 .subtitle {
-	/*font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: normal;*/
-	font:1.6em/1.5 Arial, Helvetica, sans-serif;
+	font:18px/1.5 Arial, Helvetica, sans-serif;
 	color: #171817;
 	margin-bottom: 10px;
 }
@@ -285,17 +262,17 @@ a {
 	width: 952px;
 	height: 69px;
 	float: left;
-	padding: 2em 2em 0em 2em;/*23px 24px 0px 24px;*/
+	padding: 23px 24px 0px 24px;
 }
 
 .footer p {
-	font-size: 0.8em;/*11px;*/
+	font-size: 11px;
 	color: #FFFFFF;
 	float: left;
 }
 
 .footer a {
-	font-size: 0.8em;/*11px;*/
+	font-size: 11px;
 	color: #FFFFFF;
 	text-decoration: none;
 }
@@ -306,7 +283,7 @@ a {
 
 
 table {
-  border-spacing: 0em;
+  border-spacing: 0px;
 }
 
 
@@ -314,19 +291,17 @@ table {
 /* pseudo-buttons for navigation */
 .more {
 	text-align:right;
-	/*margin: 0px 4px 0px 4px !important;*/
-	margin: 0em 0.4em 0em 0.4em !important;
+	margin: 0px 4px 0px 4px !important;
 	float:right;
 }
 
 .more p {
-	/*margin: 14px 4px 10px 4px !important;*/
-	margin: 1.0em 0.3em 0.7em 0.3em !important;
+	margin: 14px 4px 10px 4px !important;
 }
 
 .more a {
 	border-radius:5px;
-	padding: 0.4em 0.8em;/*6px 12px;*/
+	padding: 6px 12px;
 	text-decoration:none;
 	font-weight:bold;
 	border:1px solid #DDD;
@@ -529,7 +504,7 @@ td {
 	overflow: hidden;
 	background-color: #e6e6e6;
 	border:#BBBFB4 solid 1px;
-	border-radius: 0.5em;/*6px;*/
+	border-radius: 6px;
 	padding:0px;
 }
 
@@ -565,21 +540,18 @@ td {
 
 /* font size and padding for all elements but see drop button */
 .navbar a, .drop .drop-btn {
-	/*font-size: 1.0em;*//*15px;*/
+	font:inherit;
 	padding: 2px 10px;
 }
 
 /* drop button */
 .drop .drop-btn {
-	/*padding-top: 5px;
-	padding-bottom: 4px;*/
 	border: none;
 	outline: none;
 	color:#406000;
 	background-color: inherit;
-	/*font-family: inherit;*/ /* Important for vertical align on mobile phones */
 	margin:0px; /* Important for vertical align on mobile phones */
-	font: inherit;
+	font: inherit; /* Important for vertical align on mobile phones */
 }
 
 /* background color for navbar links on hover */
@@ -629,6 +601,5 @@ td {
 	border-radius:5px;
 	border:1px solid #DDD;
 	padding: 3px 12px;
-	font-size: 1.0em;/*15px;*/
+	font: inherit;
 	}
-
