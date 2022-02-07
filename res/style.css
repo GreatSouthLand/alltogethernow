@@ -380,7 +380,8 @@ td {
 	text-align: left;
 }
 
-.lbox hr {
+/*.lbox*/
+hr {
     height:1px;
     width: 100%;
     border:0; 
@@ -512,6 +513,15 @@ td {
 	width: 60%;
 }
 
+.col50text {
+	width: calc((100% - 30px)/2);
+	text-align: left;
+	padding: 0px 8px 0px 0px;
+}
+
+.col50text .col50 {
+	text-align: left;
+}
 
 
 
