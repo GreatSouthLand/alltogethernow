@@ -507,6 +507,7 @@ hr {
 
 .col50 {
 	width: calc((100% - 11px)/2);
+	text-align: left;
 }
 
 .col60 {
@@ -517,10 +518,6 @@ hr {
 	width: calc((100% - 30px)/2);
 	text-align: left;
 	padding: 0px 8px 0px 0px;
-}
-
-.col50text .col50 {
-	text-align: left;
 }
 
 
