@@ -485,9 +485,7 @@ hr {
 	text-align: center;
 }
 
-/*.row > *-last_child {
-	padding-right: 2px;
-}*/
+/* col   width: calc( (100% - 2px - (ncols + 1) * 3px) / ncols)*/
 
 .col16 {
 	width: calc((100% - 23px)/6);
@@ -627,3 +625,27 @@ hr {
 	padding: 3px 12px;
 	font: inherit;
 	}
+
+/*
+.display-table {
+    display: table; 
+}
+.display-table > div { 
+    display: table-row; 
+}
+.display-table > div > div { 
+    display: table-cell;
+    padding: 5px;
+}
+
+<div class="display-table">
+    <div>
+        <div>0, 0</div>
+        <div>0, 1</div>
+    </div>
+    <div>
+        <div>1, 0</div>
+        <div>1, 1</div>
+    </div>
+</div>
+*/
