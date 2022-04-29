@@ -7,6 +7,7 @@
 	float: left; 
 	width: auto; 
 	margin: 10px 0px 10px 0px;
+	font-size: inherit;
 }
 
 .tree ul {
@@ -35,9 +36,9 @@
 	width: 260px;
 }
 
-.tree li a b {
+/*.tree li a b {
     font-size: 10px;
-	}
+	}*/
 
 .tree li img {
 	width:52px;
@@ -47,6 +48,10 @@
 	float:left;
 	border: #c0c0c0 solid 2px;
 	border-radius: 5px;
+}
+
+.tree > * {
+	font: inherit;
 }
 
 .narrow li a {
