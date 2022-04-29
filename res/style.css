@@ -359,6 +359,10 @@ img {
 .family td:nth-child(3) {
     padding-left: 3px;
     }
+   
+.family td:nth-child(4) {
+    padding-left: 15px;
+    }
 
 .indent td {
 	padding-left: 12px;
@@ -624,6 +628,17 @@ hr {
 	padding: 3px 12px;
 	font: inherit;
 	}
+.b0 {
+	float:left;
+    margin-right: 20px;
+	outline: none;
+	background-color:#EEE;
+	color:#406000; /*dk green*/
+	border-radius:5px;
+	border:1px solid #DDD;
+	padding: 3px 12px;
+	font: inherit;
+	}
 
 .display-table {
     display: table; 
@@ -636,6 +651,11 @@ hr {
 .display-table > div > div { 
     display: table-cell;
 	border-top: 1px solid #d0d0d0;
+}
+
+.noline > div > div {
+	border:none;
+	padding: 4px;
 }
 
 .fam > div > div {
