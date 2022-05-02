@@ -1,0 +1,52 @@
+function Togl(btn,state,newhash) {
+    var show=(state.style.display=="none") ? 1 : 0;
+    state.style.display=show ? "block" : state.style.display="none";
+    t=btn.innerHTML;
+    t1=t.replace(show ? "Show" : "Hide", show ? "Hide" : "Show");
+    t=t1.replace(show ? "▽" : "△", show ? "△" : "▽");
+    btn.innerHTML=t;
+    if (show) {window.location.hash = "#"+newhash;}
+    return false;
+	}
+document.write('<div class="navbar">  
+  <a href="index.html">home</a>
+  <div class="drop">
+    <button class="drop-btn">Fenwick</button>
+    <div class="drop-content">
+      <a href="fenwick.html">The Fenwicks</a>
+      <a href="fenwick_australia.html">The Fenwicks in Australia</a>
+    </div>
+  </div>
+  <a href="mcdonald.html">McDonald</a>
+  <div class="drop">
+    <button class="drop-btn">McIntyre</button>
+    <div class="drop-content">
+      <a href="mcintyre_kilmonivaig.html">The McIntyres of Kilmonivaig</a>
+      <a href="mcintyre_glenartney.html">The McIntyres of Glenartney</a>
+      <a href="mcintyre_australia.html">The McIntyres in Australia</a>
+    </div>
+  </div>
+  <div class="drop">
+    <button class="drop-btn">Rankin</button>
+    <div class="drop-content">
+      <a href="rankin.html">The Rankins</a>
+      <a href="rankin_australia.html">The Rankins in Australia</a>
+    </div>
+  </div>
+  <a href="pieper.html">Pieper</a>
+  <a href="schneider.html">Schneider</a>
+  <a href="suchting.html">Suchting</a>
+  <a href="lobegeiger.html">Lobegeiger</a>
+  <div class="drop">
+    <button class="drop-btn">other</button>
+    <div class="drop-content">
+      <a href="british.html">Who Left Britain</a>
+      <a href="german.html">Who Left Germany</a>
+      <hr>
+      <a href="resources.html">Resources</a>
+      <hr>
+      <a href="vorwerk.html">Vorwerk and Feudalism</a>
+      <a href="ships.html">Ships to Brisbane 1860s</a>
+    </div>
+  </div>
+</div>')
