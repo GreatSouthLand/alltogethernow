@@ -7,7 +7,9 @@
 	float: left; 
 	width: auto; 
 	margin: 10px 0px 10px 0px;
-	font-size: inherit;
+	max-width: 930px;
+	overflow-x: auto;
+	font: inherit;
 }
 
 .tree ul {
@@ -18,7 +20,6 @@
 
 .tree li {
 	list-style-type: none;
-	line-height: 170%;
 	position: relative;
 	padding: 2px 0px 2px 16px;
 	display: flex;
@@ -37,11 +38,11 @@
 }
 
 .tree li img {
-	width:52px;
-	height:52px;
-	margin-right:8px;
-	vertical-align:top;
 	float:left;
+	width:4.4em;
+	height:4.4em;
+	margin:1px;
+	vertical-align:top;
 	border: #c0c0c0 solid 2px;
 	border-radius: 5px;
 }
@@ -51,11 +52,21 @@
 }
 
 .narrow li a {
-	width: auto;/*86px;*/
+	width: auto;
 	text-align:center;
 	padding: 2px 5px 3px 5px;
 	margin-top:0px;
 	line-height: 130%;
+}
+
+.fouracross li a {
+	width: 185px;
+	text-align:center;
+	padding:0px;
+}
+
+.fouracross li a p {
+	padding-top:1em;
 }
 
 .tree li::before, 
