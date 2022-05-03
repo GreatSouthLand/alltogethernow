@@ -630,13 +630,13 @@ hr {
 	}
 .b0 {
 	float:left;
-    margin-right: 20px;
+    margin: 6px 20px 0px 0px;
 	outline: none;
 	background-color:#EEE;
 	color:#406000; /*dk green*/
 	border-radius:5px;
 	border:1px solid #DDD;
-	padding: 3px 12px;
+	padding: 3px 12px 6px 12px;
 	font: inherit;
 	}
 

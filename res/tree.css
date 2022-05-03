@@ -1,13 +1,13 @@
 
 .tree {
 	background-color: #f8f8f8;
-	padding: 4px 12px 4px 8px;
+	padding: 4px 12px 4px 6px;
 	border: #d0d0d0 solid 1px;
 	border-radius: 5px;
 	float: left; 
 	width: auto; 
 	margin: 10px 0px 10px 0px;
-	max-width: 930px;
+	max-width: 940px;
 	overflow-x: auto;
 	font: inherit;
 }
