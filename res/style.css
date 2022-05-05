@@ -3,6 +3,10 @@ html {
 	font:100%/1.5 "arial", sans-serif;
 }
 
+html > * {
+	font-size:15px;
+}
+
 body {
 	color: #4d5051;
 	background-color: #d6d6d6;
