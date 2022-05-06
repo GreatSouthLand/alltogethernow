@@ -1,10 +1,5 @@
-
-html {
-	font:100%/1.5 "arial", sans-serif;
-}
-
 html > * {
-	font-size:15px;
+	font:15px/1.4 "arial", sans-serif;
 }
 
 body {
