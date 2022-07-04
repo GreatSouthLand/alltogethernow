@@ -1,6 +1,6 @@
 
-html {
-	font:100%/1.5 "arial", sans-serif;
+html > * {
+	font:15px/1.4 "arial", sans-serif;
 }
 
 body {
@@ -620,25 +620,24 @@ hr {
 .b1 {
 	float:right;
     margin-left: 20px;
-	outline: none;
-	background-color:#EEE;
-	color:#406000; /*dk green*/
-	border-radius:5px;
-	border:1px solid #DDD;
 	padding: 3px 12px;
-	font: inherit;
 	}
 .b0 {
 	float:left;
-    margin-right: 20px;
-	outline: none;
+    margin: 6px 20px 0px 0px;
+	padding: 3px 12px 6px 12px;
+	}
+	
+.b0, .b1 {
+	/*outline: none;*/
 	background-color:#EEE;
 	color:#406000; /*dk green*/
-	border-radius:5px;
-	border:1px solid #DDD;
-	padding: 3px 12px;
+	box-shadow: 7px 7px 10px -5px  rgba(50, 50, 50, 0.5);
 	font: inherit;
-	}
+	border:1px solid #DDD;
+	border-radius:5px;
+	margin-top:5px;
+}
 
 .display-table {
     display: table; 
