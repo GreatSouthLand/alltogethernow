@@ -408,7 +408,7 @@ hr {
 	page-break-inside: avoid;
 	background-color: #f8f8f8;
 	border: #d0d0d0 solid 1px;
-	padding: 4px 4px 0px 4px;
+	padding: 4px 4px 4px 4px;
 	border-radius: 5px;
 }
 
