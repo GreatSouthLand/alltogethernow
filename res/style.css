@@ -494,31 +494,60 @@ hr {
 
 /* col   width: calc( (100% - 2px - (ncols + 1) * 3px) / ncols)*/
 
-.col16 {
+/*
+.c10 {
+	width: calc((100% - 35px)/10);
+}
+.c9 {
+	width: calc((100% - 32px)/9);
+}
+.c8 {
+	width: calc((100% - 29px)/8);
+}
+.c7 {
+	width: calc((100% - 26px)/7);
+}
+.c6 {
 	width: calc((100% - 23px)/6);
 }
+.c5 {
+	width: calc((100% - 20px)/5);
+}
+.c4 {
+	width: calc((100% - 17px)/4);
+}
+.c3 {
+	width: calc((100% - 14px)/3);
+}
+
+.c2 {
+	width: calc((100% - 11px)/2);
+	text-align: left;
+}
+.c2text {
+	width: calc((100% - 30px)/2);
+	text-align: left;
+	padding: 0px 8px 0px 0px;
+}
+*/
+
 
 .col20 {
 	width: calc((100% - 20px)/5);
 }
-
 .col25 {
 	width: calc((100% - 17px)/4);
 }
-
 .col33 {
 	width: calc((100% - 14px)/3);
 }
-
 .col50 {
 	width: calc((100% - 11px)/2);
 	text-align: left;
 }
-
 .col60 {
 	width: 60%;
 }
-
 .col50text {
 	width: calc((100% - 30px)/2);
 	text-align: left;
@@ -693,3 +722,10 @@ hr {
     /*display: inline;*/
     opacity: 1;
     }
+    
+.leaf  {
+    background: url(hr1.jpg) no-repeat center;
+    display:flex;
+    height:50px;
+    border:none;
+}
