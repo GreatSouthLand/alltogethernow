@@ -649,12 +649,14 @@ hr {
 	display: block;
 }
 
+/* keep menu open when an item is right-clicked */
 .drop-content:focus-within {
     display: block;
 }
 
+/* highlight a right-clicked menu item */
 .drop-content a:focus-within {
-    background: #f4d35e;
+    background: #f4d35e; /* Senf */
     color: black;
 }
 
