@@ -649,6 +649,15 @@ hr {
 	display: block;
 }
 
+.drop-content:focus-within {
+    display: block;
+}
+
+.drop-content a:focus-within {
+    background: #f4d35e;
+    color: black;
+}
+
 
 .b1 {
 	float: right;
@@ -725,7 +734,6 @@ hr {
     
 .leaf  {
     background: url(hr1.jpg) no-repeat center;
-    display:flex;
     height:50px;
     border:none;
 }
