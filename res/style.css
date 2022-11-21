@@ -656,8 +656,10 @@ hr {
 
 /* highlight a right-clicked menu item */
 .drop-content a:focus-within {
-    background: #f4d35e; /* Senf */
-    color: black;
+    background: #608020;
+    color: white; 
+    /*background: #f4d35e;*/ /* Senf */
+    /*color: black;*/
 }
 
 
@@ -700,6 +702,19 @@ hr {
 .noline > div > div {
 	border:none;
 	padding: 4px;
+	vertical-align: top;
+}
+
+.forpic > div > div {
+	padding: 10px 0px 8px 0px;
+	vertical-align: top;
+}
+
+.forpic > div > div > img {
+    float: left; 
+    height: 6em; 
+    width: auto; 
+    margin: 3px 15px 6px 0px;
 }
 
 .fam > div > div {
