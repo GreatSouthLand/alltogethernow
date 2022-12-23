@@ -415,13 +415,18 @@ hr {
 	padding: 4px 4px 4px 4px;
 	border-radius: 5px;
 }
-
+/*
+.cbox, .lbox, .rbox p {
+	padding: 0px 3px 6px 3px;
+	background: url(zoom.gif) no-repeat top right;
+}
+*/
 .lbox p {
 	padding: 0px 3px 6px 3px;
 }
-
 .rbox p {
 	padding: 0px 3px 6px 3px;
+	/*background: url(zoom.gif) no-repeat top right;*/
 }
 .cbox p {
 	padding: 0px 3px 6px 3px;
@@ -531,7 +536,9 @@ hr {
 }
 */
 
-
+.col16 {
+	width: calc((100% - 23px)/6);
+}
 .col20 {
 	width: calc((100% - 20px)/5);
 }
