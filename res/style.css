@@ -668,13 +668,15 @@ hr {
 	margin-top: 5px;
     margin-left: 20px;
 	padding: 3px 12px;
-	}
+}
 .b0 {
 	float: left;
     margin: 6px 20px 0px 0px;
 	padding: 3px 12px 6px 12px;
-	}
-	
+}
+.b0:active {
+	box-shadow: 7px 7px 7px -5px   #333;
+}
 .b0, .b1 {
 	outline: none;
 	background-color:#EEE;
