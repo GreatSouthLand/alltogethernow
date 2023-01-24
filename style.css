@@ -356,22 +356,37 @@ img {
 
 .family td:first-child, 
 .family td:last-child {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 10px;
     }
 
+.family td:nth-child(2) {
+    text-align:right;
+    }
+    
 .family td:nth-child(3) {
     padding-left: 3px;
     }
    
 .family td:nth-child(4) {
-    padding-left: 15px;
+    padding-left: 12px;
     }
 
 .indent td {
 	padding-left: 12px;
 	padding-right: 0px;
 }
+
+.kids {
+	border: #d0d0d0 solid 1px;
+	border-radius: 5px;
+	padding: 6px 3px 2px 10px;
+	margin: 0px 0px 14px 12px;
+	}
+
+.shadowed {
+	box-shadow: 7px 7px 7px -5px  rgba(50, 50, 50, 0.5);
+	}
 
 .inri {
 	page-break-inside: avoid;
@@ -415,47 +430,25 @@ hr {
 	padding: 4px 4px 4px 4px;
 	border-radius: 5px;
 }
-/*
-.cbox, .lbox, .rbox p {
-	padding: 0px 3px 6px 3px;
-	background: url(zoom.gif) no-repeat top right;
+.cbox p, .lbox p, .rbox p {
+	padding: 0px 3px 3px 3px;
+	#background: url(expand.gif) no-repeat top right;
 }
-*/
-.lbox p {
-	padding: 0px 3px 6px 3px;
+.cbox img, .lbox img, .rbox img {
+	width: 100%;
 }
-.rbox p {
-	padding: 0px 3px 6px 3px;
-	/*background: url(zoom.gif) no-repeat top right;*/
-}
-.cbox p {
-	padding: 0px 3px 6px 3px;
-}
-
 .cbox {
 	margin: 20px auto 30px auto;
 	overflow: hidden;
 	text-align: center;
 }
-.cbox img {
-	width: 100%;
-}
-
 .lbox {
 	float: left;
 	text-align: left;
 }
-.lbox img {
-	width: 100%;
-}
-
 .rbox {
 	float: right;
 	text-align: left;
-}
-
-.rbox img {
-	width:100%;
 }
 
 /* image on left side of container, for text on right */
@@ -675,13 +668,15 @@ hr {
 	margin-top: 5px;
     margin-left: 20px;
 	padding: 3px 12px;
-	}
+}
 .b0 {
 	float: left;
     margin: 6px 20px 0px 0px;
 	padding: 3px 12px 6px 12px;
-	}
-	
+}
+.b0:active {
+	box-shadow: 7px 7px 7px -5px   #333;
+}
 .b0, .b1 {
 	outline: none;
 	background-color:#EEE;
@@ -757,7 +752,39 @@ hr {
     }
     
 .leaf  {
-    background: url(hr1.jpg) no-repeat center;
+    background: url(hr1.png) no-repeat center;
     height:50px;
     border:none;
+}
+
+
+#popup-div {
+	display:none; 
+	z-index:96; 
+	position:fixed; 
+    top:0px; 
+    right:0px; 
+    bottom:0px; 
+    left:0px; 
+    background-color:transparent;
+}
+#popup-img-div {
+	display:block; 
+	z-index:97; 
+	position:relative; 
+	max-width:100%; 
+	max-height:100%; 
+	margin:0px auto 0px auto; 
+	box-shadow:0px 0px 20px 1px #ccc; 
+	background-color:transparent;
+}
+#popup-img {
+	z-index:98; 
+	border:none; 
+	outline:none; 
+	margin-top:0; 
+	max-width:100%; 
+	max-height:100%; 
+	width:auto; 
+	height:auto;
 }
