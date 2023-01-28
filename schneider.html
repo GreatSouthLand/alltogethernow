@@ -27,25 +27,24 @@
 
 <script src="navbar.txt"></script>
 
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <span class="modal-close">&times;</span>
+  <div class="modal-content"> 
+  <img src="res/blank.gif" id="img01" alt="">
+  </div>
+</div>
+
 <div class="content">
 <div class="row1">
   <ul class="articles box">
     <li>
-    <!--
-    <div class="rbox" style="margin:10px 0px 10px 20px;">
-    <p>Name variations: <br>
-    <b>German:</b> Schneider, Schneÿder, Schnieder, Schnaider, Schnider, Schnaiter<br>
-    <b>Middle-High-German:</b> Snīdӕre, Snīder &nbsp; <b>Middle-Low-German:</b> Snīder , Snider<br>
-    <b>Latin:</b> Sartor, Sartorius &nbsp; <b>Italian:</b> Sartore &nbsp; <b>French:</b> Sartre<br>
-    </p></div>
-    -->
     
     <div class="display-table" style="float:right; width:38%; margin: 10px 0px 0px 20px;">
 	<div>
 	<div class="rbox" style="margin: 0px 0px 16px 0px; padding:20px">
-	Please note that any image can be clicked to see a full-size version. Return to this page by using the browser's back button.
+	Please note that any image can be clicked to see a full-size version. Clicking again closes it.
 	<hr>
-	To search through all the names on this page it is best to first show all the families, so they can be searched as well.<br><br>
+	To search through all the names on this page it is best to first show all the families.<br><br>
     <button style="float:left; margin:0px 0px 0px 0px; padding:12px 16px;" type='button' class='b0' onclick='ExpCon("block")' id='dummy1'>Show All Families</button>
 	<button style="float:right; margin:0px 0px 0px 0px; padding:12px 16px;" type='button' class='b0' onclick='ExpCon("none")' id='dummy2'>Hide All Families</button>
 	</div>
@@ -61,16 +60,14 @@
     </div>
     <div>
     <div class="rbox" style="width:100%; margin: 16px 0px 10px 0px;">
-    <a href="img/schneider/map_wuerttemberg_1596.jpg">
-    <img src="img/schneider/map_wuerttemberg_1596_thumb.jpg" alt=""></a>
+    <img src="img/schneider/map_wuerttemberg_1596.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Württemberg showing the locations of Schneiders <br>
-    <!--NOTE: click on the map for a larger version-->
     </p>
     </div>
     </div>
     </div>
     
-    <img src="res/DieSneider.jpg" alt="" style="width:7.2em;" class="f-left">
+    <img src="res/DieSneider.jpg" class="modal-img f-left" onclick="clk(this)" alt="" style="width:7.2em;">
 
 
     
@@ -88,22 +85,18 @@
     <br><br>
 
     <div class="lbox" style="width:25%; margin:6px 20px 40px 0px;">
-    <a href="img/schneider/esslingen_webergasse_8.jpg">
-    <img src="img/schneider/esslingen_webergasse_8.jpg" alt=""></a>
-    <p>Johann Conrad Schneider was a weaver in Esslingen where there is a Weaver's Alley (Webergasse), shown here as still standing in modern times.
+    <img src="img/schneider/esslingen_webergasse_8.jpg" class="modal-img" onclick="clk(this)" alt="">
+    <p>Johann Conrad Schneider was a weaver in Esslingen where there is a Weaver's Alley (Webergasse) with buildings which are still standing in modern times.
     <br><br>
-    The larger building is Webergasse 8, built in 1266, making it one of the three dendrochronologically oldest buildings in Germany of its type, known in German as Fachwerk, and in English as Timber Frame or Half-timbered with infill.
+    The larger building shown here is Webergasse Number 8, built in 1266, making it one of the three dendrochronologically oldest buildings in Germany of its type, known in German as Fachwerk, and in English as Timber Frame or Half-Timbered With Infill.
     </p>
     </div>
 
     Johann Georg's great-great-grandfather, Johann Conrad Schneider, was a weaver in Esslingen, a large trading center on the River Neckar, which surprisingly incurred very little damage during WW2 and as such retains much of its medieval character. Johann Conrad was born about 45km away, in Öschingen at the foot of the Swabian Alps, where his parents Conrad and Barbara were from. He married Anna Margaretha Schmid, from and in Hochdorf, not far from Esslingen, and started a family there. His son Andreas followed in his footsteps by also becoming a weaver and he too married in Hochdorf, his wife being Maria Agnes Unger. The family tradition somewhat changed its direction when their son, Johannes, became a Master Stone Mason, the first of a dynasty of masons and builders.
     
     <div class="rbox" style="width:28%; margin:10px 0px 20px 20px;">
-    <a href="img/schneider/esslingen_gustav_schoenleber_1880.jpg">
-    <img src="img/schneider/esslingen_gustav_schoenleber_1880.jpg" alt=""></a>
-    <p>
-    Esslingen old town (Altstadt) c1880
-    </p>
+    <img src="img/schneider/esslingen_gustav_schoenleber_1880.jpg" class="modal-img" onclick="clk(this)" alt="">
+    <p>Esslingen old town (Altstadt) c1880</p>
     </div>
     
     <br><br>
@@ -122,29 +115,25 @@
 
     <div>
     <div class="lbox" style="width:224px; margin-right:6px;">
-    <a href="img/schneider/Andreas_Kieser_Oeschingen.jpg">
-    <img src="img/schneider/Andreas_Kieser_Oeschingen.jpg" alt=""></a>
+    <img src="img/schneider/Andreas_Kieser_Oeschingen.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     Öschingen
     </p>
     </div>
     <div class="lbox" style="width:224px; margin-right:6px;">
-    <a href="img/schneider/Andreas_Kieser_Eslingen.jpg">
-    <img src="img/schneider/Andreas_Kieser_Eslingen.jpg" alt=""></a>
+    <img src="img/schneider/Andreas_Kieser_Eslingen.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     Esslingen
     </p>
     </div>
     <div class="lbox" style="width:224px; margin-right:6px;">
-    <a href="img/schneider/Andreas_Kieser_Hochdorf.jpg">
-    <img src="img/schneider/Andreas_Kieser_Hochdorf.jpg" alt=""></a>
+    <img src="img/schneider/Andreas_Kieser_Hochdorf.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     Hochdorf
     </p>
     </div>
     <div class="lbox" style="width:224px; margin:0px;">
-    <a href="img/schneider/Andreas_Kieser_Hertmannsweiler.jpg">
-    <img src="img/schneider/Andreas_Kieser_Hertmannsweiler.jpg" alt=""></a>
+    <img src="img/schneider/Andreas_Kieser_Hertmannsweiler.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     Hertmannsweiler
     </p>
@@ -477,8 +466,7 @@
 
     <div>
     <div class="lbox" style="width:142px; margin-right:6px;">
-    <a href="img/schneider/1670_FAMILYREG.jpg">
-    <img src="img/schneider/1670_FAMILYREG_thumb.jpg" alt=""></a>
+    <img src="img/schneider/1670_FAMILYREG.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     <b>Öschingen</b><br>
     Conrad + <br>
@@ -487,8 +475,7 @@
     </p>
     </div>
     <div class="lbox" style="width:142px; margin-right:6px;">
-    <a href="img/schneider/1707_FAMILYREG.jpg">
-    <img src="img/schneider/1707_FAMILYREG_thumb.jpg" alt=""></a>
+    <img src="img/schneider/1707_FAMILYREG.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     <b>Hochdorf</b><br>
     Johann Conrad + <br>
@@ -497,8 +484,7 @@
     </p>
     </div>
     <div class="lbox" style="width:142px; margin-right:6px;">
-    <a href="img/schneider/1746_FAMILYREG.jpg">
-    <img src="img/schneider/1746_FAMILYREG_thumb.jpg" alt=""></a>
+    <img src="img/schneider/1746_FAMILYREG.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     <b>Hochdorf</b><br>
     Andreas Friedrich + <br>
@@ -507,8 +493,7 @@
     </p>
     </div>
     <div class="lbox" style="width:142px; margin-right:6px;">
-    <a href="img/schneider/1775_FAMILYREG.jpg">
-    <img src="img/schneider/1775_FAMILYREG_thumb.jpg" alt=""></a>
+    <img src="img/schneider/1775_FAMILYREG.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     <b>Hertmannsweiler</b><br>
     Johannes + <br>
@@ -517,8 +502,7 @@
     </p>
     </div>
     <div class="lbox" style="width:142px; margin-right:6px;">
-    <a href="img/schneider/1798_FAMILYREG.jpg">
-    <img src="img/schneider/1798_FAMILYREG_thumb.jpg" alt=""></a>
+    <img src="img/schneider/1798_FAMILYREG.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     <b>Ellhofen</b><br>
     Jakob Friedrich + <br>
@@ -527,8 +511,7 @@
     </p>
     </div>
     <div class="lbox" style="width:142px; margin:0px;">
-    <a href="img/schneider/1836_FAMILYREG.jpg">
-    <img src="img/schneider/1836_FAMILYREG_thumb.jpg" alt=""></a>
+    <img src="img/schneider/1836_FAMILYREG.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     <b>Eberstadt</b><br>
     Johann Georg + <br>
@@ -550,16 +533,12 @@
     <div style="width:45%; float:right;">
         
     <div class="rbox" style="width:95%; margin:0px 0px 10px 20px;">
-    <a href="img/schneider/map_eberstadt_ellhofen_weinsberg.jpg">
-    <img src="img/schneider/map_eberstadt_ellhofen_weinsberg.jpg" alt="">
-    </a>
+    <img src="img/schneider/map_eberstadt_ellhofen_weinsberg.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>An old topographical map showing the relative locations of Eberstadt, Ellhofen and Weinsberg</p>
     </div>
 
     <div class="rbox" style="width:95%; margin:10px 0px 10px 20px;">
-    <a href="img/schneider/würtemmberg.jpg">
-    <img src="img/schneider/würtemmberg.jpg" alt="">
-    </a>
+    <img src="img/schneider/würtemmberg.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The Death of the King Wilhelm I (1864)</p>
     </div>
     
@@ -590,16 +569,12 @@
     <div style="float:right; width:50%; margin:6px 0px 0px 30px;">
     
     <div class="rbox" style="width:100%; margin-bottom:16px;">
-    <a href="img/schneider/steinhauer.jpg">
-    <img src="img/schneider/steinhauer.jpg" alt=""></a>
+    <img src="img/schneider/steinhauer.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Stone masons at work (by Pieter Bruegel)</p>
     </div>
     <br>
     <div class="rbox" style="width:92%;">
-    <a href="img/schneider/DieSteinhauerDieSneider.jpg">
-    <img class="limg" src="img/schneider/DieSteinhauerDieSneider.jpg" alt=""
-    style="width:50%; margin-bottom:5px;">
-    </a>
+    <img src="img/schneider/DieSteinhauerDieSneider.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:50%; margin-bottom:5px;">
     Guild Coat of Arms of both <br>The Stone Mason and The Tailor<br><br>
     (Gildewappen der Steinhauer und der Schneider), 1636
     </div>
@@ -623,8 +598,7 @@
         <td rowspan="7" style="width:25%;">
         <br>
         <div class="rbox" style="width:97%; margin:30px 0px 10px 20px; padding-bottom:10px;">
-        <a href="img/schneider/Winnenden_hertmannsweiler_wappen.png">
-        <img class="limg" src="img/schneider/Winnenden_hertmannsweiler_wappen.png" alt="" style="width:40%;"></a>
+        <img class="modal-img limg"  onclick="clk(this)" src="img/schneider/Winnenden_hertmannsweiler_wappen.png" alt="" style="width:40%;">
         Hertmannsweiler Coat of Arms depicting a leafy wild man holding a black club
         </div>
         </tr>
@@ -664,8 +638,7 @@
     <div style="width:100%; margin-top:30px;">
     
     <div class="rbox" style="width:49%; margin:0px 0px 10px 20px;" >
-    <a href="img/schneider/winnenden_by_julius_kornbeck.jpg">
-    <img src="img/schneider/winnenden_by_julius_kornbeck.jpg" alt=""></a>
+    <img src="img/schneider/winnenden_by_julius_kornbeck.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Winnenden (by Julius Kornbeck)</p>
     </div>
 
@@ -685,15 +658,11 @@
 
     <div style="float:right; width:15%; margin: 10px 0px 20px 30px;">
     <div class="rbox" style="width:100%; margin-bottom:10px;" >
-    <a href="img/schneider/johann_christian_heussler.jpg">
-    <img src="img/schneider/johann_christian_heussler.jpg" alt="">
-    </a>
+    <img src="img/schneider/johann_christian_heussler.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Johann Christian Heussler</p>
     </div>
     <div class="rbox" style="width:100%; margin:0px;">
-    <a href="img/schneider/wilhelm_kirchner.jpg">
-    <img src="img/schneider/wilhelm_kirchner.jpg" alt="">
-    </a>
+    <img src="img/schneider/wilhelm_kirchner.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Karl Ludwig Wilhelm Kirchner</p>
     </div>
     </div>
@@ -720,8 +689,7 @@
 
     <div class="lbox" style="width:90%; margin-top:16px;">
     <p><b>1864</b> May 28, Departure from Hamburg on the 'La Rochelle'</p>
-    <a href="img/schneider/1864_La_Rochelle_Heinrich_Schneider_and_family.jpg">
-    <img class="limg" src="img/schneider/1864_La_Rochelle_Heinrich_Schneider_and_family.jpg" alt="" style="width:65%; margin:2px 10px 6px 0px;"></a>
+    <img src="img/schneider/1864_La_Rochelle_Heinrich_Schneider_and_family.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:65%; margin:2px 10px 6px 0px;">
     Heinrich Schneider, Eberstadt, age 28<br>
     Rosine Schneider,  age 28<br>
     Friederike Schneider, age 6 months
@@ -730,8 +698,7 @@
     <div class="lbox" style="width:85%; margin-top:16px;">
     <p><b>1863</b> September 21, Departure from Hamburg of the 'Susanne Godeffroy'<br>
     showing Wilhelmine with her first husband Gottlieb and their four children, all from Stegelitz, Preussen</p>
-    <a href="img/schneider/1864_Susanne_Godeffroy_Hamburg_Lobegeiger_Topp.jpg">
-    <img class="limg" src="img/schneider/1864_Susanne_Godeffroy_Hamburg_Lobegeiger_Topp.jpg" alt="" style="width:68%; margin:2px 10px 6px 0px;"></a>
+    <img src="img/schneider/1864_Susanne_Godeffroy_Hamburg_Lobegeiger_Topp.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:68%; margin:2px 10px 6px 0px;">
     Gottlieb Lobegeyer, age 37<br>
     Wilhelmine (born Topp),  age 35<br>
     Emilie, age 13<br>
@@ -742,8 +709,7 @@
 
     <div class="lbox" style="width:94%; margin-top:16px;">
     <p><b>1865</b> April 23, Departure from Hamburg of the 'Sophie' with Johann Georg's family.</p>
-    <a href="img/schneider/1865_Sophie_Hamburg_Georg_Schneider_and_family.jpg">
-    <img class="limg" src="img/schneider/1865_Sophie_Hamburg_Georg_Schneider_and_family.jpg" alt="" style="width:54%; margin:2px 10px 6px 0px;"></a>
+    <img src="img/schneider/1865_Sophie_Hamburg_Georg_Schneider_and_family.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:54%; margin:2px 10px 6px 0px;">
     <br>
     <table>
     <tr><td>Schneider, Georg</td><td>&nbsp; 55&nbsp; Mason&nbsp; Eberstadt&nbsp; Württemberg</td></tr>
@@ -761,9 +727,7 @@
 
     <p>
     <div class="rbox" style="width:52%; margin:20px 0px 16px 20px;">
-    <a href="img/schneider/map_boonah_district.jpg">
-    <img src="img/schneider/map_boonah_district.jpg" alt="">
-    </a>
+    <img src="img/schneider/map_boonah_district.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The Fassifern and Boonah district, highlighting some Schneider farms</p>
     </div>
 
@@ -771,13 +735,9 @@
     Upon landing in the new colony on September 5th 1864, Henry and Rosine applied for their own land. Five months after they had first set foot on Australian soil on the 18th February 1865, 
     
     <div class="lbox" style="width:20%; margin:16px 20px 0px 0px;">
-    <a href="img/schneider/victoria_tunnel.jpg">
-    <img src="img/schneider/victoria_tunnel.jpg" alt="">
-    </a>
+    <img src="img/schneider/victoria_tunnel.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The Victoria Tunnel</p>
-    <a href="img/schneider/victoria_tunnel2.jpg">
-    <img src="img/schneider/victoria_tunnel2.jpg" alt="" style="margin-top:8px;">
-    </a>
+    <img src="img/schneider/victoria_tunnel2.jpg" class="modal-img" onclick="clk(this)" alt="" style="margin-top:8px;">
     </div>
     their application for Land Order 488 in both their names was accepted. 
     That was rather timely because six months later Johann's father, mother, two brothers and three sisters all arrived on August 17th of that year.
@@ -788,9 +748,7 @@
     
     
     <div class="lbox" style="width:22%; margin:6px 20px 0px 0px;">
-    <a href="img/schneider/1891_Fernberg.jpg">
-    <img src="img/schneider/1891_Fernberg.jpg" alt="">
-    </a>
+    <img src="img/schneider/1891_Fernberg.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Fernberg in 1891</p>
     </div>
 
@@ -800,9 +758,7 @@
     <br><br>
 
     <div class="lbox" style="width:40%; margin:6px 20px 10px 0px;">
-    <a href="img/schneider/map_franklinvale.jpg">
-    <img src="img/schneider/map_franklinvale.jpg" alt="">
-    </a>
+    <img src="img/schneider/map_franklinvale.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Map showing the Franklinvale and Fassifern Districts<br>
     (Ipswich is in the top right corner)</p>
     </div>
@@ -813,9 +769,7 @@
     <br><br>
     
     <div class="rbox" style="width:27%; margin:6px 0px 10px 25px;">
-    <a href="img/schneider/1869_Henry_Schneider_land_selection.jpg">
-    <img src="img/schneider/1869_Henry_Schneider_land_selection.jpg" alt="">
-    </a>
+    <img src="img/schneider/1869_Henry_Schneider_land_selection.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Henry's application to select land<br>
     121 acres, 1 rood at Franklyn Vale</p>
     </div>
@@ -842,9 +796,7 @@
 
 
     <div class="rbox" style="width:47%; margin:0px 0px 10px 20px;">
-    <a href="img/schneider/1856_the_track_through_cunninghams_gap_(conrad_martens).jpg">
-    <img src="img/schneider/1856_the_track_through_cunninghams_gap_(conrad_martens).jpg" alt="">
-    </a>
+    <img src="img/schneider/1856_the_track_through_cunninghams_gap_(conrad_martens).jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1856 The Track through Cunningham’s Gap (Conrad Martens)</p>
     </div>
 
@@ -855,9 +807,7 @@
     The first settlers of the Fassifern Valley were John Cameron from Stirling in Scotland and Robert Coulson who had married Cameron's sister. Cameron's father was a soldier and an early settler of the Upper Hunter Valley having been granted 1280 acres of land near Scone, not far from Peter McIntyre's property. Cameron, not wanting to be a soldier like his father turned his hand to sheep grazing. After first moving to New England and then to the Darling Downs, he finally took out the first lease on the 'Fassifern Run'. 
 
     <div class="rbox" style="width:40%; margin:20px 0px 10px 20px;">
-    <a href="img/schneider/runs.jpg">
-    <img src="img/schneider/runs.jpg" alt="">
-    </a>
+    <img src="img/schneider/runs.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The Runs</p>
     </div>
 
@@ -901,8 +851,7 @@
     <hr>
     
     <div class="rbox" style="width:15%; margin:0px 0px 10px 10px; padding-bottom:0px;">
-    <a href="img/schneider/Andreas_Kieser_Hochdorf.jpg">
-    <img src="img/schneider/Andreas_Kieser_Hochdorf.jpg" alt=""></a>
+    <img src="img/schneider/Andreas_Kieser_Hochdorf.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     
     <div id="andreas"></div>
@@ -1122,57 +1071,38 @@
     <div class="row" style="margin:6px 0px 10px 0px; border:none;">
 		
     <div class="col16">
-    <a href="img/schneider/andreas0_family.jpg">
-    <img src="img/schneider/andreas0_family.jpg" alt=""></a>
+    <img src="img/schneider/andreas0_family.jpg" class="modal-img" onclick="clk(this)" alt="">
     Family Register
     </div>
     
     <div class="col16">
-    <a href="img/schneider/andreas1_georg.jpg">
-    <img src="img/schneider/andreas1_georg.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/andreas1_georg.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1748 Birth of Georg Friedrich</p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/andreas2_sabina.jpg">
-    <img src="img/schneider/andreas2_sabina.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/andreas2_sabina.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1750 Birth of Sabina</p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/andreas3_johannes.jpg">
-    <img src="img/schneider/andreas3_johannes.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/andreas3_johannes.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1753 Birth of Johannes</p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/andreas4_maria.jpg">
-    <img src="img/schneider/andreas4_maria.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/andreas4_maria.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1756 Birth of Maria Agnes</p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/andreas5_maria.jpg">
-    <img src="img/schneider/andreas5_maria.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/andreas5_maria.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1760 Birth of Maria Barbara</p>
     </div>
     
     </div>
 
 	&nbsp;&nbsp;<b>Above:</b> Hochdorf Records for the family of Andreas Friedrich Schneider and his wife Maria Agnes Unger, married 1746<br>
-    
-
-    
-    <!--div class="display-table" style="width:99%;">
-    <div>
-		
-	</div>		
-	</div-->
     
     </div>
 
@@ -1184,8 +1114,7 @@
     <hr>
     
     <div class="rbox" style="width:15%; margin:0px 0px 10px 10px; padding-bottom:0px;">
-    <a href="img/schneider/Andreas_Kieser_Hertmannsweiler.jpg">
-    <img src="img/schneider/Andreas_Kieser_Hertmannsweiler.jpg" alt=""></a>
+    <img src="img/schneider/Andreas_Kieser_Hertmannsweiler.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
 
 
@@ -1728,36 +1657,27 @@
     <div class="row" style="margin:6px 0px 10px 0px; border:none;">
 		
     <div class="col20">
-    <a href="img/schneider/johannes0_family.jpg">
-    <img src="img/schneider/johannes0_family.jpg" alt=""></a>
+    <img src="img/schneider/johannes0_family.jpg" class="modal-img" onclick="clk(this)" alt="">
     Family Register
     </div>
     
     <div class="col20">
-    <a href="img/schneider/johannes1_jacob.jpg">
-    <img src="img/schneider/johannes1_jacob.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/johannes1_jacob.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1776 Birth of Jacob Friedrich</p>
     </div>
     
     <div class="col20">
-    <a href="img/schneider/johannes2_philippina.jpg">
-    <img src="img/schneider/johannes2_philippina.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/johannes2_philippina.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1785 Birth of Philippina</p>
     </div>
     
     <div class="col20">
-    <a href="img/schneider/johannes3_johann_georg.jpg">
-    <img src="img/schneider/johannes3_johann_georg.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/johannes3_johann_georg.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1789 Birth of Johann Georg</p>
     </div>
     
     <div class="col20">
-    <a href="img/schneider/johannes4_johannes.jpg">
-    <img src="img/schneider/johannes4_johannes.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/johannes4_johannes.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>1793 Birth of Johannes</p>
     </div>
     
@@ -1775,8 +1695,7 @@
     <hr>
     
     <div class="rbox" style="width:15%; margin:0px 0px 10px 10px; padding-bottom:0px;">
-    <a href="img/schneider/1597_Weinsberg.jpg">
-    <img src="img/schneider/1597_Weinsberg.jpg" alt=""></a>
+    <img src="img/schneider/1597_Weinsberg.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
 
 
@@ -2017,8 +1936,6 @@
               migrated to Queensland in 1865 <br>
               with family</td>
           <td>
-          <!--button type='button' class='b1'  onclick='window.location.hash = "#johanngeorg";'
-          id='dropper'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button-->
           <button type='button' class='b1'  onclick='window.location.hash = "#johanngeorg";'
           id='dropper'>click here to see<br>the whole family<br>(down the page)</button>
           </td>
@@ -2030,8 +1947,7 @@
     
     <div style="width:35%; float:right; margin: 6px 0px 16px 20px;">
     <div class="rbox" style="text-align:center; margin-bottom:20px;">
-    <a href="img/schneider/1798_FAMILYREG_crop.jpg">
-    <img class="img" src="img/schneider/1798_FAMILYREG_crop.jpg" alt=""></a>
+    <img src="img/schneider/1798_FAMILYREG_crop.jpg" class="modal-img" onclick="clk(this)" alt="">
 	<hr>
 	<b>Family Register, Ellhofen</b><hr>
 	Jakob Friedrich Schneider (m. 6 Nov 1798)<br>
@@ -2042,9 +1958,8 @@
 	died 7 Jan 1830
     </div>
     <div class="rbox">
-    <a href="img/schneider/1922_marriage.jpg">
-    <img class="img" src="img/schneider/1922_marriage.jpg" alt=""></a>
-	<p>5 October 1922 newspaper announcement</>
+    <img src="img/schneider/1922_marriage.jpg" class="modal-img" onclick="clk(this)" alt="">
+	<p>5 October 1922 newspaper announcement</p>
     </div>
     </div>
     
@@ -2074,49 +1989,37 @@
     <div class="row" style="width:99%; margin:6px 6px 10px 0px;">
     
     <div class="col16">
-    <a href="img/schneider/Schneider_Ernest.jpg">
-    <img src="img/schneider/Schneider_Ernest.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/Schneider_Ernest.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Johannes Ernest Schneider<br>
     m. Margaretha Brandt </p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/Schneider_Margaret.jpg">
-    <img src="img/schneider/Schneider_Margaret.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/Schneider_Margaret.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Margaretha Katharine Marie (Brandt) Schneider </p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/Schneider_Margaret_Pauline.jpg">
-    <img src="img/schneider/Schneider_Margaret_Pauline.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/Schneider_Margaret_Pauline.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Margaret Pauline Schneider<br>
     m. Roy Radford Slusher</p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/Schneider_Luise.jpg">
-    <img src="img/schneider/Schneider_Luise.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/Schneider_Luise.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Luisa Friederike Schneider<br>
     m. Johann Gottlieb Bihlmaier
     </p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/Schneider_Erwin.jpg">
-    <img src="img/schneider/Schneider_Erwin.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/Schneider_Erwin.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Irvin Schneider
     </p>
     </div>
     
     <div class="col16">
-    <a href="img/schneider/Schneider_Carl_Gottlieb.jpg">
-    <img src="img/schneider/Schneider_Carl_Gottlieb.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/Schneider_Carl_Gottlieb.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Carl Gottlieb Schneider<br>
      m. Verna Bernice Young</p>
     </div>
@@ -2128,39 +2031,33 @@
     <h6><b>Jacob and Rosina (details)</b></h6>
     
     <div class="lbox" style="width:98%; margin-top:16px;">
-    <a href="img/schneider/1776_TAUFE_jacob_schneider.jpg">
-    <img class="limg" src="img/schneider/1776_TAUFE_jacob_schneider.jpg" alt="" style="width:55%;"></a>
+    <img src="img/schneider/1776_TAUFE_jacob_schneider.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:55%;">
     Baptism 1776, 15 April, in Hertmannsweiler, of Jacob Friedrich Schneider, son of Johannes Schneider and his wife: Margaretha, born Rincker
     </div>
 
     <div class="lbox" style="width:98%; margin-top:16px;">
-    <a href="img/schneider/1772_TAUFE_heinricke_lauer.jpg">
-    <img class="limg" src="img/schneider/1772_TAUFE_heinricke_lauer.jpg" alt="" style="width:55%;"></a>
+    <img src="img/schneider/1772_TAUFE_heinricke_lauer.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:55%;">
     Baptism 1772, 14 August, of Rosina Heinrica Lauer, daughter of Georg David Lauer, Winegrower, and his wife: Maria Barbara, born Breuninger
     </div>
 
     <div class="lbox" style="width:98%; margin-top:16px;">
-    <a href="img/schneider/1798_marriage_jacob_friedrich.jpg">
-    <img class="limg" src="img/schneider/1798_marriage_jacob_friedrich.jpg" alt="" style="width:55%;"></a>
+    <img src="img/schneider/1798_marriage_jacob_friedrich.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:55%;">
     Marriage 1798, 6 November, in Ellhofen, of Johann Friderich Schneider, lawful unmarried son of Johannes Schneider, Resident, Mason and Master Stone Mason of Herdmannsweiler, Winnenden, with Rosina Heinrika Lauer, daughter of Georg David Lauer, Resident and Baker
     </div>
 
     <div class="lbox" style="width:98%; margin-top:16px;">
-    <a href="img/schneider/1830_DEATH_Jakob_Schneider.jpg">
-    <img class="limg" src="img/schneider/1830_DEATH_Jakob_Schneider.jpg" alt="" style="width:55%;"></a>
+    <img src="img/schneider/1830_DEATH_Jakob_Schneider.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:55%;">
     Death 1830, 7 January, in Ellhofen, of Jakob Friedrich Schneider, Resident and Mason, born in Herdmannsweiler, Winnenden, son of Johannes Schneider, Resident and Maurermeister in Winnenden and his wife Margaretha born Rinckerin. Wife Heinrike born Lauer
     </div>
 
     <div class="lbox" style="width:98%; margin-top:16px;">
-    <a href="img/schneider/1815_DEATH_Georg_Karl_Schneider.jpg">
-    <img class="limg" src="img/schneider/1815_DEATH_Georg_Karl_Schneider.jpg" alt="" style="width:75%;"></a>
+    <img src="img/schneider/1815_DEATH_Georg_Karl_Schneider.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:75%;">
     Death 1815 Jakob's son Georg Karl, aged 19<br>
     Single, 19y 6m 11d, Tuberculosis, Ellhofen, Sept 2, Morning 7 o'clock
     </div>
 
     <div class="lbox" style="width:98%; margin-top:16px;">
-    <a href="img/schneider/1836_marriages_schneiders.jpg">
-    <img class="limg" src="img/schneider/1836_marriages_schneiders.jpg" alt="" style="width:45%;"></a>
+    <img src="img/schneider/1836_marriages_schneiders.jpg" class="modal-imglimg" onclick="clk(this)" alt="" style="width:45%;">
     Double Wedding 10 May 1836 <br>
     The Schneider brothers Johann Friedrich and Johann Georg married the Lauer sisters Johanne Christiane and Heinricke Margarethe on the same day.
     </div>
@@ -2173,15 +2070,13 @@
 
     <div>
     <div class="lbox" style="width:400px; margin-right:16px;">
-    <a href="img/schneider/postcard1.jpg">
-    <img src="img/schneider/postcard1.jpg" alt=""></a>
+    <img src="img/schneider/postcard1.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     Weinsberg, near Burg Weibetreu
     </p>
     </div>
     <div class="lbox" style="width:400px;">
-    <a href="img/schneider/postcard2.jpg">
-    <img src="img/schneider/postcard2.jpg" alt=""></a>
+    <img src="img/schneider/postcard2.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     Queensland, Neurum Creek near Somerset
     </p>
@@ -2664,13 +2559,6 @@
               &#8224;Qld</td>
           <td>(8 months and 3 days old, as on death certificate)</td>
           <td></td></tr>
-      <!--tr><td><b>Mary Schneider</b></td>
-          <td>??.??.<b>1886</b>&nbsp;–<br>
-              *Boonah</td>
-          <td>unknown<br>
-              &#8224;unknown</td>
-          <td>marriage status unknown</td>
-          </tr-->
       <tr><td><b>Eliza Wilhelmine Schneider</b></td>
           <td>15.02.<b>1890</b>&nbsp;–<br>
               *Qld</td>
@@ -2823,9 +2711,7 @@
     <div class="row">
     
     <div class="col20">
-    <a href="img/schneider/schneider_johann_heinrich_m.jpg">
-    <img src="img/schneider/schneider_johann_heinrich_m.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/schneider_johann_heinrich_m.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Johann Heinrich "Henry" Schneider<br>
     m. Rosina Eckert<br>
     m. Wilhelmine "Minnie" Topp
@@ -2833,34 +2719,26 @@
     </div>
     
     <div class="col20">
-    <a href="img/schneider/schneider_fred_m_caroline_dickfos.jpg">
-    <img src="img/schneider/schneider_fred_m_caroline_dickfos.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/schneider_fred_m_caroline_dickfos.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Gottfried Friedrich "Fred" Schneider<br>
     m. Johanna "Caroline" Dickfos </p>
     </div>
     
     <div class="col20">
-    <a href="img/schneider/schneider_sophia_m_johann_dickfos.jpg">
-    <img src="img/schneider/schneider_sophia_m_johann_dickfos.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/schneider_sophia_m_johann_dickfos.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Christine "Sophie" Schneider<br>
     m. Johann Friedrich "August" Dickfos
     </p>
     </div>
     
     <div class="col20">
-    <a href="img/schneider/schneider_johann_georg_m_auguste_henselin.jpg">
-    <img src="img/schneider/schneider_johann_georg_m_auguste_henselin.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/schneider_johann_georg_m_auguste_henselin.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Johann Georg "George, sometimes John" Schneider jr.<br>
     m. Auguste "Friederike" Henselin</p>
     </div>
     
     <div class="col20">
-    <a href="img/schneider/schneider_christine_m_carl_dickfos.jpg">
-    <img src="img/schneider/schneider_christine_m_carl_dickfos.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/schneider_christine_m_carl_dickfos.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Christine Elisabeth Schneider<br>
      m. Carl Gottlieb Dickfos</p>
     </div>
@@ -2876,14 +2754,12 @@
 
 
     <div class="lbox" style="width:96%; margin-top:16px;">
-    <a href="img/schneider/1810_TAUFE_Johann_Georg_Schneider.jpg">
-    <img class="limg" src="img/schneider/1810_TAUFE_Johann_Georg_Schneider.jpg" alt="" style="width:55%;"></a>
+    <img src="img/schneider/1810_TAUFE_Johann_Georg_Schneider.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:55%;">
     <b>1810</b> birth 25 Oct, baptism 28 Oct, in Ellhofen, of Johann Georg Schneider, son of Jakob Schneider, Resident and Mason and his wife Rosina Heinrike born Lauer
     </div>
 
     <div class="lbox" style="width:75%; margin-top:16px;">
-    <a href="img/schneider/1836_FAMILYREG.jpg">
-    <img class="limg" src="img/schneider/1836_FAMILYREG_small.jpg" alt="" style="width:45%;"></a>
+    <img src="img/schneider/1836_FAMILYREG.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:45%;">
     <b>Eberstadt</b> Family Register of Johann Georg Schneider<br>
     <br>
     Housefather: Schneider, Joh. Georg, Maurermeister, <br>
@@ -2936,8 +2812,7 @@
     </div>
     
     <div style="width:auto;">
-    <a href="img/schneider/1836_MARRIAGE_Johann_Georg_Schneider_certificate.jpg">
-    <img class="limg" src="img/schneider/1836_MARRIAGE_Johann_Georg_Schneider_certificate.jpg" alt="" style="width:300px;"></a>
+    <img src="img/schneider/1836_MARRIAGE_Johann_Georg_Schneider_certificate.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:300px;">
     </div>
     
     <div style="width:300px;">
@@ -2969,8 +2844,7 @@
     
 
     <div class="lbox" style="width:99%; margin-top:16px;">
-    <a href="img/schneider/1859_DEATH_Friedrich_Karl_Schneider.jpg">
-    <img class="limg" src="img/schneider/1859_DEATH_Friedrich_Karl_Schneider.jpg" alt="" style="width:55%;"></a>
+    <img src="img/schneider/1859_DEATH_Friedrich_Karl_Schneider.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:55%;">
     Death 1859 Johann Georg's son Friedrich Karl, aged 21<br>
     single, Baptist, 21yrs 6mths, broke neck by unlucky fall from scaffold in Hölzern 12 Nov. 7:00<br>
     (Hölzern is 1km east of Eberstadt)
@@ -2979,9 +2853,7 @@
 
 
     <div style="text-align:center; width:30%; margin:0px auto 20px auto; " >
-    <a href="img/schneider/steinhauer2.jpg">
-    <img src="img/schneider/steinhauer2.jpg" style="width:100%; margin-top:40px;" alt="">
-    </a>
+    <img src="img/schneider/steinhauer2.jpg" style="width:100%; margin-top:40px;" class="modal-img" onclick="clk(this)" alt="">
     </div>
 
 
@@ -3006,28 +2878,20 @@
     <div>
     
     <div class="lbox" style="width:24%; margin:0px 15px 0px 0px;" >
-    <a href="img/schneider/schneider_johann_heinrich.jpg">
-    <img src="img/schneider/schneider_johann_heinrich.jpg" alt="">
-    </a>
+    <img src="img/schneider/schneider_johann_heinrich.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Johann Heinrich Schneider</p>
     </div>
     
     <div class="lbox" style="width:45%; margin:0px 15px 0px 0px;" >
-    <a href="img/schneider/1862_MARRIAGE_Johann_Heinrich.jpg">
-    <img src="img/schneider/1862_MARRIAGE_Johann_Heinrich.jpg" alt="">
-    </a>
+    <img src="img/schneider/1862_MARRIAGE_Johann_Heinrich.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1862 1st Marriage to Rosina Friederike Eckert</p>
     <hr>
-    <a href="img/schneider/1869_MARRIAGE_Wilhelmine_Heinrich.jpg">
-    <img src="img/schneider/1869_MARRIAGE_Wilhelmine_Heinrich.jpg" alt="">
-    </a>
+    <img src="img/schneider/1869_MARRIAGE_Wilhelmine_Heinrich.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1869 2nd Marriage to Wilhelmine Friederike (Topp) Lobegeiger</p>
     </div>
     
     <div class="lbox" style="width:24%; margin:0px 0px 0px 0px;" >
-    <a href="img/schneider/schneider_johann_heinrich_family3.jpg">
-    <img src="img/schneider/schneider_johann_heinrich_family3.jpg" alt="">
-    </a>
+    <img src="img/schneider/schneider_johann_heinrich_family3.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>c1889 Family of Johann Heinrich with Wilhelmine at his side</p>
     </div>
     
@@ -3172,33 +3036,23 @@
     <br>
     <div class="row" style="margin-bottom:10px;">
     <div class="col20">
-    <a href="img/schneider/lobegeier_christine_schneider.jpg">
-    <img src="img/schneider/lobegeier_christine_schneider.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_christine_schneider.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Mother
     </div>
     <div class="col20">
-    <a href="img/schneider/lobegeier_julius.jpg">
-    <img src="img/schneider/lobegeier_julius.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_julius.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Julius
     </div>
     <div class="col20">
-    <a href="img/schneider/lobegeier_daniel.jpg">
-    <img src="img/schneider/lobegeier_daniel.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_daniel.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Daniel
     </div>
     <div class="col20">
-    <a href="img/schneider/lobegeier_adina.jpg">
-    <img src="img/schneider/lobegeier_adina.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_adina.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Adina
     </div>
     <div class="col20">
-    <a href="img/schneider/lobegeier_rosa.jpg">
-    <img src="img/schneider/lobegeier_rosa.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_rosa.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Rosa
     </div>
     </div>
@@ -3206,33 +3060,23 @@
     
     <div class="row" style="margin-bottom:10px;">
     <div class="col20">
-    <a href="img/schneider/lobegeier_george.jpg">
-    <img src="img/schneider/lobegeier_george.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_george.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     George
     </div>
     <div class="col20">
-    <a href="img/schneider/lobegeier_louisa.jpg">
-    <img src="img/schneider/lobegeier_louisa.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_louisa.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Louisa
     </div>
     <div class="col20">
-    <a href="img/schneider/lobegeier_ellen.jpg">
-    <img src="img/schneider/lobegeier_ellen.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_ellen.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Ellen
     </div>
     <div class="col20">
-    <a href="img/schneider/lobegeier_christina.jpg">
-    <img src="img/schneider/lobegeier_christina.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_christina.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Christina
     </div>
     <div class="col20">
-    <a href="img/schneider/lobegeier_albert.jpg">
-    <img src="img/schneider/lobegeier_albert.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/lobegeier_albert.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     Albert
     </div>
     </div>
@@ -3354,9 +3198,7 @@
     <div>
     
     <div class="lbox" style="width:40%; margin:0px 15px 0px 0px;" >
-    <a href="img/schneider/1882_double_schneider_marriage.jpg">
-    <img src="img/schneider/1882_double_schneider_marriage.jpg" alt="">
-    </a>
+    <img src="img/schneider/1882_double_schneider_marriage.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     
     <div style="width:53%; margin:0px 15px 0px 0px; float:left; border:0;" >
@@ -3537,9 +3379,7 @@
     
     
     <div class="rbox" style="width:36%; margin:30px 0px 0px 15px;" >
-    <a href="img/schneider/1915_DEATH_CERT_Wilhelmine_Gayndah.jpg">
-    <img src="img/schneider/1915_DEATH_CERT_Wilhelmine_Gayndah.jpg" alt="">
-    </a>
+    <img src="img/schneider/1915_DEATH_CERT_Wilhelmine_Gayndah.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1915 Death Certificate of Wilhelmina in Gayndah</p>
     </div>
     
@@ -3558,9 +3398,7 @@
     <br>
     
     <div class="lbox" style="width:58%; margin:0px 0px 0px 0px;" >
-    <a href="img/schneider/connections_chart.jpg">
-    <img src="img/schneider/connections_chart.jpg" alt="">
-    </a>
+    <img src="img/schneider/connections_chart.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>More connections</p>
     </div>
     
@@ -3579,9 +3417,7 @@
     <h5> The Family Chronicle (Familien-Chronik) of Johann Heinrich Schneider senior</h5>
     
     <div class="f-right" style="width:100%; margin:6px 0px 0px 0px;" >
-    <a href="img/schneider/familienchronik.jpg">
-    <img src="img/schneider/familienchronik.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/familienchronik.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     </td></tr><tr>
     <td style="width:25%; border:1px solid LightGray; border-radius:5px; padding:5px;">Family-Chronicle<br>
@@ -3670,9 +3506,7 @@
 
 
     <div class="cbox" style="width:95%; margin:20px 0px 10px 0px;">
-    <a href="img/schneider/Schneider_Henry_Annie_children.jpg">
-    <img src="img/schneider/Schneider_Henry_Annie_children.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/schneider/Schneider_Henry_Annie_children.jpg" class="modal-img" onclick="clk(this)" alt="" style="width:100%;">
     <p>Henry and Annie with their eight children,
     from left:  Norman, Ben, Ambrose, Arthur, Lily, Edward, Harry, Fred</p>
     </div>
@@ -4006,9 +3840,7 @@
     <h5>Themes</h5>
 
     <div class="rbox" style="width:20%; margin:6px 0px 10px 20px;">
-    <a href="img/schneider/varmint.jpg">
-    <img src="img/schneider/varmint.jpg" alt="">
-    </a>
+    <img src="img/schneider/varmint.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
 
     It's not too much of a coincidence that the Schneiders in Germany had a thing about building walls. In the old days, walls were a necessary part of defence for city, town, castle and house. In Australia, those defences were down. It was nigh on impossible to protect property and farms  from marauders. And that's exactly where Henry (Johann Heinrich) senior got himself into trouble. Big trouble. Around two o'clock in the morning of January 24, 1875, one Michael Portley with accomplices attempted to steal Henry's watermelons (again). Henry saw this as the last straw, having been under attack many times before. 
@@ -4017,9 +3849,7 @@
     He issued a warning: "Stop! I shoot!"
     
     <div class="lbox" style="width:25%; margin:6px 20px 10px 0px;">
-    <a href="img/schneider/barbed_wire.jpg">
-    <img src="img/schneider/barbed_wire.jpg" alt="">
-    </a>
+    <img src="img/schneider/barbed_wire.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Barbed Wire which completely changed the game</p>
     </div>
 
@@ -4035,8 +3865,7 @@
 
 
     <div class="lbox" style="width:99%; margin:30px 0px 30px 0px;">
-    <a href="img/schneider/cornfield_near_lyons_by_preston_keres.jpg">
-    <img class="limg" src="img/schneider/cornfield_near_lyons_by_preston_keres.jpg" alt="" style="width:35%;  margin-bottom:4px;"></a>
+    <img src="img/schneider/cornfield_near_lyons_by_preston_keres.jpg" class="modal-img limg" onclick="clk(this)" alt="" style="width:35%;  margin-bottom:4px;">
     <b>The Circle of Summertime</b><br>
 
     The Fassifern way of life and living can be nicely summarised <br>
