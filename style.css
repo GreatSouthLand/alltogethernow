@@ -752,33 +752,22 @@ hr {
 	bottom: 0;
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.1);
-	/* display: flex; when shown*/
+	/* display: flex;  to show */
 	display: none; /* hide initially*/
-	justify-content: center;
-	align-items: center;
 	}
 .modal-img {
 	max-width: 100%;
 	cursor: pointer;
 	}
-.modal-close {
-	position: absolute;
-	right: 25px;
-	top: 25px;
-	z-index: 2;
-	background: #000;
-	color: #fff;
-	cursor: pointer;
-	width: 25px;
-	height: 25px;
-	display: flex;
-	font-size: 1.5rem;
-	justify-content: center;
-	align-items: center;
-	}
 .modal-content {
+	max-width:100%;
 	margin: auto;
-	animation: fade 0.5s ease;
+	animation: fade 0.3s ease;
+	background-color: #f0f0f0;
+	border: solid #f0f0f0;
+	border-width: 4px 4px 0px 4px;
+	border-radius: 5px;
+	box-shadow: 15px 15px 15px -5px  rgba(50, 50, 50, 0.5);
 	}
 @keyframes fade {
 	from { opacity: 0; }
