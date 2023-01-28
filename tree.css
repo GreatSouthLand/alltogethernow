@@ -1,15 +1,16 @@
 
 .tree {
 	background-color: #f8f8f8;
-	padding: 4px 12px 4px 8px;
+	padding: 4px 12px 4px 6px;
 	border: #d0d0d0 solid 1px;
 	border-radius: 5px;
 	float: left; 
 	width: auto; 
 	margin: 10px 0px 10px 0px;
-	max-width: 930px;
+	max-width: 940px;
 	overflow-x: auto;
 	font: inherit;
+	font-size:14px;
 }
 
 .tree ul {
@@ -38,11 +39,11 @@
 }
 
 .tree li img {
-	width:52px;
-	height:52px;
-	margin-right:8px;
-	vertical-align:top;
 	float:left;
+	width:4.4em;
+	height:4.4em;
+	margin:1px;
+	vertical-align:top;
 	border: #c0c0c0 solid 2px;
 	border-radius: 5px;
 }
@@ -52,11 +53,21 @@
 }
 
 .narrow li a {
-	width: auto;/*86px;*/
+	width: auto;
 	text-align:center;
 	padding: 2px 5px 3px 5px;
 	margin-top:0px;
 	line-height: 130%;
+}
+
+.fouracross li a {
+	width: 185px;
+	text-align:center;
+	padding:0px;
+}
+
+.fouracross li a p {
+	padding-top:1em;
 }
 
 .tree li::before, 
