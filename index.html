@@ -36,13 +36,15 @@
 
 <script src="navbar.txt"></script>
 
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content">  <img src="res/blank.gif" id="img01" alt=""> </div>
+</div>
+
 <div class="content">
 <div class="row1">
 
 <div class="f-right" style="text-align:center; width:26%; margin:6px 0px 0px 20px;" >
-<a href="img/bananier.jpg">
-<img src="img/bananier.jpg" alt="" style="width:100%; border-radius: 8px;">
-</a>
+<img src="img/bananier.jpg" alt="" class="modal-img" onclick="clk(this)" style="width:100%; border-radius: 8px;">
 <p>Queensland Family Tree</p>
 <a href="#btm" onclick="return toggle(1)" id="btp">Go to Tree</a>
 <div class="rbox" style="margin: 16px 0px 10px 20px; padding:0;">
@@ -67,15 +69,18 @@ Those migrants and their descendants have not only survived the rigours of almos
 
 <ul class="list1">
   <li>The old must make way for the new, and one thing must be built
-  out of the ruins of another.<br>
-   – Lucretius </li>
+      out of the ruins of another.<br>
+      – Lucretius </li>
   <li>Only those who know the past, have a future. 
-   (Nur wer die Vergangenheit kennt, hat eine Zukunft.)<br>
-   – Wilhelm von Humboldt <!--(1767-1835) --></li>
+     (Nur wer die Vergangenheit kennt, hat eine Zukunft.)<br>
+      – Wilhelm von Humboldt <!--(1767-1835) --></li>
+  <li>Why waste your money looking up your family tree? <br>
+      Just go into politics and your opponent will do it for you.<br>
+      – Mark Twain </li>
   <li>Don't forget who you are and where you come from.<br>
-   – F. Scott Fitzgerald </li>
+      – F. Scott Fitzgerald </li>
   <li>Knowing where you come from is one thing, but it's suicide to stay there.<br>
-   – Dennis Covington </li>
+      – Dennis Covington </li>
   <!--li>Now that you feel the weather / 
       Was it all in vain? / 
       Now that we're together /
@@ -96,7 +101,7 @@ Of course there was always the issue of health and well-being. Seeking a better 
 
 <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
 
-<img src="img/terra-australis.jpg" alt="" class="f-left" style="width:40%; margin-top:18px; margin-bottom:0px; border-radius: 7px;">
+<img src="img/terra-australis.jpg" alt="" class="modal-img f-left" onclick="clk(this)" style="width:40%; margin-top:18px; margin-bottom:0px; border-radius: 7px;">
 
 <h5>The Great South Land</h5>
 
@@ -112,9 +117,7 @@ Our ancestors and their families were a busy bunch on both sides of the family. 
 
 
 <div class="rbox" style="width:50%; text-align:center; margin:20px 0px 30px 20px;">
-<a href="img/map_australia_europe_2.jpg">
-<img src="img/map_australia_europe_2.jpg" alt="" style="width:100%;">
-</a>
+<img src="img/map_australia_europe_2.jpg" alt="" class="modal-img" onclick="clk(this)">
 <p>Europe in Australia<br>
 Comparison of the land mass areas of Australia and Europe.</p>
 </div>

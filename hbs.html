@@ -26,6 +26,10 @@
 
 <script src="navbar.txt"></script>
 
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content">  <img src="res/blank.gif" id="img01" alt=""> </div>
+</div>
+
 <div class="content">
 <div class="row1">
 
@@ -34,10 +38,8 @@
     <li>
     
     <div class="rbox" style="width:20%; margin:0px 0px 10px 20px;">
-    <a href="img/schneider/hbs.jpg">
-    <img src="img/schneider/hbs.jpg" alt="">
-    </a>
-    <p><b>The Author:</b><br>&nbsp; Hugh Schneider</p>
+    <img src="img/schneider/hbs.jpg" alt="" class="modal-img" onclick="clk(this)">
+    <p><b>The author of this page:</b><br>&nbsp; Hugh Schneider</p>
     </div>
     
     <i>
@@ -58,10 +60,10 @@ Note: These are old texts and therefore contain what was known at the time.
       they are two totally different words.
 
       Some incorrect words are followed by an asterisk *, for instance:
-         WURTTENBURG* = Württemberg (or Wuerttemberg)
-         WURTENBURG*  = Württemberg (or Wuerttemberg)
-         WEINSBURG*   = Weinsberg
-         MAUNSBERG*   = Weinsberg
+         WURTTENBURG* = should be &nbsp;Württemberg (or Wuerttemberg)
+         WURTENBURG*  = should be &nbsp;Württemberg (or Wuerttemberg)
+         WEINSBURG*   = should be &nbsp;Weinsberg
+         MAUNSBERG*   = should be &nbsp;Weinsberg
     
     The side column shows the original pages and often some updates regarding speculations.
     The pictures can be enlarged by clicking on them.
@@ -73,16 +75,12 @@ Note: These are old texts and therefore contain what was known at the time.
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>Page 1</p>
-    <a href="img/schneider/01.jpg">
-    <img src="img/schneider/01.jpg" alt="">
-    </a>
+    <img src="img/schneider/01.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>Page 2</p>
-    <a href="img/schneider/02.jpg">
-    <img src="img/schneider/02.jpg" alt="">
-    </a>
+    <img src="img/schneider/02.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     </div>
@@ -124,73 +122,53 @@ Many instances of the outcome of this persecution are given by references to the
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>The rumour of a deceased brother proved to be correct. In 1815, Johann Georg's older brother, Georg Karl, died from Tuberculosis at the age of 19. </p>
-    <a href="img/schneider/1815_death_karl.jpg">
-    <img src="img/schneider/1815_death_karl.jpg" alt="">
-    </a>
+    <img src="img/schneider/1815_death_karl.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>1836 Marriage of Johann Georg Schneider and Heinrike Margarethe Lauer (whose father, Johann Martin Lauer, was a baker in Ellhofen, not Hamburg)</p>
-    <a href="img/schneider/1836_marriage.jpg">
-    <img src="img/schneider/1836_marriage.jpg" alt="">
-    </a>
+    <img src="img/schneider/1836_marriage.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>The "Sophie"</p>
-    <a href="img/extras/Sophie.jpg">
-    <img src="img/extras/Sophie.jpg" alt="">
-    </a>
+    <img src="img/extras/Sophie.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>Page 3</p>
-    <a href="img/schneider/03.jpg">
-    <img src="img/schneider/03.jpg" alt="">
-    </a>
+    <img src="img/schneider/03.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>1862 Marriage of Johann Heinrich Schneider and Rosine Friederike Eckert</p>
-    <a href="img/schneider/1862_marriage.jpg">
-    <img src="img/schneider/1862_marriage.jpg" alt="">
-    </a>
+    <img src="img/schneider/1862_marriage.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>The "La Rochelle"</p>
-    <a href="img/extras/LaRochelle.jpg">
-    <img src="img/extras/LaRochelle.jpg" alt="">
-    </a>
+    <img src="img/extras/LaRochelle.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>1863 June 5 Birth of Friederike Christine Schneider who was 6 months old when Henry and Rosine left Hamburg and not born on the ship.<br>
     The earlier daughter, Friederike Sophie, died in 1863 before reaching 2 years old.</p>
-    <a href="img/schneider/1863_birth_christine.jpg">
-    <img src="img/schneider/1863_birth_christine.jpg" alt="">
-    </a>
+    <img src="img/schneider/1863_birth_christine.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>Page 4</p>
-    <a href="img/schneider/04.jpg">
-    <img src="img/schneider/04.jpg" alt="">
-    </a>
+    <img src="img/schneider/04.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 16px 0px;">
     <p>Page 5</p>
-    <a href="img/schneider/05.jpg">
-    <img src="img/schneider/05.jpg" alt="">
-    </a>
+    <img src="img/schneider/05.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     <div class="rbox" style="width:100%; margin:0px 0px 50px 0px;">
     <p>Page 6</p>
-    <a href="img/schneider/06.jpg">
-    <img src="img/schneider/06.jpg" alt="">
-    </a>
+    <img src="img/schneider/06.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
     </div>
@@ -309,9 +287,7 @@ notes thereon show various dates during processing - from 15.1.85 until <br><br>
 
     <div class="rbox" style="width:30%; margin:0px 0px 16px 20px;">
     <p>Page 7</p>
-    <a href="img/schneider/07.jpg">
-    <img src="img/schneider/07.jpg" alt="">
-    </a>
+    <img src="img/schneider/07.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     
 <b>Historical Data and Remarks</b> <br><br>
@@ -333,9 +309,7 @@ George was a devout Baptist and is historically recorded as the "First Pastor, B
 
     <div class="rbox" style="width:30%; margin:0px 0px 16px 20px;">
     <p>Page 8</p>
-    <a href="img/schneider/08.jpg">
-    <img src="img/schneider/08.jpg" alt="">
-    </a>
+    <img src="img/schneider/08.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
 
 <b>JOHANN GEORGE SCHNEIDER</b> : SON OF FREDRICH SCHNEIDER <br>
@@ -368,9 +342,7 @@ CHILDREN: SIX (6)
 <br>
     <div class="rbox" style="width:30%; margin:0px 0px 16px 20px;">
     <p>Once again, the family legend was true. Johann Georg's son Friedrich Karl died in 1859, aged 21, single, Baptist, aged 21yrs 6mths, broke neck by unlucky fall from scaffold in Hölzern 12 Nov. 7:00</p>
-    <a href="img/schneider/1859_DEATH_Friedrich_Karl_Schneider.jpg">
-    <img src="img/schneider/1859_DEATH_Friedrich_Karl_Schneider.jpg" alt="">
-    </a>
+    <img src="img/schneider/1859_DEATH_Friedrich_Karl_Schneider.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
 
 It is believed that the family operated a Stone quarry, at Stuttgart, Germany, where an older brother was killed in a fall of stone. <br><br>
@@ -385,9 +357,7 @@ It is thought that when the family migrated to Australia one brother remained in
 
     <div class="rbox" style="width:30%; margin:0px 0px 16px 20px;">
     <p>Page 9</p>
-    <a href="img/schneider/09.jpg">
-    <img src="img/schneider/09.jpg" alt="">
-    </a>
+    <img src="img/schneider/09.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
 
 <b>JOHANN HEINRICH "HENRY" SCHNEIDER </b><br>
@@ -417,9 +387,7 @@ Lobegeyer Gottlieb   37  Bricklayer Prussia Naturalised Aug 22, 1866
 
     <div class="rbox" style="width:30%; margin:0px 0px 16px 20px;">
     <p>Page 10</p>
-    <a href="img/schneider/10.jpg">
-    <img src="img/schneider/10.jpg" alt="">
-    </a>
+    <img src="img/schneider/10.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
 
 
@@ -444,9 +412,7 @@ Apparently such overcrowding of German immigrant ships was often the case and it
 
     <div class="rbox" style="width:30%; margin:0px 0px 16px 20px;">
     <p>Page 11</p>
-    <a href="img/schneider/11.jpg">
-    <img src="img/schneider/11.jpg" alt="">
-    </a>
+    <img src="img/schneider/11.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
 
 <b>JOHANN GEORG SCHNEIDER "George"</b>
@@ -484,9 +450,7 @@ Children:
 
     <div class="rbox" style="width:30%; margin:0px 0px 16px 20px;">
     <p>Page 12</p>
-    <a href="img/schneider/12.jpg">
-    <img src="img/schneider/12.jpg" alt="">
-    </a>
+    <img src="img/schneider/12.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
 
 <b>JOHANN HEINRICH SCHNEIDER  "Henry"</b>
@@ -527,8 +491,7 @@ The family of the first marriage of Henry being:
 
 
     <div class="lbox" style="width:99%; margin:16px 0px 30px 0px;">
-    <a href="img/schneider/hbs_familytree.jpg">
-    <img class="limg" src="img/schneider/hbs_familytree_thumb.jpg" alt="" style="width:75%; margin-bottom:4px;"></a>
+    <img src="img/schneider/hbs_familytree_thumb.jpg" alt="" class="modal-img limg" onclick="clk(this)" style="width:75%; margin-bottom:4px;">
     <p>
     <b>The Family Tree for <br>
     Johann Georg Schneider (George, sometimes John) and his wife Heinricke Margarethe Lauer as well as a lot of their descendants</b><br>

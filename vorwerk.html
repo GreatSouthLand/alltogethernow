@@ -26,6 +26,10 @@
 
 <script src="navbar.txt"></script>
 
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content">  <img src="res/blank.gif" id="img01" alt=""> </div>
+</div>
+
 <div class="content">
 <div class="row1">
   <ul class="articles box">
@@ -38,9 +42,7 @@
     <br>
     
     <div class="rbox" style="width:30%; margin:6px 0px 16px 20px;">
-    <a href="img/ducdeberry.jpg">
-    <img src="img/ducdeberry.jpg" alt="">
-    </a>
+    <img src="img/ducdeberry.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Toiling in the soil<br>
     (from the Book of Hours of the Duke of Berry, Les Très Riches Heures du duc de Berry)</p>
     </div>
@@ -63,9 +65,7 @@
     <br>
     
     <div class="lbox" style="width:35%; margin:20px 20px 0px 0px;">
-    <a href="img/1848_revolution_berlin.jpg">
-    <img src="img/1848_revolution_berlin.jpg" alt="">
-    </a>
+    <img src="img/1848_revolution_berlin.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>March 19 1848, Cheering revolutionaries in Berlin</p>
     </div>
     

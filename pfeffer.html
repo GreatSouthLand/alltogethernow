@@ -26,6 +26,10 @@
 
 <script src="navbar.txt"></script>
 
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content">  <img src="res/blank.gif" id="img01" alt=""> </div>
+</div>
+
 <div class="content">
 <div class="row1">
   <ul class="articles box">
@@ -43,8 +47,7 @@
     
     <div>
     <div class="rbox" style="width:100%; margin: 10px 0px 10px 0px;">
-    <a href="img/extras/1863_beausite_rudolph_pfeffer.jpg">
-    <img src="img/extras/1863_beausite_rudolph_pfeffer.jpg" alt=""></a>
+    <img src="img/extras/1863_beausite_rudolph_pfeffer.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1863 The Pfeffer family on the Beausite; <br>
     Rudolph and Caroline, with their son, Joseph.
     </p>
@@ -54,8 +57,7 @@
 
     <div>
     <div class="rbox" style="width:100%; margin: 10px 0px 10px 0px;">
-    <a href="img/extras/1863_pfeffer.jpg">
-    <img src="img/extras/1863_pfeffer.jpg" alt=""></a>
+    <img src="img/extras/1863_pfeffer.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1863 The Pfeffer family on the Susanne Godeffroy; <br>
     Michael and Magdalena, with their children, Theresia, Victor, Marie, Caroline, Franz and Ludvina.
     </p>
@@ -64,9 +66,7 @@
     
     <div>
     <div class="rbox" style="width:100%; margin:16px 0px 10px 0px;">
-    <a href="img/extras/neckarsulm.jpg">
-    <img src="img/extras/neckarsulm.jpg" alt="">
-    </a>
+    <img src="img/extras/neckarsulm.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Greetings from Neckarsulm</p>
     </div>
     </div>
@@ -234,20 +234,14 @@
     <div>
     
     <div class="rbox" style="width:51%; margin:0px;">
-    <a href="img/pfeffer/land_schneider_pfeffer.jpg">
-    <img src="img/pfeffer/land_schneider_pfeffer.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/land_schneider_pfeffer.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Adjoining lands of Johann Heinrich (Henry) Schneider and Francis Victor Pfeffer in Kulgun just below Roadvale. The area came to be known as "Schneiders Road" which was the name of a new Rail Station, later to be renamed Kulgun.</p>
     </div>
     
     <div class="lbox" style="width:40%; margin:0px;">
-    <a href="img/pfeffer/1869_70a.jpg">
-    <img src="img/pfeffer/1869_70a.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/1869_70a.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Land Selection acceptances (Brisbane Courier)</p>
-    <a href="img/pfeffer/1871_50a.jpg">
-    <img src="img/pfeffer/1871_50a.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/1871_50a.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     
     </div>
@@ -270,9 +264,7 @@
     
     <div class="lbox" style="width:98%; margin:40px 20px 16px 0px;">
     <p><b>The Family of Francis Victor Pfeffer (seated, center) and his wife Fredericke Christine (nee Schulz) seated to his left</b></p>
-    <a href="img/pfeffer/Francis_Victor_Pfeffer_and_Fredericke_Christine_(nee_Schulz)_family.jpg">
-    <img src="img/pfeffer/Francis_Victor_Pfeffer_and_Fredericke_Christine_(nee_Schulz)_family.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/Francis_Victor_Pfeffer_and_Fredericke_Christine_(nee_Schulz)_family.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p><b>"The Family Gathering"</b> 26.9.1912 - The Day of Ellen's Wedding<br>
     <b>BACK ROW L-R:</b> Gustav 30 and Katharine 25, August Schossow 40 and Johanna 36, 
     Francis Victor Jr. (Frank) 33 and Emilie 32, Inset - Adelaide (a few years later but would have been 16 then) who married William, seated in the front row.<br>
@@ -1013,16 +1005,12 @@
 
 
     <div class="lbox" style="width:31%; margin:20px 0px 16px 0px;">
-    <a href="img/pfeffer/william_pfeffer_and_adelaide_pieper.jpg">
-    <img src="img/pfeffer/william_pfeffer_and_adelaide_pieper.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/william_pfeffer_and_adelaide_pieper.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Wedding of William Pfeffer and Adelaide Pieper</p>    
     </div>
     
     <div class="rbox" style="width:65%; margin:20px 0px 16px 0px;">
-    <a href="img/pfeffer/bill_pfeffer.jpg">
-    <img src="img/pfeffer/bill_pfeffer.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/bill_pfeffer.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Bill Pfeffer was a keen motorist and here he is up front of his Willys Knight, a car which was produced from 1914 to 1933 by Willys-Overland Company of Toledo, Ohio</p>    
     </div>
     
@@ -1125,56 +1113,42 @@
     <div style="float:right; width:35%; margin:20px 0px 20px 20px;">
     
     <!--div class="rbox" style="width:95%; margin:0px 0px 16px 0px;">
-    <a href="img/pfeffer/bakery_kalbar.jpg">
-    <img src="img/pfeffer/bakery_kalbar.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/bakery_kalbar.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1925 Bill Pfeffer buys Kalbar bakery</p>    
     </div-->
     
     <div class="rbox" style="width:95%; margin:0px 0px 16px 0px;">
     <p>c.1924 Bill Pfeffer's Fernvale Store</p>    
-    <a href="img/pfeffer/fernvale_store.jpg">
-    <img src="img/pfeffer/fernvale_store.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/fernvale_store.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     
     <div class="rbox" style="width:95%; margin:0px 0px 16px 0px;">
     <p>c.1927 Bill Pfeffer's Bakery at Kalbar<br>
     (with little Ron pushing Lorna in a trolley)
     </p>    
-    <a href="img/pfeffer/bakery_shop_kalbar.jpg">
-    <img src="img/pfeffer/bakery_shop_kalbar.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/bakery_shop_kalbar.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     
     <div class="rbox" style="width:95%; margin:0px 0px 16px 0px;">
     <p>
     Seven year old daughter Dulcie's letter to the children's club run by a newspaper in 1928, mentions her father's bakery in Kalbar.
     </p>
-    <a href="img/pfeffer/dulcie.jpg">
-    <img src="img/pfeffer/dulcie.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/dulcie.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     
     <!--div class="rbox" style="width:95%; margin:0px 0px 16px 0px;">
-    <a href="img/pfeffer/bakery_roadvale.jpg">
-    <img src="img/pfeffer/bakery_roadvale.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/bakery_roadvale.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1931 Bill Pfeffer buys Roadvale bakery</p>    
     </div-->
     
     <div class="rbox" style="width:95%; margin:0px 0px 16px 0px;">
     <p>1932 Mr and Mrs W. Pfeffer sell their bakeries</p>    
-    <a href="img/pfeffer/bakeries_sold.jpg">
-    <img src="img/pfeffer/bakeries_sold.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/bakeries_sold.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     
     <div class="rbox" style="width:95%;">
     <p>1954 One of the Allan Pfeffer's bakeries was at Corinda (part of a newspaper advertisement)</p>
-    <a href="img/pfeffer/bakery_corinda.jpg">
-    <img src="img/pfeffer/bakery_corinda.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/bakery_corinda.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     
     </div>
@@ -1188,9 +1162,7 @@
     <br>
     
     <div class="lbox" style="width:60%; margin:0px 0px 16px 0px;">
-    <a href="img/pfeffer/pfeffer_house_kulgun.jpg">
-    <img src="img/pfeffer/pfeffer_house_kulgun.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/pfeffer_house_kulgun.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The Kulgun home of Bill and Adelaide Pfeffer</p>    
     </div>
     
@@ -1237,16 +1209,12 @@
     <div>
     
     <div class="lbox" style="width:64%; margin:25px 15px 10px 0px;">
-    <a href="img/pfeffer/pfeffer_dulcie_beryl_allan.jpg">
-    <img src="img/pfeffer/pfeffer_dulcie_beryl_allan.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/pfeffer_dulcie_beryl_allan.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Dulcie, Beryl and Allan, the three eldest children of Bill and Adelaide Pfeffer</p>    
     </div>
     
     <div class="lbox" style="width:300px; margin:0px 0px 10px 0px;">
-    <a href="img/pfeffer/pfeffer_william_young.jpg">
-    <img src="img/pfeffer/pfeffer_william_young.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/pfeffer_william_young.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>A young William Pfeffer</p>    
     </div>
     
@@ -1255,23 +1223,17 @@
     <div>
     
     <div class="lbox" style="width:300px; margin:10px 10px 20px 0px;">
-    <a href="img/pfeffer/pfeffer_esther.jpg">
-    <img src="img/pfeffer/pfeffer_esther.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/pfeffer/pfeffer_esther.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Esther Pfeffer, daughter of Francis Albert Pfeffer and Martha Heit</p> 
     </div>
     
     <div class="lbox" style="width:300px; margin:10px 10px 20px 0px;">
-    <a href="img/pfeffer/pfeffer_esther_scholl_charles_1927.jpg">
-    <img src="img/pfeffer/pfeffer_esther_scholl_charles_1927.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/pfeffer/pfeffer_esther_scholl_charles_1927.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Esther Pfeffer with her husband, Charles Scholl, on their wedding day</p> 
     </div>
     
     <div class="lbox" style="width:300px; margin:10px 0px 20px 0px;">
-    <a href="img/pfeffer/pfeffer_ruth_schneider_norman.jpg">
-    <img src="img/pfeffer/pfeffer_ruth_schneider_norman.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/pfeffer_ruth_schneider_norman.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Wedding photo of Norman Schneider and Ruth Pfeffer, daughter of Francis Victor jr. and Emilie Krueger</p>
     </div>
     
@@ -1280,23 +1242,17 @@
     <div>
     
     <div class="lbox" style="width:300px; margin:10px 10px 20px 0px;">
-    <a href="img/pfeffer/pfeffer_beryl_naumann_stan.jpg">
-    <img src="img/pfeffer/pfeffer_beryl_naumann_stan.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/pfeffer_beryl_naumann_stan.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Wedding of Beryl Pfeffer and Stan Naumann</p>
     </div>
     
     <div class="lbox" style="width:300px; margin:10px 10px 20px 0px;">
-    <a href="img/pfeffer/pfeffer_adelaide_bill_children.jpg">
-    <img src="img/pfeffer/pfeffer_adelaide_bill_children.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/pfeffer/pfeffer_adelaide_bill_children.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Adelaide and Bill Pfeffer with their first three children, Beryl, Allan and Dulcie.</p> 
     </div>
     
     <div class="lbox" style="width:300px; margin:10px 0px 20px 0px;">
-    <a href="img/pfeffer/pfeffer_adelaide_bill_1959.jpg">
-    <img src="img/pfeffer/pfeffer_adelaide_bill_1959.jpg" alt="">
-    </a>
+    <img src="img/pfeffer/pfeffer_adelaide_bill_1959.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Adelaide and Bill Pfeffer in 1959</p>
     </div>
     

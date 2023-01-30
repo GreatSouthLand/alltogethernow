@@ -26,38 +26,70 @@
 
 <script src="navbar.txt"></script>
 
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content">  <img src="res/blank.gif" id="img01" alt=""> </div>
+</div>
+
+
 <div class="content">
 <div class="row1">
   <ul class="articles box">
     <li>
-
-    <div class="rbox" style="margin: 0px 0px 10px 20px; padding:0">
+    
+    <div class="display-table" style="float:right; width:38%; margin: 10px 0px 0px 20px;">
+	<div>
+	<div class="rbox" style="margin: 0px 0px 16px 0px; padding:20px">
+	Please note that any image can be clicked to see a full-size version. Clicking again closes it.
+	<hr>
+	To search through all the names on this page it is best to first show all the families.<br><br>
+    <button style="float:left; margin:0px 0px 0px 0px; padding:12px 16px;" type='button' class='b0' onclick='ExpCon("block")' id='dummy1'>Show All Families</button>
+	<button style="float:right; margin:0px 0px 0px 0px; padding:12px 16px;" type='button' class='b0' onclick='ExpCon("none")' id='dummy2'>Hide All Families</button>
+	</div>
+	</div>
+    <div>
+    <div class="rbox" style="margin: 0px; padding:0">
     <div class="more">
     <p><a href="#fenwick_australia">jump to The Fenwicks in Australia &raquo;</a></p>
     <p><a href="british.html">read Who left Britain &raquo;</a></p>
     </div>
     </div>
+    </div>
+    <div>
+    <div class="rbox" style="width:100%; margin: 16px 0px 20px 0px;">
+    <img src="img/fenwick/reivers_raid.jpg" alt="" class="modal-img" onclick="clk(this)">
+    <p><i>Reivers raid on Gilnockie Tower</i>
+    <br>from an original drawing by G. Cattermole</p>
+    </div>
+    </div>
+    </div>
+    
+    
 
-    <img src="img/fenwick/fenwick_crest.png" alt="" style="width:12%;" class="f-left">
+    <!--div class="rbox" style="margin: 0px 0px 10px 20px; padding:0">
+    <div class="more">
+    <p><a href="#fenwick_australia">jump to The Fenwicks in Australia &raquo;</a></p>
+    <p><a href="british.html">read Who left Britain &raquo;</a></p>
+    </div>
+    </div-->
+
+    <img src="img/fenwick/fenwick_crest.png" alt="" class="modal-img f-left" onclick="clk(this)" style="width:12%;">
     <h2><b>The Fenwicks</b></h2>
     <div class="article-info box"></div>
     variously spelt Fenwyke, Fenwicke, Fennick or Fenwick
 
 
-    <br><br>
+    <br>
     <h5>From the Fens of the North</h5>
 
     The Fenwicks are said to have descended from Saxons who made their home in the fens of the ancient kingdom of Northumbria. The fens lay in lands which sprawled across both England and Scotland, known closer to the border as 'The Marches', from an old Frankish word for border territory.
 
     Needless to say, the Scots on one side and the English on the other, were sworn enemies.
 
-    <div class="rbox" style="width:40%; margin:10px 0 10px 20px;">
-    <a href="img/fenwick/reivers_raid.jpg">
-    <img src="img/fenwick/reivers_raid.jpg" alt="">
-    </a>Thomas Fenwick
+    <!--div class="rbox" style="width:40%; margin:10px 0 10px 20px;">
+    <img src="img/fenwick/reivers_raid.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p><i>Reivers raid on Gilnockie Tower</i>
     <br>from an original drawing by G. Cattermole</p>
-    </div>
+    </div-->
 
     Countless attacks, often very brutal, accompanied by desperate raids and rampaging destruction led to the Marches on both sides of the border gaining a reputation as being treacherous and lawless places.
     <br>
@@ -72,9 +104,7 @@
 
 
     <div class="lbox" style="width:35%; margin: 5px 20px 10px 0;">
-    <a href="img/fenwick/wallington2.jpg">
-    <img src="img/fenwick/wallington2.jpg" alt="Wallington by Tom MacDonald">
-    </a>
+    <img src="img/fenwick/wallington2.jpg" alt="Wallington by Tom MacDonald" class="modal-img" onclick="clk(this)">
     <p>Wallington Hall</p>
     </div>
 
@@ -88,9 +118,7 @@
     <table><tr><td>
 
     <div class="lbox" style="width:23%; margin: 0 20px 20px 0;">
-    <a href="img/fenwick/MatthewHutton_(1529-1606).jpg">
-    <img src="img/fenwick/MatthewHutton_(1529-1606).jpg" alt="">
-    </a>
+    <img src="img/fenwick/MatthewHutton_(1529-1606).jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>Matthew Hutton, <br>Bishop of Durham from 1589</p>
     </div>
 
@@ -141,21 +169,15 @@
 
     <div class="row">
     <div class="col33">
-    <a href="img/fenwick/bywell_hall.jpg">
-    <img src="img/fenwick/bywell_hall.jpg" alt="Bywell" style="width:100%">
-    </a>
+    <img src="img/fenwick/bywell_hall.jpg" alt="Bywell" class="modal-img" onclick="clk(this)">
     Bywell Hall
     </div>
     <div class="col33">
-    <a href="img/fenwick/norham_castle.jpg">
-    <img src="img/fenwick/norham_castle.jpg" alt="Norham" style="width:100%">
-    </a>
+    <img src="img/fenwick/norham_castle.jpg" alt="Norham" class="modal-img" onclick="clk(this)">
     Norham Castle
     </div>
     <div class="col33">
-    <a href="img/fenwick/wallington.jpg">
-    <img src="img/fenwick/wallington.jpg" alt="Wallington" style="width:100%">
-    </a>
+    <img src="img/fenwick/wallington.jpg" alt="Wallington" class="modal-img" onclick="clk(this)">
     Wallington Hall
     </div>
     </div>
@@ -171,8 +193,7 @@
 
 
     <div class="rbox" style="width:40%; margin:20px 0px 30px 20px;">
-    <a href="img/fenwick/saxons.jpg">
-    <img src="img/fenwick/saxons.jpg" alt="source: wikipedia"></a>
+    <img src="img/fenwick/saxons.jpg" alt="source: wikipedia" class="modal-img" onclick="clk(this)">
     <p>Maps showing the Saxon Homeland compared to the location of Holstein on the Jutland Peninsula</p>
     </div>
 
@@ -201,15 +222,13 @@
 
     <div id="fenwick_australia"></div>
     <br>
-    <h2><b>The Fenwicks in Australia</b></h2>
+    <h2><b>The Fenwicks of Australia</b></h2>
     <br>
     The Australian Fenwicks of the family started with our great-great-grandparents, Thomas and Harriet Fenwick, who migrated from Hull in 1844.
     <br>
 
     <div class="lbox" style="width:40%; margin:16px 20px 6px 0px;">
-    <a href="img/fenwick/1842_kingston_upon_hull.jpg">
-    <img src="img/fenwick/1842_kingston_upon_hull.jpg" alt="">
-    </a>
+    <img src="img/fenwick/1842_kingston_upon_hull.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>Kingston upon Hull in 1842, around the time when Thomas and Harriet were married there</p>
 
 
@@ -222,9 +241,7 @@
     Now better known as 'Hull', Kingston upon Hull was originally an outlying part of the hamlet of Myton, named Wyke, probably derived from the Saxon word Wic meaning dwelling place or refuge. It has been told that in the 13th century, King Edward I and his hunting party followed a hare which "led them along the delightful banks of the River Hull to the hamlet of Wyke and charmed with the scene before him, viewed with delight the advantageous situation of this hitherto neglected and obscure corner. He foresaw it might become subservient both to render the kingdom more secure against foreign invasion, and at the same time greatly to enforce its commerce" (source: J.C.Craggs, Guide to Hull, 1817). Consequently, on the 1st of April, 1299, King Edward granted it a royal charter that renamed the settlement King's town upon Hull. It's interesting to note that the 'Wyke' part was still present in the earlier spelling of the name of Fenwyke.
 
     <div class="rbox" style="width:35%; margin:20px 0px 0px 20px;">
-    <a href="img/fenwick/map_hull_lg.jpg">
-    <img src="img/fenwick/map_hull_sm.jpg" alt="">
-    </a>
+    <img src="img/fenwick/map_hull_sm.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>Map showing location of Naylor's Row in Drypool</p>
     </div>
 
@@ -233,9 +250,7 @@
 
 
     <div class="rbox" style="width:99%; margin:20px 0px 0px 0px;">
-    <a href="img/fenwick/1841_marriage_thomas_and_harriet.jpg">
-    <img src="img/fenwick/1841_marriage_thomas_and_harriet.jpg" alt="">
-    </a>
+    <img src="img/fenwick/1841_marriage_thomas_and_harriet.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>1841 Marriage Record for Thomas Fenwick, Age 21, Blacksmith, and Harriet Downs, Age 23, both residing at 6 Naylor's Row, Drypool</p>
     </div>
 
@@ -245,9 +260,7 @@
     <div>
 
     <div class="lbox" style="width:34%; margin:20px 10px 0px 0px;">
-    <a href="img/fenwick/1841_hull_marriage_thomas_and_harriet.jpg">
-    <img src="img/fenwick/1841_hull_marriage_thomas_and_harriet.jpg" alt="">
-    </a>
+    <img src="img/fenwick/1841_hull_marriage_thomas_and_harriet.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>1841 announcement in the Hull Packet.
     <br><br>
     "On Saturday the 23rd instant at Holborn Chapel, by the Rev. Ebenezer Morley, Mr Thomas Fenwick, to Miss Harriet Downs, both of this town".
@@ -257,16 +270,12 @@
     </div>
 
     <div class="lbox" style="width:33%; margin:20px 10px 0px 0px;">
-    <a href="img/fenwick/holborn_chapel.jpg">
-    <img src="img/fenwick/holborn_chapel.jpg" alt="">
-    </a>
+    <img src="img/fenwick/holborn_chapel.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>An old representation of the Holborn Chapel situated on the corner of Holborn Street and Holderness Road in Drypool, Hull. The building still stands, almost in its original form, but is now used as an office supplies shop.</p>
     </div>
 
     <div class="lbox" style="width:27%; margin:20px 0px 0px 0px;">
-    <a href="img/fenwick/1841_census_thomas_and_harriet.jpg">
-    <img src="img/fenwick/1841_census_thomas_and_harriet.jpg" alt="">
-    </a>
+    <img src="img/fenwick/1841_census_thomas_and_harriet.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>1841 Census for Kingston upon Hull showing Thomas and Harriet both aged 20. Their ages were rounded down to a multiple of five, as required for the census.</p>
     </div>
 
@@ -284,7 +293,7 @@
     <div class="rbox" style="width:100%; margin:0px 0px 0px 0px;">
     <p>Shipping News
     <br>
-    <img src="img/fenwick/royal_saxon.jpg" alt="">
+    <img src="img/fenwick/royal_saxon.jpg" alt="" class="modal-img" onclick="clk(this)">
     <br>
     THE “ROYAL SAXON”—This vessel has made one of the quickest passages of the season, only 99 days having elapsed since her leaving Cork, but her English news does not extend to so late a date as that per the Briton. Her cargo is very trifling, about a hundred hogsheads of beer being the chief article. The emigrants and vessel have a cleanly appearance, and they all seem highly pleased with the treatment received on board; there are 56 single females, 30 unmarried men, 71 children, and 94 married persons.
     </p>
@@ -293,7 +302,7 @@
 
     <div><div>
     <div class="rbox" style="width:100%; margin:0px 0px 0px 0px;">
-    <img src="img/fenwick/jane_austin.jpg" alt="">
+    <img src="img/fenwick/jane_austin.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>
     Jane Austin, the wife of D'Arcy Wentworth but not the mother of any of his children
     </p>
@@ -309,9 +318,7 @@
     Three years after they were married, Thomas and Harriet migrated to Australia. They left Detport in London on March 1, 1844 and arrived in Port Jackson on June 20 the next year. The records of the ship on which they travelled, the Royal Saxon, reveal that they left London with 'Bounty' assisted passage and an agreement to employ them at the other end, namely at Captain Addison's Peterborough Estate in Illawarra. Thomas was to be employed as a Blacksmith, and 'otherwise make himself generally useful as a farm servant' for the term of 12 calendar months.
 
     <div class="lbox" style="width:40%; margin:20px 20px 10px 0px;">
-    <a href="img/fenwick/1847_peterborough.jpg">
-    <img src="img/fenwick/1847_peterborough.jpg" alt="">
-    </a>
+    <img src="img/fenwick/1847_peterborough.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>The Peterborough Estate partitioned into five parts marked A to E, which were allocated to the five inheritors who drew lots to determine ownership. <br>
     <br>
     The circled area indicates the location of the Lake House from where Thomas was managing the estate for Captain Addison.
@@ -362,18 +369,14 @@
     <div>
 
     <div class="lbox" style="width:48%; margin:0px 0px 0px 0px;">
-    <a href="img/fenwick/bassett_darley_shellharbour.jpg">
-    <img src="img/fenwick/bassett_darley_shellharbour.jpg" alt="OUT OF COPYRIGHT https://catalogue.nla.gov.au/Record/4394418" style="width:100%;">
-    </a>
+    <img src="img/fenwick/bassett_darley_shellharbour.jpg" alt="OUT OF COPYRIGHT https://catalogue.nla.gov.au/Record/4394418" class="modal-img" onclick="clk(this)">
     <p>The advertisement for the Bassett-Darley Estate Land Sales at Shellharbour The red highlighted area shows where Thomas Fenwick had his farm.<br>
     (see detail on the right)
     </p>
     </div>
 
     <div class="rbox" style="width:45%; margin:0px 0px 0px 0px;">
-    <a href="img/fenwick/fenwick_land_shellharbour.jpg">
-    <img src="img/fenwick/fenwick_land_shellharbour.jpg" alt="OUT OF COPYRIGHT https://catalogue.nla.gov.au/Record/4394418" style="width:100%;">
-    </a>
+    <img src="img/fenwick/fenwick_land_shellharbour.jpg" alt="OUT OF COPYRIGHT https://catalogue.nla.gov.au/Record/4394418" class="modal-img" onclick="clk(this)">
     <p>Detail of the Bassett-Darley Estate Land Sales showing Thomas Fenwick's farm buildings, just east of what is now the junction of the Princes Highway and the Princes Motorway.</p>
     </div>
 
@@ -390,9 +393,7 @@
     <br><br>
 
     <div class="lbox" style="width:12%; margin:6px 20px 10px 0px;">
-    <a href="img/fenwick/shellharbour_logo.jpg">
-    <img src="img/fenwick/shellharbour_logo.jpg" alt="">
-    </a>
+    <img src="img/fenwick/shellharbour_logo.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
 
     Back in Shellharbour, Thomas took up farming as well as being a council alderman for 25 years, during which time he was elected as mayor no less than three times. He also upheld the law as a magistrate, a Justice of the Peace, or J.P. for short.
@@ -402,9 +403,7 @@
     <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
 
     <div class="rbox" style="width:48%; margin:0px 0px 10px 0px;">
-    <a href="img/fenwick/shellharbour_council_members.jpg">
-    <img src="img/fenwick/shellharbour_council_members.jpg" alt="">
-    </a>
+    <img src="img/fenwick/shellharbour_council_members.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>c1870, The Shellharbour Municipal Council Aldermen<br>
     <br>
     <b>L-R:</b> William James (Mayor), John Fraser, <b>Thomas Fenwick</b>, <br>
@@ -722,16 +721,12 @@
 
 
     <div class="lbox" style="width:35%; margin:10px 10px 10px 0px;">
-    <a href="img/fenwick/1873_marriage_robert_helen.jpg">
-    <img src="img/fenwick/1873_marriage_robert_helen.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/fenwick/1873_marriage_robert_helen.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>1873 Announcement in the Kiama Independent of the marriage of Robert Fenwick to Helen Rankin, in Shellharbour</p>
     </div>
 
     <div class="rbox" style="width:60%; margin:10px 0px 10px 0px;">
-    <a href="img/fenwick/1897_marriage_thomas_fanny.jpg">
-    <img src="img/fenwick/1897_marriage_thomas_fanny.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/fenwick/1897_marriage_thomas_fanny.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>1897 Marriage of Thomas Fenwick and Fanny Sharp in Dapto, Nov 26</p>
     </div>
     </div>
@@ -1330,25 +1325,19 @@
     <!--h4><i>to be continued ....</i></h4-->
 
     <div class="rbox" style="width:44%; margin:16px 0px 16px 0px;">
-    <a href="img/fenwick/fenwicks_places.jpg">
-    <img src="img/fenwick/fenwicks_places_small.jpg" alt="">
-    </a>
+    <img src="img/fenwick/fenwicks_places_small.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>The Fenwicks' whereabouts in Queensland, extracted from the Queensland Electoral Rolls</p>
     </div>
     
     <div class="lbox" style="width:52%; margin: 16px 0px 10px 0px;">
-    <a href="img/fenwick/cooroy.jpg">
-    <img src="img/fenwick/cooroy.jpg" alt="">
-    </a>
+    <img src="img/fenwick/cooroy.jpg" alt="" class="modal-img" onclick="clk(this)">
 	<p>
 	Maple street Cooroy around 1910
 	</p>
     </div>
 
     <div class="lbox" style="width:52%; margin: 10px 0px 0px 0px;">
-    <a href="img/fenwick/cooroy_estate.jpg">
-    <img src="img/fenwick/cooroy_estate.jpg" alt="">
-    </a>
+    <img src="img/fenwick/cooroy_estate.jpg" alt="" class="modal-img" onclick="clk(this)">
 	<p>
 	The Surveyed Town of Cooroy
 	</p>
@@ -1361,18 +1350,15 @@
     
     
     <div class="lbox" style="width:30%; margin: 0px 0px 10px 0px;">
-    <a href="img/fenwick/mum_at_ronalga.jpg">
-    <img src="img/fenwick/mum_at_ronalga.jpg" alt="">
-    </a>
+    <img src="img/fenwick/mum_at_ronalga.jpg" alt="" class="modal-img" onclick="clk(this)">
 	<p>
 	c.1930 Margaret Joy Fenwick in front of "Ronalga" at Auchenflower in Brisbane where Fred and Jessie Fenwick lived with the family after moving from Cooroy
 	</p>
     </div>
     
     
+
     <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
-
-
 
 
     </li>

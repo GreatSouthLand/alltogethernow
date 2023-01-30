@@ -27,6 +27,10 @@
 
 <script src="navbar.txt"></script>
 
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content">  <img src="res/blank.gif" id="img01" alt=""> </div>
+</div>
+
 <div class="content">
 <div class="row1">
   <ul class="articles box">
@@ -68,9 +72,7 @@
     -->
     
     <div id="uckermark" class="rbox" style="width:40%; margin:16px 0px 10px 20px;">
-    <a href="img/lobegeiger/UckermarkMapMarked.jpg">
-    <img src="img/lobegeiger/UckermarkMapMarked.jpg" alt="">
-    </a>
+    <img src="img/lobegeiger/UckermarkMapMarked.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>Map of the Uckermark in Brandenburg, Prussia.
     <br><br>
     The green area is a map of modern Germany with the orange dot indicating the location of the Uckermark.
@@ -100,9 +102,7 @@
     
     
     <div id="vorwerk" class="lbox" style="width:25%; margin:20px 20px 10px 0px;">
-    <a href="img/lobegeiger/goetschendorf.jpg">
-    <img src="img/lobegeiger/goetschendorf.jpg" alt="">
-    </a>
+    <img src="img/lobegeiger/goetschendorf.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>Götschendorf on the map</p>
     </div>
     
@@ -125,17 +125,13 @@
     <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
     
     <div class="rbox" style="width:48%; margin:6px 0px 0px 0px;">
-    <a href="img/lobegeiger/1863_Lobegeyer_Auswanderung.jpg">
-    <img src="img/lobegeiger/1863_Lobegeyer_Auswanderung.jpg" alt="">
-    </a>
+    <img src="img/lobegeiger/1863_Lobegeyer_Auswanderung.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>From the Official Records of the Brandenburg Archive<br>
     1863 Approval for Emigration to Australia for the family of<br>
     <b>Friedrich Gottlieb Ferdinand Lobegeyer</b></p>
     </div>
     <div class="lbox" style="width:48%; margin:6px 0px 10px 0px;">
-    <a href="img/lobegeiger/1861_Lobegeyer_Auswanderung.jpg">
-    <img src="img/lobegeiger/1861_Lobegeyer_Auswanderung.jpg" alt="">
-    </a>
+    <img src="img/lobegeiger/1861_Lobegeyer_Auswanderung.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>From the Official Records of the Brandenburg Archive<br>
     1861 Approval for Emigration to Australia for the family of<br>
     <b>Friedrich Wilhelm August Lobegeyer</b></p>
@@ -149,9 +145,7 @@
     
     <div class="rbox" style="width:20%; margin: 0px 0px 10px 20px; text-align:center;">
     <div class="f-left" style="width:calc(100% - 2px);">
-    <a href="img/lobegeiger/witte_caroline.jpg">
-    <img src="img/lobegeiger/witte_caroline.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/witte_caroline.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>Caroline Witte</p>
     </div>
     
@@ -234,33 +228,23 @@
     <br>
     <div class="row">
     <div class="col20">
-    <a href="img/lobegeiger/lobegeiger_caroline_auguste_and_jacob_korner.jpg">
-    <img src="img/lobegeiger/lobegeiger_caroline_auguste_and_jacob_korner.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeiger_caroline_auguste_and_jacob_korner.jpg" alt="" class="modal-img" onclick="clk(this)">
     Caroline Auguste<br> and Jacob Korner
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_wilhelm_august_friedrich.jpg">
-    <img src="img/lobegeiger/lobegeier_wilhelm_august_friedrich.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_wilhelm_august_friedrich.jpg" alt="" class="modal-img" onclick="clk(this)">
     Wilhelm Friedrich August
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeiger_fred.jpg">
-    <img src="img/lobegeiger/lobegeiger_fred.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeiger_fred.jpg" alt="" class="modal-img" onclick="clk(this)">
     Frederick Wilhelm August<br>(Fred)
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeiger_ferdinand_wilhelm.jpg">
-    <img src="img/lobegeiger/lobegeiger_ferdinand_wilhelm.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeiger_ferdinand_wilhelm.jpg" alt="" class="modal-img" onclick="clk(this)">
     Ferdinand Wilhelm
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeiger_august_carl_hermann.jpg">
-    <img src="img/lobegeiger/lobegeiger_august_carl_hermann.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeiger_august_carl_hermann.jpg" alt="" class="modal-img" onclick="clk(this)">
     August Carl Hermann<br>
     (Carl)
     </div>
@@ -280,7 +264,6 @@
     <br>
     
     Wilhelm Friedrich August Lobegeiger was the son of Friedrich Wilhelm August Lobegeiger and his wife Caroline Lobegeyer, nee Witte.
-    <br><br>
     
     <div id="idwfal"></div>
     
@@ -324,7 +307,6 @@
           </tr>
     </table>
     </div>
-    <hr>
     </div>
 
     
@@ -336,15 +318,11 @@
     
     <div class="rbox" style="width:40%; margin: 0px 0px 10px 20px; text-align:center;">
     <div class="f-left" style="width:calc(50% - 2px);">
-    <a href="img/lobegeiger/lobegeiger_fred2.jpg">
-    <img src="img/lobegeiger/lobegeiger_fred2.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeiger_fred2.jpg" alt="" class="modal-img" onclick="clk(this)">
     Frederick Wilhelm August<br>(Fred)
     </div>
     <div class="f-right" style="width:calc(50% - 2px);">
-    <a href="img/lobegeiger/wolter_ernestine.jpg">
-    <img src="img/lobegeiger/wolter_ernestine.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/wolter_ernestine.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>Ernestine Wolter<br>
     (Fred's wife)</p>
     </div>
@@ -357,12 +335,12 @@
     
     <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
     <div id="idfwal2"></div>
+    <button type='button' class='b1'  onclick='return Togl(bfwal2,fwal2,"idfwal2")'
+    id='bfwal2'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     
     <b>&raquo;&nbsp;Frederick William August Lobegeiger</b> (1851–1913)<br>
     &nbsp;&nbsp;&nbsp;married <b>Ernestine Friederika Amelia Wolter</b> (1852–1923) 
     in Ipswich, 06.08.1870
-    <button type='button' class='b1'  onclick='return Togl(bfwal2,fwal2,"idfwal2")'
-    id='bfwal2'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     <div id='fwal2' style='display:none'>
     &nbsp;&nbsp;&nbsp;and they had the following children:
     <br><br>
@@ -460,8 +438,6 @@
           </tr>
     </table>
     </div>
-    <hr>
-
     </div>
     
     
@@ -474,16 +450,12 @@
     <div class='lbox' style='width:96%; padding:16px; margin:0px;'>
     <div class="rbox" style="width:40%; margin: 0px 0px 10px 20px; text-align:center;">
     <div class="f-left" style="width:calc(50% - 2px);">
-    <a href="img/lobegeiger/lobegeiger_august_carl_hermann.jpg">
-    <img src="img/lobegeiger/lobegeiger_august_carl_hermann.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeiger_august_carl_hermann.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>August Carl Hermann<br>
     (Carl)</p>
     </div>
     <div class="f-right" style="width:calc(50% - 2px);">
-    <a href="img/lobegeiger/schneider_friederike_christina.jpg">
-    <img src="img/lobegeiger/schneider_friederike_christina.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/schneider_friederike_christina.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>Friederike Christine Schneider (Carl's wife)</p>
     </div>
     </div>
@@ -495,12 +467,12 @@
     
     <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
     <div id="idachl"></div>
+    <button type='button' class='b1'  onclick='return Togl(bachl,achl,"idachl")'
+    id='bachl'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     
     <b>&raquo;&nbsp;August Carl Hermann Lobegeier</b> (1859–1936)<br>
     &nbsp;&nbsp;&nbsp;married <b>Frederike Christina Schneider</b> (1863–1938) 
     in Harrisville, 23.02.1882
-    <button type='button' class='b1'  onclick='return Togl(bachl,achl,"idachl")'
-    id='bachl'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     <div id='achl' style='display:none'>
     &nbsp;&nbsp;&nbsp;and they had the following children:
     <br><br>
@@ -612,33 +584,23 @@
     <br>
     <div class="row">
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_adina_and_frederik_kratzman.jpg">
-    <img src="img/lobegeiger/lobegeier_adina_and_frederik_kratzman.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_adina_and_frederik_kratzman.jpg" alt="" class="modal-img" onclick="clk(this)">
     Adina Lobegeier and <br>Frederik Kratzman
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_albert_and_gladys_herterick.jpg">
-    <img src="img/lobegeiger/lobegeier_albert_and_gladys_herterick.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_albert_and_gladys_herterick.jpg" alt="" class="modal-img" onclick="clk(this)">
     Albert Lobegeier and <br>Gladys Herterick
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_christina_and_william_petersen.jpg">
-    <img src="img/lobegeiger/lobegeier_christina_and_william_petersen.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_christina_and_william_petersen.jpg" alt="" class="modal-img" onclick="clk(this)">
     Christina Lobegeier and <br>William Petersen
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_daniel_and_bertha_kratzman.jpg">
-    <img src="img/lobegeiger/lobegeier_daniel_and_bertha_kratzman.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_daniel_and_bertha_kratzman.jpg" alt="" class="modal-img" onclick="clk(this)">
     Daniel Lobegeier and <br>Bertha Kratzman
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_louisa_and_thomas_euler.jpg">
-    <img src="img/lobegeiger/lobegeier_louisa_and_thomas_euler.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_louisa_and_thomas_euler.jpg" alt="" class="modal-img" onclick="clk(this)">
     Louisa Lobegeier and <br>Thomas Euler
     </div>
     </div>
@@ -647,47 +609,25 @@
     
     <div class="row">
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_helen_and_harold_bolden.jpg">
-    <img src="img/lobegeiger/lobegeier_helen_and_harold_bolden.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_helen_and_harold_bolden.jpg" alt="" class="modal-img" onclick="clk(this)">
     Helen Lobegeier and<br>Harold Bolden
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_rosa_and_fred_kratzmann.jpg">
-    <img src="img/lobegeiger/lobegeier_rosa_and_fred_kratzmann.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_rosa_and_fred_kratzmann.jpg" alt="" class="modal-img" onclick="clk(this)">
     Rosa Lobegeier and <br>Frederik Kratzman
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/lobegeier_rosa_and_fred_kratzmann_children.jpg">
-    <img src="img/lobegeiger/lobegeier_rosa_and_fred_kratzmann_children.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_rosa_and_fred_kratzmann_children.jpg" alt="" class="modal-img" onclick="clk(this)">
     Children of Rosa Lobegeier and Frederik Kratzman
     </div>
     <div class="col20">
-    <a href="img/lobegeiger/1.jpg">
-    <img src="img/lobegeiger/1.jpg" alt="" style="width:100%;">
-    </a>
-    <!-- Lobegeier and <br>-->
+    <img src="img/lobegeiger/1.jpg" alt="" class="modal-img" onclick="clk(this)">
     </div>
     <div class="col20">
     <a href="img/lobegeiger/1.jpg">
-    <img src="img/lobegeiger/1.jpg" alt="" style="width:100%;">
+    <img src="img/lobegeiger/1.jpg" alt="">
     </a>
-    <!-- Lobegeier and <br>-->
     </div>
-    <!--div class="col20">
-    <a href="img/lobegeiger/1.jpg">
-    <img src="img/lobegeiger/1.jpg" alt="" style="width:100%;">
-    </a>
-     Lobegeier and <br>
-    </div>
-    <div class="col20">
-    <a href="img/lobegeiger/1.jpg">
-    <img src="img/lobegeiger/1.jpg" alt="" style="width:100%;">
-    </a>
-     Lobegeier and<br>
-    </div-->
     </div>
     </div>
     
@@ -707,9 +647,7 @@
     <div class='lbox' style='width:96%; padding:16px; margin:0px;'>
     
     <div class="rbox" style="width:38%; margin:0px 0px 10px 20px;">
-    <a href="img/lobegeiger/marriage_gottlieb_and_wilhelmine.jpg">
-    <img src="img/lobegeiger/marriage_gottlieb_and_wilhelmine.jpg" alt="">
-    </a>
+    <img src="img/lobegeiger/marriage_gottlieb_and_wilhelmine.jpg" alt="" class="modal-img" onclick="clk(this)">
     <p>The Marriage of Gottlieb Lobegeyer and Wilhelmine Topp</p>
     </div>
     
@@ -819,12 +757,12 @@
     
     <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
     <div id="idlob3"></div>
+    <button type='button' class='b1'  onclick='return Togl(blob3,lob3,"idlob3")'
+    id='blob3'>&#9651;&nbsp;&nbsp;Hide&nbsp;Children</button>
   
     <b>&raquo;&nbsp;Friedrich Gottlieb Ferdinand Lobegeiger (known as Gottlieb)</b> (1826–1867)<br>
     &nbsp;&nbsp;&nbsp;married <b>Wilhelmina Fredericka Topp</b> (1829–1915) 
-    in Götschendorf, Templin, Brandenburg, Prussia, 06.10.1850
-    <button type='button' class='b1'  onclick='return Togl(blob3,lob3,"idlob3")'
-    id='blob3'>&#9651;&nbsp;&nbsp;Hide&nbsp;Children</button>
+    in Götschendorf, Templin, Brandenburg, 06.10.1850
     <div id='lob3' style='display:block'>
     &nbsp;&nbsp;&nbsp;and they had the following children:
     <br><br>
@@ -878,16 +816,12 @@
     <div class="row">
     
     <div class="col33">
-    <a href="img/lobegeiger/lobegeier_auguste_and_samuel_stewart_and_family.jpg">
-    <img src="img/lobegeiger/lobegeier_auguste_and_samuel_stewart_and_family.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeier_auguste_and_samuel_stewart_and_family.jpg" alt="" class="modal-img" onclick="clk(this)">
     c1897 Auguste Bertha with her husband Samuel Stewart and their first six children. L-R at back, Annie (14) and Minna (16), at front, Daisy (5), William (1), Benjamin (3), Samuel (12). 
     </div>
     
     <div class="col20">
-    <a href="img/lobegeiger/lobegeiger_marie_emilie_wells.jpg">
-    <img src="img/lobegeiger/lobegeiger_marie_emilie_wells.jpg" alt="" style="width:100%;">
-    </a>
+    <img src="img/lobegeiger/lobegeiger_marie_emilie_wells.jpg" alt="" class="modal-img" onclick="clk(this)">
     Marie Emile
     </div>
     </div>

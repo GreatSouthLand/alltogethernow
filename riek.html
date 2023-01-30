@@ -26,6 +26,10 @@
 
 <script src="navbar.txt"></script>
 
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content">  <img src="res/blank.gif" id="img01" alt=""> </div>
+</div>
+
 <div class="content">
 
     
@@ -47,27 +51,21 @@
     
     <div>
     <div class="rbox" style="width:100%; margin:16px 0px 16px 0px;">
-    <a href="img/riek/ak_gerswalde.jpg">
-    <img src="img/riek/ak_gerswalde.jpg" alt="">
-    </a>
+    <img src="img/riek/ak_gerswalde.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>An old postcard with Greetings from Gerswalde, Uckermark</p>
     </div>
     </div>
     
     <div>
     <div class="rbox" style="width:100%; margin:6px 0px 16px 0px;">
-    <a href="img/riek/map_uckermark_urmesstisch.jpg">
-    <img src="img/riek/map_uckermark_urmesstisch_50.jpg" alt="">
-    </a>
+    <img src="img/riek/map_uckermark_urmesstisch_50.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>19th century composite map of the Gerswalde area showing locations of the Riek and Rieck families. The distance from Ringenwalde (bottom-left) to Potzlow (top-right) is about 20km. </p>
     </div>
     </div>
     
     <div>
     <div class="rbox" style="width:100%; margin:6px 0px 16px 0px;">
-    <a href="img/riek/1841_riek_dickfos.jpg">
-    <img src="img/riek/1841_riek_dickfos.jpg" alt="">
-    </a>
+    <img src="img/riek/1841_riek_dickfos.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1820 Marriage of Johanna Riek and Johann Dickfos in Fergitz</p>
     </div>
     </div>
@@ -89,9 +87,7 @@
     It's also interesting that the records before about 1855 had the names spelt as Riek, while those after that date were written down as Rieck. Yet there is also the possibility that the Rieks and Riecks were two distinct families and not originally related. All that changed in the new country, at least by marriage, as some of them and their descendants married into our family.
 
     <div class="lbox" style="width:99%; margin:20px 0px 20px 0px;">
-    <a href="img/riek/map_gerswalde.jpg">
-    <img src="img/riek/map_gerswalde.jpg" alt="">
-    </a>
+    <img src="img/riek/map_gerswalde.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>c.1825 map of Gerswalde with Herrenstein to the west</p>
     </div>
     
@@ -133,9 +129,7 @@
     
 
     <div class="rbox" style="width:50%; margin:6px 0px 16px 20px;">
-    <a href="img/riek/1820_riek_schroeder.jpg">
-    <img src="img/riek/1820_riek_schroeder.jpg" alt="">
-    </a>
+    <img src="img/riek/1820_riek_schroeder.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p><b>1820 Marriage of Ludwig and Dorothee</b><br>
     The farmhand, Carl Ludwig Riek, of Kaakstedt, eldest legitimate son of the worker in that place, Daniel Riek, was with his bride Marie Christine Schröder of Kaakstedt, 2nd daughter of local worker Michael Schröder, after proclaiming the Banns on the 19th 20th and 21st after Trig.,  married on the 29th of October at home, because the bride who had just given birth could not go to the church.
     </p>
@@ -151,10 +145,8 @@
     That family consisted of Fred, his wife Dorothea and their only two children, Wilhelmine (who became our 2x great-grandmother) and her younger brother, Wilhelm. 
 
 
-    <div class="lbox" style="width:99%; margin:6px 0px 16px 20px; text-align:center;">
-    <a href="img/riek/kaakstedt.jpg">
-    <img src="img/riek/kaakstedt.jpg" alt="">
-    </a>
+    <div class="lbox" style="width:99%; margin:6px 0px 16px 0px; text-align:center;">
+    <img src="img/riek/kaakstedt.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The exterior and interior of the village church in Kaakstedt (Dorfkirche Kaakstedt) dating from the 13th century
     </p>
     </div>
@@ -190,7 +182,7 @@
     id='bcfriek'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='cfriek' style='display:none; margin-left:22px;'>
+    <div id='cfriek' style='display:none;' class="kids">
     Christian Friedrich Riek and Caroline Friederike Wilhelmine Dorothee Schmidt had the following children:
     <table class='family'>
       <tr><td><b>Johanne Wilhelmine Louise Riek</b></td>
@@ -215,7 +207,6 @@
           <td>status unknown</td>
           </tr>
     </table>
-    <hr>
     Christian Friedrich Riek and Dorothea Wilhelmine Bechly had the following children:
     <table class='family'>
       <tr><td><b>August Christian Friederich Riek</b></td>
@@ -263,7 +254,7 @@
     id='bmcfriek'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='mcfriek' style='display:none; margin-left:22px;'>
+    <div id='mcfriek' style='display:none;' class="kids">
     Martin Christian Friedrich Riek and Dorothea Louise Spann had the following children:
     <table class='family'>
       <tr><td><b>Wilhelmine Riek</b></td>
@@ -304,7 +295,7 @@
     id='bwfriek'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='wfriek' style='display:none; margin-left:22px;'>
+    <div id='wfriek' style='display:none;' class="kids">
     Wilhelm Friedrich Riek and Christine Louise Pieper had the following children:
     <table class='family'>
       <tr><td><b>Karl Friedrich Wilhelm Riek</b></td>
@@ -350,7 +341,7 @@
     id='blwcriek'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='lwcriek' style='display:none; margin-left:22px;'>
+    <div id='lwcriek' style='display:none;' class="kids">
     Louise Wilhelmine Christine Riek and Ferdinand David August Kruger had the following children:
     <table class='family'>
       <tr><td><b>Franz August Carl Kruger</b></td>
@@ -424,7 +415,6 @@
           </tr>
     </table>
     </div>
-    <hr>
     </div>
     
     
@@ -434,24 +424,18 @@
     
 
     <div class="rbox" style="width:50%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/1850_riek_spann.jpg">
-    <img src="img/riek/1850_riek_spann.jpg" alt="">
-    </a>
+    <img src="img/riek/1850_riek_spann.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p><b>1850 Marriage of Friedrich and Dorothea in Gerswalde</b><br>
     TRANSLATION: The bachelor Christian Friederich Riek, worker in Gerswalde, legitimate son of the local worker Ludwig Riek, married his fiancée Dorothee Louise Spann from Hahnwerder, legitimate daughter of the worker from there, Martin Spann, after three announcements of the Banns, on the 27th October 1850.</p>
     </div>
     
     <div class="rbox" style="width:50%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/potzlow.jpg">
-    <img src="img/riek/potzlow.jpg" alt="">
-    </a>
+    <img src="img/riek/potzlow.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Potzlow (from an old postcard)</p>
     </div>
     
     <div class="rbox" style="width:50%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/1865_riek_helene.jpg">
-    <img src="img/riek/1865_riek_helene.jpg" alt="">
-    </a>
+    <img src="img/riek/1865_riek_helene.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>1865 The Riek family on board the Helene</p>
     </div>
 
@@ -497,7 +481,7 @@
     id='bwilhelmine'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='wilhelmine' style='display:none; margin-left:22px;'>
+    <div id='wilhelmine' style='display:none;' class="kids">
     Wilhelmine Riek and Friedrich Suchting had the following children:
     <table class='family'>
       <tr><td><b>Wilhelm Suchting</b></td>
@@ -615,7 +599,7 @@
     id='bwilhelm'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='wilhelm' style='display:none; margin-left:22px;'>
+    <div id='wilhelm' style='display:none;' class="kids">
     Wilhelm Frederick Rieck and Louise Wilhelmine Rossow had the following children:
     <table class='family'>
       <tr><td><b>Alvine Maria Rieck</b></td>
@@ -696,7 +680,6 @@
 </tr>
     </table>
     </div>
-    <hr>
     </div>
     
     
@@ -704,9 +687,7 @@
     <div style="width:25%; float:right; margin:0px 0px 0px 20px;">
     
     <div class="rbox" style="width:95%; margin:0px 0px 20px 0px;">
-    <a href="img/suchting/suchting_family.jpg">
-    <img src="img/suchting/suchting_family.jpg" alt="">
-    </a>
+    <img src="img/suchting/suchting_family.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>c.1888 Wilhelmina Riek with her husband Friedrich Suchting and their younger children, 
     Alvina(4), Martha(6) and Alfred(2).
     
@@ -716,9 +697,7 @@
 
     </div>
     <div class="rbox" style="width:95%; margin:0px 0px 10px 0px;">
-    <a href="img/riek/vernor_riek_spann.jpg">
-    <img src="img/riek/vernor_riek_spann.jpg" alt="">
-    </a>
+    <img src="img/riek/vernor_riek_spann.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Fred Riek's selection of land at Vernor. Also shown are the Spann and Pieper selections.</p>
     </div>
     
@@ -737,33 +716,25 @@
     <div style="width:40%; float:left; margin:0px 20px 0px 0px;">
 
     <div class="lbox" style="width:95%; margin:0px 0px 20px 0px;">
-    <a href="img/riek/1890_concert_rieks_store.jpg">
-    <img src="img/riek/1890_concert_rieks_store.jpg" alt="">
-    </a>
+    <img src="img/riek/1890_concert_rieks_store.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>In 1890 William was already holding a concert and ball at his store in Blantyre. <a href="#band">&raquo; The local brass band mentioned here is very likely the one pictured further below.</a>
     </p>
     </div>
     
     <div class="lbox" style="width:95%; margin:0px 0px 20px 0px;">
-    <a href="img/riek/1903_blantyre_state_school.jpg">
-    <img src="img/riek/1903_blantyre_state_school.jpg" alt="">
-    </a>
+    <img src="img/riek/1903_blantyre_state_school.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Blantyre State School in 1903
     </p>
     </div>
     
     <div class="lbox" style="width:95%; margin:0px 0px 20px 0px;">
-    <a href="img/riek/1894-11-15_dora_riek.jpg">
-    <img src="img/riek/1894-11-15_dora_riek.jpg" alt="">
-    </a>
+    <img src="img/riek/1894-11-15_dora_riek.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>On the 9th of November 1894, William's daughter, Dora, performed at the Blantyre State School concert.
     </p>
     </div>
     
     <div class="lbox" style="width:95%; margin:0px 0px 40px 0px;">
-    <a href="img/riek/1896_william_riek_notice.jpg">
-    <img src="img/riek/1896_william_riek_notice.jpg" alt="">
-    </a>
+    <img src="img/riek/1896_william_riek_notice.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>In 1896 William applied for permission to sell wine at his store in Blantyre. The neighbour mentioned here, Charles Rossow, was William's brother-in-law. 
     </p>
     </div>
@@ -794,9 +765,7 @@
     
     <div class="lbox" style="width:99%; margin:16px 0px 20px 0px;">
     <h5><b>&nbsp; The Engelsburg Baptist Church Band, Kalbar, 1907-1914</b></h5>
-    <a href="img/riek/engelsburg_baptist_band.jpg">
-    <img src="img/riek/engelsburg_baptist_band.jpg" alt="">
-    </a>
+    <img src="img/riek/engelsburg_baptist_band.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     The group members including Henry Moller on the stairs and 
     standing from left to right are <br>
@@ -816,17 +785,13 @@
     <div style="width:39%; float:right; margin:0px 0px 0px 20px;">
     
     <div class="rbox" style="width:94%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/chorinchen.jpg">
-    <img src="img/riek/chorinchen.jpg" alt="">
-    </a>
+    <img src="img/riek/chorinchen.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>An old postcard with Greetings from Chorinchen which also shows Chorin Abbey (Kloster). 
     Chorinchen was renamed to Chorin in 1934 and is about 30km south of Gerswalde.</p>
     </div>
     
     <div class="rbox" style="width:95%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/1853_riek_grothe.jpg">
-    <img src="img/riek/1853_riek_grothe.jpg" alt="">
-    </a>
+    <img src="img/riek/1853_riek_grothe.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p><b>1853 Marriage of Carl Christian Riek and Wilhelmine Grothe</b><br>
     1. Louisenhof. The bachelor and farmhand Carl Christian Riek from Chorinchen near Neustadt, the only legitimate son of Christoph Riek of Potzlow, together with his fiancée the spinster Friederike Wilhelmine Grothe from Louisenhof, the eldest legitimate daughter of the worker  Christian Grothe, were married on the 13th of November 1853.<br> 
     (Note: Neustadt is now known as Eberswalde) 
@@ -834,46 +799,34 @@
     </div>
     
     <div class="rbox" style="width:95%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/1863_rieck_johan_cesar.jpg">
-    <img src="img/riek/1863_rieck_johan_cesar.jpg" alt="">
-    </a>
+    <img src="img/riek/1863_rieck_johan_cesar.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The Rieck family on board the Johan Cesar</p>
     </div>
     
     <div class="rbox" style="width:95%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/map_louisenhof_friedenfelde.jpg">
-    <img src="img/riek/map_louisenhof_friedenfelde.jpg" alt="">
-    </a>
+    <img src="img/riek/map_louisenhof_friedenfelde.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>An old map of the Gerswalde district showing Louisenhof near Friedenfelde, where Christian and Wilhelmine were married. Gerswalde itself and Louisenhof, were both <a href="vorwerk.html"><b><i>&raquo;Vorwerke</i></b></a> belonging to the von Arnim family. </p>
     </div>
     
 
     <!--div class="rbox" style="width:95%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/map_louisenhof.jpg">
-    <img src="img/riek/map_louisenhof.jpg" alt="">
-    </a>
+    <img src="img/riek/map_louisenhof.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>An old map showing the Louisenhof, which was about 5km north of Chorinchen and 4km west of Angermünde. Louisenhof itself, like many other settlements around there, was a <a href="vorwerk.html"><b><i>&raquo;Vorwerk</i></b></a>, marked here with "Vw.", belonging to the von Arnim family. </p>
     </div-->
     
     <!--div class="rbox" style="width:95%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/map_louisenhof_friedenfelde.jpg">
-    <img src="img/riek/map_louisenhof_friedenfelde.jpg" alt="">
-    </a>
+    <img src="img/riek/map_louisenhof_friedenfelde.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>There was another Louisenhof near Friedenfelde in the Gerswalde district. Which one of these Louisenhofs os the correct one is difficult to judge.     
     Gerswalde itself and this Louisenhof, were also <a href="vorwerk.html"><b><i>&raquo;Vorwerke</i></b></a> belonging to the von Arnim family. </p>
     </div-->
     
     <!--div class="rbox" style="width:95%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/map_louisenhof_friedenfelde.jpg">
-    <img src="img/riek/map_louisenhof_friedenfelde.jpg" alt="">
-    </a>
+    <img src="img/riek/map_louisenhof_friedenfelde.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Another old map showing another Louisenhof near Friedenfelde in the Gerswalde district. Gerswalde itself and both Louisenhofs, like many other settlements around there were <a href="vorwerk.html"><b><i>&raquo;Vorwerke</i></b></a>, marked here as <i>"Vw"</i>, belonging to the von Arnim family. </p>
     </div-->
     
     <!--div class="rbox" style="width:95%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/map_louisenhof_friedenfelde.jpg">
-    <img src="img/riek/map_louisenhof_friedenfelde.jpg" alt="">
-    </a>
+    <img src="img/riek/map_louisenhof_friedenfelde.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>There was another Louisenhof, which was about 5km north of Chorinchen and 4km west of Angermünde. Louisenhof itself, like many other settlements around there, was a <a href="vorwerk.html"><b><i>&raquo;Vorwerk</i></b></a>, marked here with "Vw.", belonging to the von Arnim family. </p>
     </div-->
     
@@ -888,16 +841,12 @@
     
 
     <div class="lbox" style="width:29%; margin:20px 20px 10px 0px;">
-    <a href="img/riek/rieck_gilloway.jpg">
-    <img src="img/riek/rieck_gilloway.jpg" alt="">
-    </a>
+    <img src="img/riek/rieck_gilloway.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>William Rieck, grandson of Christian and Wilhelmine, son of Wilhelm and Rosine Schneider, on his wedding day with his bride Margaret Gilloway, 1925</p>
     </div>
     
     <div class="lbox" style="width:29%; margin:10px 20px 16px 0px;">
-    <a href="img/riek/krueger_wolter.jpg">
-    <img src="img/riek/krueger_wolter.jpg" alt="">
-    </a>
+    <img src="img/riek/krueger_wolter.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Auguste Christine Wolter, granddaughter of Christian and Wilhelmine, daughter of Wilhelmine Auguste Rieck and Carl Wolter, on her wedding day with her groom Henry Krueger, 1917</p>
     </div>
     
@@ -940,7 +889,7 @@
     id='bacfrieck'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='acfrieck' style='display:none; margin-left:22px;'>
+    <div id='acfrieck' style='display:none;' class="kids">
     August Christian Frederick Rieck and Marie Elisabeth Henrietta Henrichsen had the following children:
     <table class='family'>
       <tr><td><b>Minnie Rieck</b></td>
@@ -1000,7 +949,6 @@
           <td>m. Stephen Bellotti in , 01.12.1915</td>
           </tr>
     </table>
-    <hr>
         August Christian Frederick Rieck and Marie Alwine Augusta Profke had the following children:
     <table class='family'>
       <tr><td><b>Alwine Auguste Rieck</b></td>
@@ -1084,7 +1032,7 @@
     id='bcarlcfrieck'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='carlcfrieck' style='display:none; margin-left:22px;'>
+    <div id='carlcfrieck' style='display:none;' class="kids">
     Carl Christian Friedrich Rieck and Auguste Johanne Caroline Rieck had the following children:
     <table class='family'>
       <tr><td><b>Ada Rieck</b></td>
@@ -1123,7 +1071,7 @@
     id='bwcfrieck'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='wcfrieck' style='display:none; margin-left:22px;'>
+    <div id='wcfrieck' style='display:none;' class="kids">
     Wilhelm Christian Friedrich Rieck and Rosina Sophie Schneider had the following children:
     <table class='family'>
       <tr><td><b>Amelia Rieck</b></td>
@@ -1155,7 +1103,7 @@
     id='bawjrieck'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='awjrieck' style='display:none; margin-left:22px;'>
+    <div id='awjrieck' style='display:none;' class="kids">
     Auguste Wilhelmine Johanne Rieck and Wilhelm Friedrich or William Krueger had the following children:
     <table class='family'>
       <tr><td><b>Emilie Louisa Krueger</b></td>
@@ -1215,7 +1163,7 @@
     id='bfwarieck'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='fwarieck' style='display:none; margin-left:22px;'>
+    <div id='fwarieck' style='display:none;' class="kids">
     Friederike Wilhelmine Auguste Rieck and Carl Friedrich Wolter had the following children:
     <table class='family'>
       <tr><td><b>Frederick Wolter</b></td>
@@ -1304,7 +1252,7 @@
     id='bjelrieck'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='jelrieck' style='display:none; margin-left:22px;'>
+    <div id='jelrieck' style='display:none;' class="kids">
     Johannah Eliza Louisa Rieck and Johann Carl Friedrich Wolter had the following children:
     <table class='family'>
       <tr><td><b>Christoph or Christopher Wolter</b></td>
@@ -1380,7 +1328,7 @@
     id='bjrieck'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='jrieck' style='display:none; margin-left:22px;'>
+    <div id='jrieck' style='display:none;' class="kids">
     John Rieck and Anna Mary Augusta Muller had the following children:
     <table class='family'>
       <tr><td><b>Frederick William Rieck</b></td>
@@ -1452,7 +1400,6 @@
           </tr>
     </table>
     </div>
-    <hr>
     </div>
     
     
@@ -1466,16 +1413,12 @@
     <div style="width:100%;">
     
     <div class="lbox" style="width:520px; margin-right:16px;">
-    <a href="img/riek/map_rieck_mutdapilly.jpg">
-    <img src="img/riek/map_rieck_mutdapilly.jpg"  alt="" style="width:100%">
-    </a>
+    <img src="img/riek/map_rieck_mutdapilly.jpg"  class="modal-img" onclick="clk(this)" alt="">
     <p>The original land selected by Christian Rieck in the Parish of Mutdapilly, slightly west of the Warrill Creek</p>
     </div>
     
     <div class="rbox" style="width:390px;">
-    <a href="img/riek/map_rieck_engelsburg.jpg">
-    <img src="img/riek/map_rieck_engelsburg.jpg"  alt="" style="width:100%">
-    </a>
+    <img src="img/riek/map_rieck_engelsburg.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The later land selections of Christian and his eldest son, August, further south at Engelsburg, this time east of the Warrill Creek</p>
     </div>
     
@@ -1483,9 +1426,7 @@
 
 
     <div class="rbox" style="width:99%; margin:16px 0px 16px 0px;">
-    <a href="img/riek/map_fassifern.jpg">
-    <img src="img/riek/map_fassifern.jpg"  alt="" style="width:100%">
-    </a>
+    <img src="img/riek/map_fassifern.jpg" class="modal-img" onclick="clk(this)" alt="">
     <h6><b>Map of part of the Parish of Fassifern</b><br>
      (the width of the map is about six miles)</h6>
     <br>
@@ -1505,9 +1446,7 @@
     
     
     <div class="rbox" style="width:50%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/1879_riek_fritzreuter.jpg">
-    <img src="img/riek/1879_riek_fritzreuter.jpg" alt="">
-    </a>
+    <img src="img/riek/1879_riek_fritzreuter.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>The Riek family on board the Fritz Reuter</p>
     </div>
     
@@ -1538,7 +1477,7 @@
     id='bwdriek'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='wdriek' style='display:none; margin-left:22px;'>
+    <div id='wdriek' style='display:none;' class="kids">
     Wilhelmina Dorothea Riek and Ferdinand Frederick William Lassig had the following children:
     <table class='family'>
       <tr><td><b>Ferdinand Wilhelm Lassig</b></td>
@@ -1621,7 +1560,7 @@
     id='bwilliamriek'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='williamriek' style='display:none; margin-left:22px;'>
+    <div id='williamriek' style='display:none;' class="kids">
     Wilhelm Christian Friedrich Rieck and Augusta Bade had the following children:
     <table class='family'>
       <tr><td><b>Franz Herman Wilhelm Riek</b></td>
@@ -1683,7 +1622,7 @@
     id='bccriek'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='ccriek' style='display:none; margin-left:22px;'>
+    <div id='ccriek' style='display:none;' class="kids">
     Christoph Carl Wilhelm Riek and Wilhelmine Lindenberg had the following children:
     <table class='family'>
       <tr><td><b>Wilhelm Carl August Rieck</b></td>
@@ -1767,7 +1706,7 @@
     id='bamerieck'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='amerieck' style='display:none; margin-left:22px;'>
+    <div id='amerieck' style='display:none;' class="kids">
     Augusta Marie Elizabeth Rieck (and unnamed father) had the following children:
     <table class='family'>
       <tr><td><b>unnamed Riek</b></td>
@@ -1792,7 +1731,6 @@
           <td>m. William august Muller</td>
           </tr>
     </table>
-    <hr>
     Augusta Marie Elizabeth Rieck and Christian Friedrich Bechly had the following children:
     <table class='family'>
       <tr><td><b>Anna Auguste Bechly</b></td>
@@ -1875,7 +1813,7 @@
     id='bfeeriek'>&#9661;&nbsp;&nbsp;Show&nbsp;Children</button>
     </td>
     <tr><td colspan='5' style='border:none;'>
-    <div id='feeriek' style='display:none; margin-left:22px;'>
+    <div id='feeriek' style='display:none;' class="kids">
     Frederike Emilie Ernstine Riek and Wilhelm Ferdinand Friedrich Kerwitz had the following children:
     <table class='family'>
       <tr><td><b>Maria Fredericke Augusta Kerwitz</b></td>
@@ -1962,7 +1900,6 @@
           </tr>
     </table>
     </div>
-    <hr>
     </div>
 
     
@@ -1979,9 +1916,7 @@
     
     
     <div class="rbox" style="width:50%; margin:0px 0px 16px 20px;">
-    <a href="img/riek/1884_riek_and_wendt.jpg">
-    <img src="img/riek/1884_riek_and_wendt.jpg" alt="">
-    </a>
+    <img src="img/riek/1884_riek_and_wendt.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Wilhelmine and Carl on board the Goalpara</p>
     </div>
     
