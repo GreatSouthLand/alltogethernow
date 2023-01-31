@@ -460,9 +460,9 @@ hr {
 	}
 .quote span { /* very large e.g. for first letter */
 	font-size: 2em;
-	color:#789838;
+	opacity: 0.8;
 	line-height: 1em;
-	margin-top: 5px;
+	margin-right: -2px;
 	}
 .quote p { /* normal */
 	font: 15px/1.5 "arial", sans-serif;
@@ -472,7 +472,7 @@ hr {
 	}
 /*.quote ul::first-letter {
 	font-size: 2em;
-	color:#789838;
+	opacity: 0.8;
 	line-height: 1em;
 	margin-top: 5px;
 	}*/
@@ -541,6 +541,20 @@ hr {
 }
 
 
+.nav {
+	margin: 10px 0px 10px 20px; 
+	padding: 8px 12px 12px 12px; 
+	text-align: right; 
+	/*border-color:#406000;*/
+	background: #f7f9ef;
+}
+.nav a {
+	color:#406000;
+	text-decoration: none;
+	/*background: url(leaf.png) no-repeat right top;
+	padding-right: 10px;
+	margin: 0px 0px 0px 0px;*/
+}
 
 
 /* navbar container */
@@ -718,29 +732,15 @@ hr {
     padding-left: 3px;
     }
 
-.card {
-    width: 100%;
-    position: relative;
-    }
-.card .imgtop {
-    width: 100%;
-    /*display: none;*/
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    transition: opacity 600ms ease-in-out;
-    }
-.card:hover .imgtop {
-    /*display: inline;*/
-    opacity: 1;
-    }
-    
 .leaf  {
     background: url(hr1.png) no-repeat center;
-    height:50px;
-    border:none;
+    height: 50px;
+    border: none;
+}
+
+.low  {
+    height: 6px;
+    margin: 0px 0px 5px 0px;
 }
 
 .modal {
@@ -752,28 +752,12 @@ hr {
 	bottom: 0;
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.1);
-	/* display: flex; when shown*/
+	/* display: flex;  to show */
 	display: none; /* hide initially*/
 	}
 .modal-img {
 	max-width: 100%;
 	cursor: pointer;
-	}
-.modal-close {
-	position: absolute;
-	right: 25px;
-	top: 25px;
-	z-index: 2;
-	background: #4d5051;
-	border-radius: 50%;
-	color: #fff;
-	cursor: pointer;
-	width: 25px;
-	height: 25px;
-	display: flex;
-	font-size: 1.5rem;
-	justify-content: center;
-	align-items: center;
 	}
 .modal-content {
 	max-width:100%;
