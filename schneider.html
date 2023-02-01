@@ -32,10 +32,13 @@
   <ul class="articles box">
     <li>
     
+    <img src="res/DieSneider.jpg" class="modal-img f-left" onclick="clk(this)" alt="" style="width:7.2em;">
+    
+    
     <div class="display-table" style="float:right; width:38%; margin: 10px 0px 0px 24px;">
 	<div>
 	<div class="rbox" style="margin: 0px 0px 16px 20px; padding:16px">
-	Any image can be clicked to see the full sized version. Click again to close.
+	Any image can be clicked to see the full sized version. Click again to close it.
 	<hr>
 	To search through every name on the page, it's best to first show all the families.<br><br>
     <button style="float:left; margin:0px; padding:12px 16px;" type='button' class='b0' onclick='ExpCon("block")' id='dummy1'>Show All Families</button>
@@ -54,15 +57,18 @@
     <div>
     <div class="rbox" style="width:100%; margin: 16px 0px 10px 0px;">
     <img src="img/schneider/map_wuerttemberg_1596.jpg" class="modal-img" onclick="clk(this)" alt="">
-    <p>Württemberg showing the locations of Schneiders <br>
+    <p>Württemberg with the locations of Schneiders <br>
     </p>
+    </div>
+    </div>
+    <div>
+    <div class="rbox" style="width:95%; margin:10px 0px 20px 20px;">
+    <img src="img/schneider/esslingen_gustav_schoenleber_1880.jpg" class="modal-img" onclick="clk(this)" alt="">
+    <p>Esslingen old town (Altstadt) c1880</p>
     </div>
     </div>
     </div>
     
-    <img src="res/DieSneider.jpg" class="modal-img f-left" onclick="clk(this)" alt="" style="width:7.2em;">
-
-
     
     <h2><b>The Schneiders</b></h2>
     
@@ -77,20 +83,16 @@
     Looking back in time earlier than the beginning of the 17th century is greatly hindered by the disarray caused by the "Thirty Years' War" which occurred between 1618 and 1648. Not only was a huge amount of the population decimated but also their towns, buildings and records. To find anything substantial and continuous from that period of time would be nothing short of miraculous, yet due to the work of some people, then and now, more is gradually coming to light.
     <br><br>
 
-    <div class="lbox" style="width:25%; margin:6px 20px 40px 0px;">
+    <div class="lbox" style="width:25%; margin:6px 20px 20px 0px;">
     <img src="img/schneider/esslingen_webergasse_8.jpg" class="modal-img" onclick="clk(this)" alt="">
-    <p>Johann Conrad Schneider was a weaver in Esslingen where there is a Weaver's Alley (Webergasse) with buildings which are still standing in modern times.
+    <p><b>Webergasse 8</b><br>
+    <br>Johann Conrad Schneider was a weaver in Esslingen where there is a Weaver's Alley (Webergasse) in which the old buildings are still standing in modern times.
     <br><br>
     The larger building shown here is Webergasse Number 8, built in 1266, making it one of the three dendrochronologically oldest buildings in Germany of its type, known in German as Fachwerk, and in English as Timber Frame or Half-Timbered With Infill.
     </p>
     </div>
 
     Johann Georg's great-great-grandfather, Johann Conrad Schneider, was a weaver in Esslingen, a large trading center on the River Neckar, which surprisingly incurred very little damage during WW2 and as such retains much of its medieval character. Johann Conrad was born about 45km away, in Öschingen at the foot of the Swabian Alps, where his parents Conrad and Barbara were from. He married Anna Margaretha Schmid, from and in Hochdorf, not far from Esslingen, and started a family there. His son Andreas followed in his footsteps by also becoming a weaver and he too married in Hochdorf, his wife being Maria Agnes Unger. The family tradition somewhat changed its direction when their son, Johannes, became a Master Stone Mason, the first of a dynasty of masons and builders.
-    
-    <div class="rbox" style="width:28%; margin:10px 0px 20px 20px;">
-    <img src="img/schneider/esslingen_gustav_schoenleber_1880.jpg" class="modal-img" onclick="clk(this)" alt="">
-    <p>Esslingen old town (Altstadt) c1880</p>
-    </div>
     
     <br><br>
     In 1775, Johannes moved from Hochdorf to Hertmannsweiler where he married Philippina Caroline Rincker (also known as Margaretha). Hertmannsweiler, as well as the neighbouring villages such as Leutenbach, Winnenden and Waiblingen, already had many generations of Schneiders living and working there as stone masons, dignitaries, winegrowers and farmers and they could very likely have been related to our Schneiders from nearby Esslingen and Hochdorf.
@@ -137,8 +139,8 @@
     
 
 
-
-    <div id="ancestors"></div>
+    <div id="ancestors" class="lbox shadowed" style="width:940px; margin:0px; padding: 3px 0px 9px 9px;">
+    <!--div id="ancestors"></div-->
 
     <button style="width:200px;" type='button' class='b0' onclick='return Togl(anc,anc1,"ancestors")'
     id='anc'><b>&#9661;<br>Show<br>Ancestors<br></b></button>
@@ -147,14 +149,13 @@
     and Heinricke Margaretha Lauer</b></h4>
 
     click the button to the left to show or hide the ancestors
-    <div id='anc1' style='display:none'>
-    <br>
-
     
-    if too wide, scroll the tree sideways by using the scrollbar at the bottom, or click on the tree and use the cursor keys<br>
+    <div id="anc1" style="display:none;">
     <br>
-    * = place of birth
-    <ul class="tree narrow">
+    
+    &nbsp; if the tree is too wide, scroll it sideways by using the scrollbar at the bottom, or click on the tree and use the cursor keys<br>
+    &nbsp; * = place of birth
+    <ul class="tree narrow" style="border:none;">
 
 
     <li>
@@ -445,7 +446,7 @@
     </ul>
 
     </div>
-    
+    </div>    
     
     
     <img src="res/blank.gif" style="width:98%; height:1px; margin:0px;" alt="">
