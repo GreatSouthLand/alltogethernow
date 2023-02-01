@@ -500,14 +500,13 @@ hr {
 
 /* clear floats after row */
 .row::after {
-
 	content: "";
 	clear: both;
 	display: table;
 }
 
 
-/* containers for rows and columns, with 3px on each side of item */
+/* containers for rows and columns, with 3px on each side of an item */
 
 .row > * {
 	float: left;
