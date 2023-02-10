@@ -357,10 +357,11 @@ img {
 .family td:first-child, 
 .family td:last-child {
     padding-left: 12px;
-    padding-right: 10px;
+    padding-right: 3px;
     }
 
 .family td:nth-child(2) {
+	padding-left: 9px;
     text-align:right;
     }
     
@@ -402,14 +403,34 @@ td {
 	text-align: left;
 }
 
-/*.lbox*/
+
 hr {
     height:1px;
     width: 100%;
     border:0; 
     border-bottom: #d0d0d0 solid 1px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+.leaf  {
+    background: url(hr1.png) no-repeat center;
+    height: 50px;
+    border: none;
+}
+.blank  {
+    background: url(blank.gif) no-repeat center;
+    height: 6px;
+    border: none;
+    margin: 0px;
+}
+.h20  {
+    height: 20px;
+}
+.h30  {
+    height: 30px;
+}
+.h40  {
+    height: 40px;
 }
 
 
@@ -470,12 +491,7 @@ hr {
 	letter-spacing:normal;
 	margin-top:14px;
 	}
-/*.quote ul::first-letter {
-	font-size: 2em;
-	opacity: 0.8;
-	line-height: 1em;
-	margin-top: 5px;
-	}*/
+
 
 /* image on left side of container, for text on right */
 .limg {
@@ -514,6 +530,9 @@ hr {
 	padding-right: 0px;
 	text-align: center;
 }
+.col14 {
+	width: calc((100% - 26px)/7);
+}
 .col16 {
 	width: calc((100% - 23px)/6);
 }
@@ -528,7 +547,6 @@ hr {
 }
 .col50 {
 	width: calc((100% - 11px)/2);
-	text-align: left;
 }
 .col60 {
 	width: 60%;
@@ -538,22 +556,14 @@ hr {
 	text-align: left;
 	padding: 0px 8px 0px 0px;
 }
-
-
-.nav {
-	margin: 10px 0px 10px 20px; 
-	padding: 8px 12px 12px 12px; 
-	text-align: right; 
-	/*border-color:#406000;*/
-	background: #f7f9ef;
+.framed {
+	border: #d0d0d0 solid 1px;
+	border-radius: 5px;
 }
-.nav a {
-	color:#406000;
-	text-decoration: none;
-	/*background: url(leaf.png) no-repeat right top;
-	padding-right: 10px;
-	margin: 0px 0px 0px 0px;*/
+.unframed {
+	border: none;
 }
+
 
 
 /* navbar container */
@@ -664,9 +674,11 @@ hr {
 
 .b1 {
 	float: right;
-	margin-top: 5px;
-	margin-left: 20px;
+	margin: 3px 0px 6px 20px;
 	padding: 3px 12px;
+	/*margin-top: 5px;
+	margin-left: 20px;
+	padding: 3px 12px;*/
 }
 .b0 {
 	float: left;
@@ -730,12 +742,6 @@ hr {
 .fam > div > div:nth-child(3) {
     padding-left: 3px;
     }
-
-.leaf  {
-    background: url(hr1.png) no-repeat center;
-    height: 50px;
-    border: none;
-}
 
 .low  {
     height: 6px;
