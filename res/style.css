@@ -326,7 +326,7 @@ table {
 .gtop {
 	width:100%;
 	margin: 20px 0 16px 0;
-	page-break-inside: avoid;
+	page-break-inside: avoid !important;
 }
 
 .gto {
@@ -337,7 +337,7 @@ table {
 .geni {
 	width:95%;
 	margin: 16px 0 16px 30px;
-	page-break-inside: avoid;
+	page-break-inside: avoid !important;
 }
 
 .gen {
@@ -346,7 +346,7 @@ table {
 }
 
 img {
-	page-break-inside: avoid;
+	page-break-inside: avoid  !important;
 }
 
 .family td {
@@ -390,7 +390,7 @@ img {
 	}
 
 .inri {
-	page-break-inside: avoid;
+	page-break-inside: avoid !important;
 }
 
 .inri td {
@@ -445,7 +445,7 @@ hr {
 
 /* container boxes with outlines, placed center, left or right */
 .cbox, .lbox, .rbox, .row, .quote {
-	page-break-inside: avoid;
+	/*page-break-inside: avoid !important;*/
 	background-color: #f8f8f8;
 	border: #d0d0d0 solid 1px;
 	padding: 4px 4px 4px 4px;
@@ -453,7 +453,7 @@ hr {
 }
 .cbox p, .lbox p, .rbox p {
 	padding: 0px 3px 3px 3px;
-	#background: url(expand.gif) no-repeat top right;
+	/*background: url(expand.gif) no-repeat top right;*/
 }
 .cbox img, .lbox img, .rbox img {
 	width: 100%;
@@ -497,6 +497,9 @@ hr {
 	margin-top:14px;
 	}
 
+.quotebox {
+	padding: 10px 20px 10px 20px;;
+}
 
 /* image on left side of container, for text on right */
 .limg {
@@ -564,6 +567,7 @@ hr {
 .framed {
 	border: #d0d0d0 solid 1px;
 	border-radius: 5px;
+	padding: 0px 0px 6px 0px;
 }
 .unframed {
 	border: none;
@@ -783,4 +787,19 @@ hr {
 	from { opacity: 0; }
 	to { opacity: 1; }
 	}
+
+@media print {
+	body, .page, .main, .page-in, .header.bottom, .header-top, .row1, .row2 {
+		background-image: none;
+		/*width: 100% !important;*/
+		background-color: white;
+		margin: 0px;
+		}
+	.header,.header-bottom, .header-top, .navbar, .footer {
+		display: none;
+		/*width: 100% !important;*/
+		}
+}
+
+
 
