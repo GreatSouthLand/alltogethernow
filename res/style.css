@@ -789,7 +789,7 @@ hr {
 	}
 
 @media print {
-	body, .page, .main, .page-in, .header.bottom, .header-top, .row1, .row2 {
+	body, .page, .main, .page-in, .content, .header.bottom, .header-top, .row1, .row2 {
 		background-image: none;
 		/*width: 100% !important;*/
 		background-color: white;
