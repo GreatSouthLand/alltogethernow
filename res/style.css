@@ -789,16 +789,18 @@ hr {
 	}
 
 @media print {
-	body, .page, .main, .page-in, .content, .header.bottom, .header-top, .row1, .row2 {
+	body, .page, .main, .page-in, .content, .header.bottom, .header-top, .row, .row1, .row2, .lbox, .rbox, .cbox, #ancestors, .tree {
 		background-image: none;
-		/*width: 100% !important;*/
+		background: none;
 		background-color: white;
 		margin: 0px;
-		}
-	.header,.header-bottom, .header-top, .navbar, .footer {
+	}
+	.header,.header-bottom, .header-top, .navbar, .footer, .b1, .b0, .more, .noprint, .row2 {
 		display: none;
-		/*width: 100% !important;*/
-		}
+	}
+	.shadowed {
+		box-shadow: none;
+	}
 }
 
 

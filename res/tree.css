@@ -147,3 +147,12 @@
 .tree li a:hover+ul ul::before {
 	border-color: #94a0b4;
 }
+
+@media print {
+	.tree, .tree li a, #ancestors {
+		background-image: none;
+		background: none;
+		background-color: white;
+		margin: 0px;
+		}
+}
