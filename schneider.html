@@ -35,12 +35,12 @@
     <img src="res/DieSneider.jpg" class="modal-img f-left" onclick="clk(this)" alt="" style="width:7.2em;">
 
 
-    <div class="display-table" style="float:right; width:38%; margin: 10px 0px 0px 24px;">
+    <div class="display-table noprint" style="float:right; width:38%; margin: 10px 0px 0px 24px;">
 	<div>
 	<div class="rbox" style="margin: 0px 0px 16px 20px; padding:16px">
 	Any image can be clicked to see the full sized version. Click again to close it.
 	<hr>
-	To search through every name on the page, it's best to first show all the families.<br><br>
+	To print the page or search for any name, consider showing all the families first.<br><br>
     <button style="float:left; margin:0px; padding:12px 16px;" type='button' class='b0' onclick='ExpCon("block")' id='dummy1'>Show All Families</button>
 	<button style="float:right; margin:0px; padding:12px 16px;" type='button' class='b0' onclick='ExpCon("none")' id='dummy2'>Hide All Families</button>
 	</div>
@@ -141,9 +141,8 @@
 
 
 
-    <div id="ancestors" class="lbox shadowed" style="width:940px; margin:0px; padding: 3px 0px 9px 9px;">
-    <!--div id="ancestors"></div-->
-
+    <div id="ancestors" class="lbox" style="width:940px; margin:0px; padding: 3px 0px 9px 9px;">
+    
     <button style="width:200px;" type='button' class='b0' onclick='return Togl(anc,anc1,"ancestors")'
     id='anc'><b>&#9661;<br>Show<br>Ancestors<br></b></button>
 
@@ -151,16 +150,22 @@
     and Heinricke Margaretha Lauer</b></h4>
 
     click the button to the left to show or hide the ancestors
+    
+    </div>
 
     <div id="anc1" style="display:none;">
-    <br>
+    
+    <hr class="blank h30">
 
+    <h4><b>The Ancestors of Johann Georg Schneider</b></h4>
+    
+    <div class="nprint">
     &nbsp; if the tree is too wide, scroll it sideways by using the scrollbar at the bottom, or click on the tree and use the cursor keys<br>
     &nbsp; * = place of birth
-    <ul class="tree narrow" style="border:none;">
-
-
-    <li>
+    </div>
+    
+    
+    <div class="tree narrow">
     <ul>
     <li><a href="#johanngeorg"><b>Johann Georg Schneider</b><br>1810–1878<br>Ellhofen<br>Master Mason</a>
     <ul>
@@ -172,14 +177,11 @@
     <ul>
     <li><a href="#hanssconrad"><b>Hanss<br>Conrad<br>(Hanss)<br>Schneider</b><br>1678–1738<br>*Oeschingen<br>Weaver</a>
     <ul>
-    <li><a href="#conrad"><b>Conrad Schneider</b><br>1645–1709<br>*Oeschingen<!--<br>Mayor--></a>
+    <li><a href="#conrad"><b>Conrad Schneider</b><br>1645–1709<br>*Oeschingen</a>
     <ul>
-
-    <!--li><a href="#void"><b>Jacob Schneider</b></a></li-->
 
     <li><a href="#jacob1"><b>Jacob Schneider</b><br>1617–1689<br>*Oeschingen<br>Schultheiß<br> (Mayor/Sheriff)</a></li>
     <li><a href="#jacob1"><b>Marina</b><br>1622–1662<br>*Oeschingen</a></li>
-
 
     </ul>
     </li>
@@ -330,7 +332,23 @@
     </ul>
     </li>
     </ul>
-    </li>
+    </ul>
+    </div>
+    
+    <hr class="leaf">
+    
+    <h4><b>The Ancestors of Heinricke Margaretha Lauer</b></h4>
+    
+    <div class="nprint">
+    &nbsp; if the tree is too wide, scroll it sideways by using the scrollbar at the bottom, or click on the tree and use the cursor keys<br>
+    &nbsp; * = place of birth
+    </div>
+    
+    <hr class="blank h20">
+    
+    
+    <div class="tree narrow">
+    <ul>
     <li><a href="#johanngeorg"><b>Heinricke <br>Margaretha <br>Lauer</b><br>1809–1882<br>Ellhofen</a>
     <ul>
     <li><a href="#void"><b>Johann <br>Martin <br>Lauer</b><br>1777–1871<br>Ellhofen</a>
@@ -404,15 +422,11 @@
     </ul>
     </li>
     </ul>
-    </li>
     </ul>
-    </li>
     </ul>
-    </li>
-    </ul>
+    </div>
+    </div>
 
-    </div>
-    </div>
 
 
 
@@ -483,11 +497,11 @@
     </p>
     </div>
     </div>
-
     </div>
 
 
 
+	<hr class="blank">
 
 
     <div style="width:100%; margin:10px 0px 0px 0px;">
@@ -3182,9 +3196,9 @@
 
     <button type='button' class='b1' style="float:none;" onclick='ShowHide(bjgsone,jgsone,"#jgsone","block"); ShowHide(bjgstwo,jgstwo,"#jgstwo","block"); ShowHide(bjes,jes,"#jes","block"); window.location.href = "#jes"; return false;'>Show&nbsp;Family</button>
 
-    <br><br>
+    <hr class="blank h20">
 
-    <div class="row" style="width:940px; margin:6px 6px 10px 0px;">
+    <div class="row gtop" style="width:940px; margin:6px 6px 10px 0px;">
 
     <div class="col16">
     <img src="img/schneider/Schneider_Ernest.jpg" class="modal-img" onclick="clk(this)" alt="">
@@ -3267,13 +3281,13 @@
 
 
 
-    <div class="lbox" style="width:450px; margin-right:16px;">
+    <div class="lbox" style="width:450px; margin: 20px 16px 0px 0px;">
     <img src="img/schneider/postcard1.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     Weinsberg, near Burg Weibetreu
     </p>
     </div>
-    <div class="lbox" style="width:450px;">
+    <div class="lbox" style="width:450px; margin: 20px 0px 0px 0px;">
     <img src="img/schneider/postcard2.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>
     Queensland, Neurum Creek near Somerset
@@ -4045,8 +4059,8 @@
     <br>
 
 
-    <div style="text-align:center; width:30%; margin:0px auto 20px auto; " >
-    <img src="img/schneider/steinhauer2.jpg" style="width:100%; margin-top:40px;" class="modal-img" onclick="clk(this)" alt="">
+    <div style="text-align:center; width:30%; margin:20px auto 20px auto; " >
+    <img src="img/schneider/steinhauer2.jpg" style="width:100%; margin:30px auto 20px auto;" class="modal-img" onclick="clk(this)" alt="">
     </div>
 
 
@@ -4567,7 +4581,8 @@
     </div>
 
     <hr class="blank h30">
-
+    
+    
 
     <div class="rbox" style="width:36%; margin:30px 0px 0px 15px;" >
     <img src="img/schneider/1915_DEATH_CERT_Wilhelmine_Gayndah.jpg" class="modal-img" onclick="clk(this)" alt="">
@@ -4586,23 +4601,24 @@
     Annie's father was Friedrich Wilhelm August Lobegeiger
     who was the brother of August Carl Hermann Lobegeier
     who married Friederike Christine<br>
-    <br>
+    <br><br>
 
     <div class="lbox" style="width:58%; margin:0px 0px 0px 0px;" >
     <img src="img/schneider/connections_chart.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>More connections</p>
     </div>
+    
+    
 
 
     <hr class="blank h30">
 
 
-
-    <table style="width:100%;"><tr><td colspan="4">
+    <table style="float:left; width:100%;"><tr><td colspan="4">
 
     <h5> The Family Chronicle (Familien-Chronik) of Johann Heinrich Schneider senior</h5>
 
-    <div class="f-right" style="width:100%; margin:6px 0px 0px 0px;" >
+    <div style="width:100%; margin:6px 0px 0px 0px;" >
     <img src="img/schneider/familienchronik.jpg" class="modal-img" onclick="clk(this)" alt="">
     </div>
     </td></tr><tr>
@@ -4674,8 +4690,7 @@
 	in the Lord.</td>
     </tr></table>
     <br>
-
-
+    
 
 
 
@@ -4683,6 +4698,8 @@
     <hr class="blank">
 
     <hr>
+    
+    <div class="gtop">
 
 
     <h4><b>&raquo;&nbsp;Johann Heinrich Schneider (Henry) <br>
@@ -4696,6 +4713,8 @@
     <img src="img/schneider/Schneider_Henry_Annie_children.jpg" class="modal-img" onclick="clk(this)" alt="">
     <p>Henry and Annie with their eight children,
     from left:  Norman, Ben, Ambrose, Arthur, Lily, Edward, Harry, Fred</p>
+    </div>
+    
     </div>
 
 
