@@ -381,13 +381,17 @@ img {
 .kids {
 	border: #d0d0d0 solid 1px;
 	border-radius: 5px;
-	padding: 6px 3px 2px 10px;
+	padding: 6px 6px 2px 10px;
 	margin: 0px 0px 14px 12px;
 	}
 
 .shadowed {
 	box-shadow: 7px 7px 7px -5px  rgba(50, 50, 50, 0.5);
 	}
+	
+.double {
+	border: #d0d0d0 double 3px;
+}
 
 .inri {
 	page-break-inside: avoid !important;
@@ -734,9 +738,20 @@ hr {
 
 .forpic > div > div > img {
     float: left; 
-    height: 6em; 
-    width: auto; 
+    height: auto; 
+    width: 5em; 
     margin: 3px 15px 6px 0px;
+}
+
+.forpic2 > div > div {
+	padding: 10px 10px 8px 0px;
+	vertical-align: top;
+}
+
+.forpic2 > div > div > img {
+    float: left; 
+    height: auto; 
+    margin-top: 3px;
 }
 
 .fam > div > div {
