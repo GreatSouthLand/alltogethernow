@@ -196,9 +196,9 @@ img.f-right {
 	background-image: url(body-top.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
-	width: 952px;
+	width: 940px;
 	float: left;
-	padding: 30px 24px 4px 24px;
+	padding: 30px 35px 4px 25px;
 }
 
 .row1 {
@@ -421,6 +421,15 @@ hr {
     margin-top: 8px;
     margin-bottom: 18px;
 }
+.shaded {
+	border:none;
+	height: 20px;
+	width: 90%;
+	height: 50px;
+	border-bottom: 1px solid #999;
+	box-shadow: 0 20px 20px -20px #888;
+	margin: -20px auto 20px; 
+}
 .leaf  {
     background: url(hr1.png) no-repeat center;
     height: 50px;
@@ -576,12 +585,15 @@ hr {
 .framed {
 	border: #d0d0d0 solid 1px;
 	border-radius: 5px;
-	padding: 0px 0px 6px 0px;
+	padding: 2px 2px 6px 2px;
 }
 .unframed {
 	border: none;
 }
 
+.framed p {
+	padding: 0px 6px 3px 6px;
+}
 
 
 /* navbar container */
@@ -626,7 +638,7 @@ hr {
 /* font size and padding for all elements but see drop button */
 .navbar a, .drop .drop-btn {
 	font:inherit;
-	padding: 2px 10px;
+	padding: 2px 8px;
 }
 
 /* drop button */
@@ -823,5 +835,7 @@ hr {
 	}
 }
 
-
+sup {
+    line-height: 0;
+	}
 
