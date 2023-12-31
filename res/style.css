@@ -603,6 +603,7 @@ hr {
 	border:#BBBFB4 solid 1px;
 	border-radius: 6px;
 	padding:0px;
+	margin-bottom: 1px;
 }
 
 /* last item without vertical bar */
@@ -638,7 +639,7 @@ hr {
 /* font size and padding for all elements but see drop button */
 .navbar a, .drop .drop-btn {
 	font:inherit;
-	padding: 2px 8px;
+	padding: 2px 10px;
 }
 
 /* drop button */
@@ -741,6 +742,20 @@ hr {
     display: table-cell;
 	border-top: 1px solid #d0d0d0;
 }
+
+.display-table2 {
+    display: table; 
+}
+.display-table2 > div { 
+    display: table-row; 
+}
+.display-table2 > div > div { 
+    display: table-cell;
+	border-top: 1px solid #d0d0d0;
+	padding: 3px;
+}
+
+
 
 .noline > div > div {
 	border:none;
