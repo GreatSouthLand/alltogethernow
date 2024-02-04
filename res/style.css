@@ -441,6 +441,9 @@ hr {
     border: none;
     margin: 0px;
 }
+.h10  {
+    height: 10px;
+}
 .h20  {
     height: 20px;
 }
@@ -606,10 +609,10 @@ hr {
 	margin-bottom: 1px;
 }
 
-/* last item without vertical bar */
+/* last item without vertical bar
 .navbar :last-child {
 	border-right:none;
-}
+} */
 
 /* links inside the navbar */
 .navbar a {
@@ -618,6 +621,7 @@ hr {
 	text-align: center;
 	text-decoration: none;
 	border-right:#91969a dotted 2px;
+	border-bottom:#91969a solid 1px;
 }
 
 .navbar hr {
@@ -634,6 +638,7 @@ hr {
 	float: left;
 	overflow: hidden;
 	border-right:#91969a dotted 2px;
+	border-bottom:#91969a solid 1px;
 }
 
 /* font size and padding for all elements but see drop button */
