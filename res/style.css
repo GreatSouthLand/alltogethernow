@@ -465,18 +465,18 @@ hr {
 }
 
 /* container boxes with outlines, placed center, left or right */
-.cbox, .lbox, .rbox, .row, .quote {
+.cbox, .lbox, .rbox, .lboxc, .rboxc, .row, .quote {
 	/*page-break-inside: avoid !important;*/
 	background-color: #f8f8f8;
 	border: #d0d0d0 solid 1px;
 	padding: 4px 4px 4px 4px;
 	border-radius: 5px;
 }
-.cbox p, .lbox p, .rbox p {
+.cbox p, .lbox p, .rbox p, lboxc p, rboxc p {
 	padding: 0px 3px 3px 3px;
 	/*background: url(expand.gif) no-repeat top right;*/
 }
-.cbox img, .lbox img, .rbox img {
+.cbox img, .lbox img, .rbox img, lboxc img, rboxc img {
 	width: 100%;
 }
 .cbox {
@@ -492,6 +492,16 @@ hr {
 	float: right;
 	text-align: left;
 }
+.lboxc {
+	float: left;
+	text-align: center;
+}
+.rboxc {
+	float: right;
+	text-align: center;
+}
+
+
 .fambase {
 	width: 918px; 
 	padding: 16px; 
