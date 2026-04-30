@@ -598,22 +598,22 @@ hr {
 	text-align: center;
 }
 .col14 {
-	width: calc((100% - 26px)/7);
+	width: calc((100% - 28px)/7);
 }
 .col16 {
-	width: calc((100% - 23px)/6);
+	width: calc((100% - 25px)/6);
 }
 .col20 {
-	width: calc((100% - 20px)/5);
+	width: calc((100% - 22px)/5);
 }
 .col25 {
 	width: calc((100% - 19px)/4);
 }
 .col33 {
-	width: calc((100% - 14px)/3);
+	width: calc((100% - 16px)/3);
 }
 .col50 {
-	width: calc((100% - 11px)/2);
+	width: calc((100% - 13px)/2);
 }
 .col60 {
 	width: 60%;
