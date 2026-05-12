@@ -67,7 +67,12 @@
 }
 
 .fouracross li a p {
-	padding-top:1em;
+	padding:0.4em;
+}
+
+.scroll-container {
+	width: 98%;
+	overflow-x: auto;
 }
 
 .tree li::before, 
