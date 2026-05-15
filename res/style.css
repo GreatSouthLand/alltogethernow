@@ -138,7 +138,7 @@ body {
 
 
 .fambase {
-	width: calc(100%x - 80px); /*920px;*/
+	width: 100%; /*calc(100% - 80px);*/ /*920px;*/
 	padding: 16px; 
 	margin: 20px 0px 20px 0px;
 }
