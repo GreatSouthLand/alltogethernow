@@ -429,11 +429,17 @@ img {
 .inri {
 	page-break-inside: avoid !important;
 }
-
 .inri td {
-	padding-left: 2px;
+	padding-left: 0px;
 	padding-right: 10px;
+	vertical-align: top;
 }
+.inri td:first-child , 
+.inri td:last-child {
+    padding-left: 10px;
+    text-align: right;
+    }
+
 
 td {
 	vertical-align: top;
@@ -664,6 +670,14 @@ hr {
     border-bottom: #c0c0c0 solid 1px;
     margin-top: 3px;
     margin-bottom: 4px;
+}
+
+/* Apply to specific divs or globally */
+.navbar * {
+  -webkit-text-size-adjust: 100%; /* For Safari and Chrome on iOS */
+  -moz-text-size-adjust: 100%;    /* For Firefox (though support varies) */
+  -ms-text-size-adjust: 100%;     /* For older Windows mobile browsers */
+  text-size-adjust: 100%;         /* Standard property */
 }
 
 /* drop container */
