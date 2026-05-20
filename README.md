@@ -1,7 +1,7 @@
 # alltogethernow
-A family tree website for Fenwick, McDonald, McIntyre, Rankin, Schneider, Pieper, Suchting, Lobegeiger and more families.
+A family history website for the families of Fenwick, McDonald, McIntyre, Rankin, Schneider, Pieper, Pfeffer, Rieck, Suchting, Dickfos, Lobegeiger, Hinrichsen, Wolter and more families.
 
-This is a work in progress.
+This is always a work in progress.
 
 The static website employs only html, css and javascript. <br>
 Browsing is via the top navigation bar on each page and/or some button type links where applicable. <br>
