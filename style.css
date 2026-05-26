@@ -13,10 +13,6 @@ body {
 }
 
 
-
-
-
-
 .main, .header, .header-top, .header-bottom {
 	width: 100%; /*calc(100%);*/ /*1000px;*/
 	float: left;
@@ -53,8 +49,6 @@ body {
 	background: #f5f7ec; /*pale green*/
 	border-radius: 1.5%; /*15px;*/
 }
-
-
 
 .header-top {
 	background-image: url(header-top.jpg);
@@ -639,6 +633,8 @@ hr {
 }
 
 
+
+
 /* navbar container */
 .navbar {
 	overflow: hidden;
@@ -647,6 +643,7 @@ hr {
 	border-radius: 6px;
 	padding:0px;
 	margin-bottom: 1px;
+	font-size: 1em;
 }
 
 /* last item without vertical bar
@@ -662,6 +659,7 @@ hr {
 	text-decoration: none;
 	border-right:#91969a dotted 2px;
 	border-bottom:#91969a solid 1px;
+	font-size: 1em;
 }
 
 .navbar hr {
@@ -679,12 +677,14 @@ hr {
 	overflow: hidden;
 	border-right:#91969a dotted 2px;
 	border-bottom:#91969a solid 1px;
+	font-size: 1em;
 }
 
 /* font size and padding for all elements but see drop button */
 .navbar a, .drop .drop-btn {
 	font:inherit;
 	padding: 2px 10px;
+	font-size: 1em;
 }
 
 /* drop button */
@@ -695,12 +695,14 @@ hr {
 	background-color: inherit;
 	margin:0px; /* Important for vertical align on mobile phones */
 	font: inherit; /* Important for vertical align on mobile phones */
+	font-size: 1em;
 }
 
 /* background color for navbar links on hover */
 .navbar a:hover, .drop:hover .drop-btn {
 	background-color: #608020;
 	color: white;
+	font-size: 1em;
 }
 
 /* drop content (hidden by default) */
@@ -713,6 +715,7 @@ hr {
 	z-index: 1;
 	padding-top: 2px;
 	padding-bottom: 6px;
+	font-size: 1em;
 }
 
 /* links inside the drop */
@@ -721,22 +724,26 @@ hr {
 	display: block;
 	text-align: left;
 	border: none;
+	font-size: 1em;
 }
 
 /* no focus ouline for links */
 .drop-content a:focus {
 	outline: none;
 	box-shadow: none;
+	font-size: 1em;
 }
 
 /* drop down the menu on hover */
 .drop:hover .drop-content {
 	display: block;
+	font-size: 1em;
 }
 
 /* keep menu open when an item is right-clicked */
 .drop-content:focus-within {
     display: block;
+    font-size: 1em;
 }
 
 /* highlight a right-clicked menu item */
@@ -745,6 +752,7 @@ hr {
     color: white; 
     /*background: #f4d35e;*/ /* Senf */
     /*color: black;*/
+    font-size: 1em;
 }
 
 
@@ -914,15 +922,16 @@ sup {
 	}
 
  /* Style the navbar */
-#navbar2 {
+.navbar2 {
   position: sticky;
   top: 0;
   overflow: hidden;
   background-color: #f0f0f0;
+  margin-bottom:10px;
 }
 
 /* Navbar links */
-#navbar2 a {
+.navbar2 a {
   float: left;
   display: block;
   color:#406000;
